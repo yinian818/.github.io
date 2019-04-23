@@ -96,18 +96,17 @@
 
 
 
-  <meta name="description" content="数据预处理(sklearn.preprocessing)独热编码对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。1-&amp;gt;k  sklearnpreprocessing.OneHotEncoder()   参数  OneHotEncoder(n_values=’auto’, categorical_features=’all’, categories=’auto’, dtyp">
-<meta name="keywords" content="sklearn,python">
+  <meta name="description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, co">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sklearn 快速入门">
-<meta property="og:url" content="http://yoursite.com/2019/04/20/sklearn-快速入门/index.html">
+<meta property="og:title" content="sklearn入门-非监督学习">
+<meta property="og:url" content="http://yoursite.com/2019/04/22/sklearn入门-非监督学习/index.html">
 <meta property="og:site_name" content="桃花源">
-<meta property="og:description" content="数据预处理(sklearn.preprocessing)独热编码对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。1-&amp;gt;k  sklearnpreprocessing.OneHotEncoder()   参数  OneHotEncoder(n_values=’auto’, categorical_features=’all’, categories=’auto’, dtyp">
+<meta property="og:description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, co">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-21T11:28:47.659Z">
+<meta property="og:updated_time" content="2019-04-23T02:42:35.456Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sklearn 快速入门">
-<meta name="twitter:description" content="数据预处理(sklearn.preprocessing)独热编码对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。1-&amp;gt;k  sklearnpreprocessing.OneHotEncoder()   参数  OneHotEncoder(n_values=’auto’, categorical_features=’all’, categories=’auto’, dtyp">
+<meta name="twitter:title" content="sklearn入门-非监督学习">
+<meta name="twitter:description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, co">
 
 
 
@@ -115,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/20/sklearn-快速入门/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/22/sklearn入门-非监督学习/">
 
 
 
@@ -125,7 +124,7 @@
   };
 </script>
 
-  <title>sklearn 快速入门 | 桃花源</title>
+  <title>sklearn入门-非监督学习 | 桃花源</title>
   
 
 
@@ -328,7 +327,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/20/sklearn-快速入门/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/sklearn入门-非监督学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李一念">
@@ -345,7 +344,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sklearn 快速入门
+          <h1 class="post-title" itemprop="name headline">sklearn入门-非监督学习
 
               
             
@@ -371,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-04-20 18:48:37" itemprop="dateCreated datePublished" datetime="2019-04-20T18:48:37+08:00">2019-04-20</time>
+              <time title="创建时间：2019-04-22 16:44:03" itemprop="dateCreated datePublished" datetime="2019-04-22T16:44:03+08:00">2019-04-22</time>
             
 
             
@@ -388,7 +387,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-21 19:28:47" itemprop="dateModified" datetime="2019-04-21T19:28:47+08:00">2019-04-21</time>
+                <time title="修改时间：2019-04-23 10:42:35" itemprop="dateModified" datetime="2019-04-23T10:42:35+08:00">2019-04-23</time>
               
             
           </span>
@@ -405,7 +404,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/机器学习/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/sklearn/" itemprop="url" rel="index"><span itemprop="name">sklearn</span></a></span>
 
                 
                 
@@ -440,35 +439,18 @@
       
 
       
-        <h3 id="数据预处理-sklearn-preprocessing"><a href="#数据预处理-sklearn-preprocessing" class="headerlink" title="数据预处理(sklearn.preprocessing)"></a>数据预处理(sklearn.preprocessing)</h3><h4 id="独热编码"><a href="#独热编码" class="headerlink" title="独热编码"></a>独热编码</h4><p>对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。1-&gt;k</p>
-<ol>
-<li>sklearnpreprocessing.OneHotEncoder()</li>
-</ol>
-<ul>
-<li><p>参数</p>
+        <p>对不带标签的数据进行学习。</p>
+<h4 id="k均值算法-k-Means-sklearn-cluster-KMeans"><a href="#k均值算法-k-Means-sklearn-cluster-KMeans" class="headerlink" title="k均值算法(k-Means)(sklearn.cluster.KMeans)"></a>k均值算法(k-Means)(sklearn.cluster.KMeans)</h4><p>最基本的聚类算法。</p>
 <blockquote>
-<p>OneHotEncoder(n_values=’auto’, categorical_features=’all’, categories=’auto’, dtype=<class ‘numpy.float64’>, sparse=True, handle_unknown=’error’)<br><code>n_values</code>: 每个特征使用几维数据，默认由数据集自动决定<br><code>categorial_features</code>: 指定对哪些特征进行编码，默认为传入的所有值，通过bool值或索引进行指定(exp:<code>[True, True, False] | [0, 1]</code>)<br><code>categories</code>: 每个特征的类别<br><code>dtype</code>: 编码数值格式<br><code>sparse</code>: 默认返回稀疏矩阵，设置为False可直接返回array，否则需要<code>.toarray()</code>转换<br><code>handle_unknown</code>: ‘error’/‘ignore’，遇到未知类别，返回错误/忽略</class></p>
+<p>KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, copy_x=True, n_jobs=None, algorithm=’auto’)<br><code>n_clusters=8</code> 聚类数。<br><code>init=&#39;k-means++&#39;</code> 初始化聚类中心方法。/ ‘auto’ / 数组shape (n_clusters, n_features)<br><code>n_init=1</code> 算法选择不同聚类中心运行的次数，保留最好的结果。<br><code>max_iter=300</code> 单次运行的最大迭代数目。<br><code>tol=0.0001</code> 停止迭代的相对误差界限。<br><code>precompute_distances=&#39;auto&#39;</code> {‘auto’, True, False}是否预先计算距离，选择’auto’时，当n_samples * n_clusters&gt;1,000,000 则不预先计算。<br><code>verbose=0</code> int<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>copy_x=True</code> 是否拷贝训练数据。<br><code>n_jobs=None</code> 并行作业数。<br><code>algorithm=&#39;auto&#39;</code> “auto”, “full” or “elkan”. 指定要使用的算法。</p>
 </blockquote>
-</li>
-<li><p>简单应用</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> OneHotEncoder</span><br><span class="line">OneHot_enc = OneHotEncoder(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#第一次对数据进行编码直接使用 fit_transform()</span></span><br><span class="line">data1_coded = OneHot_enc.fit_transform(data1)</span><br><span class="line"><span class="comment">#对相同结构数据集再次编码，仅需 transform()</span></span><br><span class="line">data2_coded = OneHot_enc.transform(data2)</span><br><span class="line"></span><br><span class="line">array.reshape(<span class="number">-1</span>, <span class="number">1</span>)    <span class="comment">#数据仅包含一个特征，转化为n×1维矩阵</span></span><br><span class="line">array.reshape(<span class="number">1</span>, <span class="number">-1</span>)    <span class="comment">#数据仅包含一个样本，转化为1×n维矩阵</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p><strong>使用OneHotEncoder编码后，返回为一个数组(np.array)，且编码后的数据会丢失原来的列名称。</strong></p>
-<ol start="2">
-<li>pandas.get_dummies()<br><code>get_dummies()</code>对数据进行编码后，返回 pd.DataFrame ，并且可以根据特征中不同的值自动生成列名称。</li>
-</ol>
-<ul>
-<li><p>参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line">km_model = KMeans(n_clusters=<span class="number">8</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">km_model.fit_transform()</span><br><span class="line">centers = km_model.cluster_centers_    <span class="comment">#聚类中心</span></span><br><span class="line">y_pre = km_model.labels_    <span class="comment">#每个样本点的标签</span></span><br></pre></td></tr></table></figure>
+<h4 id="自底向上层次聚类-sklearn-cluster-AgglomerativeClustering"><a href="#自底向上层次聚类-sklearn-cluster-AgglomerativeClustering" class="headerlink" title="自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)"></a>自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)</h4><p>层次聚类可分为两类：自顶向下, diverse；自底向上, agglomerative。</p>
 <blockquote>
-<p>get_dummies(data, prefix=None, prefix_sep=’_’, dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None)<br><code>prefix</code>: 列表或这字符串用于添加列名称<br><code>prefix_sep</code>:<br><code>dummy_na</code>: 默认’False’忽略空值，设置为’True’则新增列用于指示空值<br><code>columns</code>: 需要编码的列名称<br><code>drop_first</code>: 是否删除特征的第一类</p>
+<p>AgglomerativeClustering(n_clusters=2, affinity=’euclidean’, memory=None, connectivity=None, compute_full_tree=’auto’, linkage=’ward’, pooling_func=’deprecated’)<br><code>n_clusters=2</code> 最终的聚类数。<br><code>affinity=&#39;euclidean&#39;</code> {‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’, ‘cosine’, ‘precomputed’}. 用于计算距离，当linkage=’ward’，只支持’euclidean’。<br><code>memory=None</code> 默认不缓存计算树的输出，以字符指定缓存路径。<br><code>connectivity=None</code> 一个数组或者可调用对象或者None，用于指定连接矩阵<br><code>compute_full_tree=&#39;auto&#39;</code> 通常当训练了n_clusters后，训练过程就会停止，但是如果compute_full_tree=True，则会继续训练从而生成一颗完整的树。<br><code>linkage=&#39;ward&#39;</code> 一个字符串，用于指定链接算法。’ward’：单链接； ‘complete’：全链接； ‘average’：均连接。<br><code>pooling_func=&#39;deprecated&#39;</code> 一个可调用对象，它的输入是一组特征的值，输出是一个数</p>
 </blockquote>
-</li>
-<li><p>简单应用</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_coded = pd.get_dummies(data)    <span class="comment">#不改参数就可以表现的很优秀啦</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="标签编码"><a href="#标签编码" class="headerlink" title="标签编码"></a>标签编码</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> AgglomerativeClustering</span><br><span class="line">agg_cluster = AAgglomerativeClustering(n_clusters=<span class="number">2</span>, linkage=<span class="string">'ward'</span>)</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -489,19 +471,27 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/sklearn/" rel="tag"># sklearn</a>
-          
-            <a href="/tags/python/" rel="tag"># python</a>
-          
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/22/sklearn入门-监督学习/" rel="next" title="sklearn入门-监督学习">
+                <i class="fa fa-chevron-left"></i> sklearn入门-监督学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
         </div>
-      
-
-      
-      
-      
-
       
 
       
@@ -569,7 +559,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -647,7 +637,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据预处理-sklearn-preprocessing"><span class="nav-number">1.</span> <span class="nav-text">数据预处理(sklearn.preprocessing)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#独热编码"><span class="nav-number">1.1.</span> <span class="nav-text">独热编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标签编码"><span class="nav-number">1.2.</span> <span class="nav-text">标签编码</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#k均值算法-k-Means-sklearn-cluster-KMeans"><span class="nav-number">1.</span> <span class="nav-text">k均值算法(k-Means)(sklearn.cluster.KMeans)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#自底向上层次聚类-sklearn-cluster-AgglomerativeClustering"><span class="nav-number">2.</span> <span class="nav-text">自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)</span></a></li></ol></div>
             
 
           </div>
