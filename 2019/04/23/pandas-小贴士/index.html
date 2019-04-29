@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="桃花源">
 <meta property="og:description" content="样本随机采样有时候拿到的数据集中有很多个样本，但如果用所有的数据一起训练，由于计算机性能的限制会花费很多时间。或者想要先在一部分数据集上实验哪一种算法得到的效果更好，可以使用pandas.DataFrame.sample 进行随机抽样，先在一部分数据集上做试验。  sample(n=None, frac=None, replace=False, weights=None, random_state">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-23T07:25:02.430Z">
+<meta property="og:updated_time" content="2019-04-23T15:10:43.754Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pandas-小贴士">
 <meta name="twitter:description" content="样本随机采样有时候拿到的数据集中有很多个样本，但如果用所有的数据一起训练，由于计算机性能的限制会花费很多时间。或者想要先在一部分数据集上实验哪一种算法得到的效果更好，可以使用pandas.DataFrame.sample 进行随机抽样，先在一部分数据集上做试验。  sample(n=None, frac=None, replace=False, weights=None, random_state">
@@ -371,7 +371,7 @@
                 
               
 
-              <time title="创建时间：2019-04-23 14:04:22 / 修改时间：15:25:02" itemprop="dateCreated datePublished" datetime="2019-04-23T14:04:22+08:00">2019-04-23</time>
+              <time title="创建时间：2019-04-23 14:04:22 / 修改时间：23:10:43" itemprop="dateCreated datePublished" datetime="2019-04-23T14:04:22+08:00">2019-04-23</time>
             
 
             
@@ -433,6 +433,9 @@
 <p>sample(n=None, frac=None, replace=False, weights=None, random_state=None, axis=None)<br><code>n=None</code> 期望抽取的样本数量。当frac=None默认为1<br><code>frac=None</code> 期望抽取的样本占所有样本的百分比<br>！n / frac 只要设置其中一个就好了<br><code>replace=False</code> 抽样放回还是不放回<br><code>weights=None</code><br><code>random_state=None</code> 随机数生成器种子。int or numpy.random.RandomState<br><code>axis=None</code> 样本的轴 int or string, optional</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame(...)</span><br><span class="line">df.sample(n=<span class="number">20</span>, random_state=<span class="number">1</span>)</span><br><span class="line">df.sample(frac=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="数据填充"><a href="#数据填充" class="headerlink" title="数据填充"></a>数据填充</h4><p>pd.DataFrame.fillna(x)<br>x可以是要填充的值(字符串或者数字)，也可以是列名对应填充值的字典…</p>
+<h4 id="重置索引-列名"><a href="#重置索引-列名" class="headerlink" title="重置索引/列名"></a>重置索引/列名</h4><p>df.reset_index()<br>什么也不输入就默认从0开始，或者可以是列表，或者新旧名称对应的字典。</p>
+
       
     </div>
 
@@ -477,6 +480,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/23/sklearn-小贴士/" rel="prev" title="sklearn-小贴士">
+                sklearn-小贴士 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -547,7 +554,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -568,7 +575,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -591,7 +600,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -629,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#样本随机采样"><span class="nav-number">1.</span> <span class="nav-text">样本随机采样</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#样本随机采样"><span class="nav-number">1.</span> <span class="nav-text">样本随机采样</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据填充"><span class="nav-number">2.</span> <span class="nav-text">数据填充</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#重置索引-列名"><span class="nav-number">3.</span> <span class="nav-text">重置索引/列名</span></a></li></ol></div>
             
 
           </div>
