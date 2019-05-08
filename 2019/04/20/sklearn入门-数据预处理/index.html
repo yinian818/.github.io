@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="桃花源">
 <meta property="og:description" content="sklearn.preprocessing 数据填充(sklearn.preprocessing.Imputer)收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～  Imputer(missing_values=’NaN’, s">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-04T11:55:15.682Z">
+<meta property="og:updated_time" content="2019-05-08T13:26:46.341Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sklearn入门-数据预处理">
 <meta name="twitter:description" content="sklearn.preprocessing 数据填充(sklearn.preprocessing.Imputer)收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～  Imputer(missing_values=’NaN’, s">
@@ -388,7 +388,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-04 19:55:15" itemprop="dateModified" datetime="2019-05-04T19:55:15+08:00">2019-05-04</time>
+                <time title="修改时间：2019-05-08 21:26:46" itemprop="dateModified" datetime="2019-05-08T21:26:46+08:00">2019-05-08</time>
               
             
           </span>
@@ -475,11 +475,6 @@
 <p>PCA(n_components=None, copy=True, whiten=False, svd_solver=’auto’, tol=0.0, iterated_power=’auto’, random_state=None)<br><code>n_components=None</code> 期望保留的主成分个数。为整数时，即为保留的个数；若为小于1的正整数，则保留使得方差百分比大于该值的最少数目的成分。还可以传入字符型参数，比如’mle’，将自动选取特征个数n，使得满足所要求的方差百分比。<br><code>copy=True</code> 是否复制原始数据。<br><code>whiten=False</code> 白化，是否要使得每个特征具有相同的方差。<br><code>svd_solver=&#39;auto&#39;</code> string {‘auto’，’full’，’arpack’，’randomized’}.<br>(老实说，下面这一段是谷歌翻译得来的，还没有时间细究，因为我也还不太明白)<br>auto：解析器由基于X.shape和n_components的默认策略选择：如果输入数据大于500x500且要提取的组件数低于数据最小维数的80％，那么效率更高’随机化’方法已启用。否则，计算精确的完整SVD并随后截断。<br>full：运行完全完整的SVD通过scipy.linalg.svd调用标准LAPACK解算器并通过后处理选择组<br>arpack：运行SVD截断为n_components通过scipy.sparse.linalg.svds调用ARPACK解算器。它严格要求0 &lt;n_components &lt;min（X.shape）<br>随机的：通过Halko等方法进行随机SVD。<br><code>tol=0.0</code> 由svd_solver ==’arpack’计算的奇异值的容差<br><code>iterated_power=&#39;auto&#39;</code> int&gt; = 0，或’auto’，由svd_solver ==’randomized’计算的幂方法的迭代次数。<br><code>random_state=None</code> (略)</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA</span><br><span class="line">pca = PCA(n_components=<span class="literal">None</span>)    <span class="comment">#这里最好要指定一个数的啊，可能小数会比较方便</span></span><br><span class="line">pca.fit_transform(data)    <span class="comment">#对数据进行训练并降维</span></span><br><span class="line">components = pca.components_    <span class="comment">#可获得方差比由大到小排列的所有主成分</span></span><br><span class="line">var = pca.explained_variance_    <span class="comment">#转换后个主成分的方差</span></span><br><span class="line">var_atio = pca.explained_variance_ratio_    <span class="comment">#转换后个主成分的方差比</span></span><br><span class="line">n_components = pca.n_components_    <span class="comment">#可返回需要的特征数</span></span><br></pre></td></tr></table></figure>
-<h4 id="数据集拆分-sklearn-model-selection-train-test-split"><a href="#数据集拆分-sklearn-model-selection-train-test-split" class="headerlink" title="数据集拆分(sklearn.model_selection.train_test_split)"></a>数据集拆分(sklearn.model_selection.train_test_split)</h4><p>把数据集拆分成两部分，一部分用于训练模型，一部分用于测试。</p>
-<blockquote>
-<p>train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, shuffle=True, stratify=None)<br><code>*arrays</code> 相同长度的一系列n个数据集，接受格式有[lists, numpy arrays, scipy-sparse matrices or pandas dataframes]。返回2n个数据集，一个输入对应两个输出。<br><code>test_size=0.25</code> 整数或小数。代表个数或比例<br><code>train_size=None</code> 同上，两个_size指定一个就好了<br><code>random_state=None</code> 随机数种子<br><code>shuffle=True</code> 拆分前是否打乱数据。If shuffle=False then stratify must be None.<br><code>stratify=None</code> </p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
 <p>(完)</p>
 
       
@@ -596,7 +591,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -644,7 +639,13 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -682,7 +683,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据填充-sklearn-preprocessing-Imputer"><span class="nav-number">1.</span> <span class="nav-text">数据填充(sklearn.preprocessing.Imputer)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据标准化-skleaarn-preprocessing-StandardScaler"><span class="nav-number">2.</span> <span class="nav-text">数据标准化(skleaarn.preprocessing.StandardScaler)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据归一化-sklearn-preprocessing-MinMaxScaler"><span class="nav-number">3.</span> <span class="nav-text">数据归一化(sklearn.preprocessing.MinMaxScaler)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独热编码"><span class="nav-number">4.</span> <span class="nav-text">独热编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标签编码-sklearn-preprocessing-LabelEncoeder"><span class="nav-number">5.</span> <span class="nav-text">标签编码(sklearn.preprocessing.LabelEncoeder)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征降维-主成分分析法PCA-sklearn-decomposition-PCA"><span class="nav-number">6.</span> <span class="nav-text">特征降维-主成分分析法PCA(sklearn.decomposition.PCA)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据集拆分-sklearn-model-selection-train-test-split"><span class="nav-number">7.</span> <span class="nav-text">数据集拆分(sklearn.model_selection.train_test_split)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据填充-sklearn-preprocessing-Imputer"><span class="nav-number">1.</span> <span class="nav-text">数据填充(sklearn.preprocessing.Imputer)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据标准化-skleaarn-preprocessing-StandardScaler"><span class="nav-number">2.</span> <span class="nav-text">数据标准化(skleaarn.preprocessing.StandardScaler)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据归一化-sklearn-preprocessing-MinMaxScaler"><span class="nav-number">3.</span> <span class="nav-text">数据归一化(sklearn.preprocessing.MinMaxScaler)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独热编码"><span class="nav-number">4.</span> <span class="nav-text">独热编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标签编码-sklearn-preprocessing-LabelEncoeder"><span class="nav-number">5.</span> <span class="nav-text">标签编码(sklearn.preprocessing.LabelEncoeder)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特征降维-主成分分析法PCA-sklearn-decomposition-PCA"><span class="nav-number">6.</span> <span class="nav-text">特征降维-主成分分析法PCA(sklearn.decomposition.PCA)</span></a></li></ol></div>
             
 
           </div>
