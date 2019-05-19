@@ -16,7 +16,7 @@
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="UTF-8">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -160,7 +160,7 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 </head>
 
@@ -171,7 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
@@ -281,11 +281,40 @@
 
       
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
     </ul>
   
 
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -389,7 +418,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-19 18:02:15" itemprop="dateModified" datetime="2019-05-19T18:02:15+08:00">2019-05-19</time>
+                <time title="修改时间：2019-05-19 21:31:44" itemprop="dateModified" datetime="2019-05-19T21:31:44+08:00">2019-05-19</time>
               
             
           </span>
@@ -406,7 +435,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/blingbling/" itemprop="url" rel="index"><span itemprop="name">blingbling</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/闪念/" itemprop="url" rel="index"><span itemprop="name">闪念</span></a></span>
 
                 
                 
@@ -445,18 +474,186 @@
           
             <h4 id="由来"><a href="#由来" class="headerlink" title="由来"></a>由来</h4><p>开始注意到这个问题是因为在 leetcode 上面刷到了这样一道题——<a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">只出现一次的数字</a>。题目要求为：给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次，找出那个只出现了一次的元素。需要注意的是：算法应该具有线性时间复杂度，尽量不使用额外的空间。<br>当时看到这个题，想的思路是：对题目中给出的数组进行遍历，用一个新的数组 N 来存储这些数，如果某个数不存在 N 中，那么就把这个数存进去，如果已经存在，就将 N 中的这个数删除，最后 N 中剩下的一个数就是那个唯一只出现一次的数了。<br>上面的方法可以实现功能，但是时间复杂度和空间复杂度都比较高，很不划算，然后，我就去看了一下已有的题解，先是很懵逼，之后就觉得非常巧妙了，代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            result ^= nums[i]</span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure></p>
 <p>以上即为，假如给出的数组是这样的：[a, b, p, m, b, m, a] ，代码中最终的结果也就是<code>result = a^b^p^m^b^m^a = p</code>，能够得到这样的答案，那么异或运算肯定就符合交换律，并且<code>a^a = 0; a^0 = 0</code>。<br>然后我就想，这么神奇的东西，我一定要弄清楚。<br>所以，以下就是，什么是异或运算？异或运算都哪些性质，为什么？以及，异或运算都可以用来做什么？</p>
-<h4 id="什么是异或运算？"><a href="#什么是异或运算？" class="headerlink" title="什么是异或运算？"></a>什么是异或运算？</h4><p>异或运算，其实就是一种逻辑运算，$p$ 异或 $q$ 记作 $pXORq$ ，在 python 中写作<code>p^q</code>，其真值运算表如下：<br>| <strong>p</strong>   |  $T$  |  $T$  |  $F$  |  $F$  |<br>| ——— | —– | —– | —– | —– |<br>| <strong>q</strong>   |  $T$  |  $F$  |  $T$  |  $F$  |<br>|<strong>p ^ q</strong>|  $F$  |  $T$  |  $T$  |  $F$  |</p>
+<h4 id="异或运算"><a href="#异或运算" class="headerlink" title="异或运算"></a>异或运算</h4><p>异或运算，其实就是一种逻辑运算，$p$ 异或 $q$ 记作 $pXORq$ ，在 python 中写作<code>p^q</code>，其真值运算表如下：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>p</strong></td>
+<td>$T$</td>
+<td>$T$</td>
+<td>$F$</td>
+<td>$F$</td>
+</tr>
+<tr>
+<td><strong>q</strong></td>
+<td>$T$</td>
+<td>$F$</td>
+<td>$T$</td>
+<td>$F$</td>
+</tr>
+<tr>
+<td><strong>p ^ q</strong></td>
+<td>$F$</td>
+<td>$T$</td>
+<td>$T$</td>
+<td>$F$</td>
+</tr>
+</tbody>
+</table>
 <p>查了维基百科上面还有一些使用 <em>且、或、非</em> 来表达异或关系的表达式(真的不想敲数学公式)。</p>
-<p>对两个数进行异或运算时，可以先把两个数转换为二进制形式，然后对其按位进行异或操作，即可得到最后的答案，比如下例：<br>| <strong>p</strong>   | $1$ | $0$ | $0$ | $1$ | $1$ | $0$ | $1$ | $1$ |<br>| ——- | — | — | — | — | — | — | — | — |<br>| <strong>q</strong>   | $0$ | $0$ | $1$ | $0$ | $1$ | $1$ | $1$ | $0$ |<br>|<strong>p ^ q</strong>|<strong>1</strong>|<strong>0</strong>|<strong>1</strong>|<strong>1</strong>|<strong>0</strong>|<strong>1</strong>|<strong>0</strong>|<strong>1</strong>|</p>
-<h4 id="满足的性质-and-why"><a href="#满足的性质-and-why" class="headerlink" title="满足的性质 and why ?"></a>满足的性质 and why ?</h4><ul>
+<p>对两个数进行异或运算时，可以先把两个数转换为二进制形式，然后对其按位进行异或操作，即可得到最后的答案，比如下例：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>p</strong></td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><strong>q</strong></td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td><strong>p ^ q</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h4 id="性质-and-why"><a href="#性质-and-why" class="headerlink" title="性质 and why ?"></a>性质 and why ?</h4><ul>
 <li>交换律：$p$ ^ $q$ = $q$ ^ $p$</li>
 <li>结合律：$p$ ^ ($q$ ^ $r$) = ($q$ ^ $p$) ^ $r$</li>
 <li>恒等律：$p$ ^ $0$ = $0$</li>
 <li>归零律：$p$ ^ $p$ = $0$</li>
 <li>自反性：$p$ ^ $q$ ^ $q$ = $q$</li>
 </ul>
-<p>很奇怪，小学很容易的接受了加法运算可以任意交换位置的事实，今天遇到的这个异或运算却非要想清楚到底为什么。然后我就想啊想啊，总结了一个规律，看对应位上 1 的个数是奇数还是偶数就好了。(在计算机中，^ 就是按位异或)<br>| <strong>p</strong>   | $1$ | $0$ | $0$ | $1$ | $1$ | $0$ | $1$ | $1$ |<br>| ——- | — | — | — | — | — | — | — | — |<br>| <strong>q</strong>   | $0$ | $0$ | $1$ | $0$ | $1$ | $1$ | $1$ | $0$ |<br>| <strong>r</strong>   | $1$ | $1$ | $1$ | $0$ | $0$ | $1$ | $1$ | $0$ |<br>|<strong>n = ‘1 的个数’</strong>| 2 |  1 | 2 | 1 | 2 | 2 | 3 | 1 |<br>|<strong>n 的奇偶性</strong> | 偶 | 奇 | 偶 | 奇 | 偶 | 偶 | 奇 | 奇 |<br>|<strong>p ^ q</strong>|<strong>0</strong>|<strong>1</strong>|<strong>0</strong>|<strong>1</strong>|<strong>0</strong>|<strong>0</strong>|<strong>1</strong>| <strong>1</strong>|<br>因为 “同为 0 ，异为 1 ” ，相异的也就只有 0 - 1 这种情况啦，而两个 1 异或得到 0 ，所以只要看 1 的个数就好了。而看个数的话，顺序当然就无所谓了。<br>当然，这里仅仅是对于数字之间异或的小规律，严谨一点的话，还是需要从表达式来推导。</p>
-<h4 id="异或运算的应用"><a href="#异或运算的应用" class="headerlink" title="异或运算的应用"></a>异或运算的应用</h4><ol>
+<p>很奇怪，小学很容易的接受了加法运算可以任意交换位置的事实，今天遇到的这个异或运算却非要想清楚到底为什么。然后我就想啊想啊，总结了一个规律，看对应位上 1 的个数是奇数还是偶数就好了。(在计算机中，^ 就是按位异或)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>p</strong></td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><strong>q</strong></td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td><strong>r</strong></td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td><strong>n = ‘1 的个数’</strong></td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr>
+<td><strong>n 的奇偶性</strong></td>
+<td>偶</td>
+<td>奇</td>
+<td>偶</td>
+<td>奇</td>
+<td>偶</td>
+<td>偶</td>
+<td>奇</td>
+<td>奇</td>
+</tr>
+<tr>
+<td><strong>p ^ q</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>0</strong></td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<p>因为 “同为 0 ，异为 1 ” ，相异的也就只有 0 - 1 这种情况啦，而两个 1 异或得到 0 ，所以只要看 1 的个数就好了。而看个数的话，顺序当然就无所谓了。<br>当然，这里仅仅是对于数字之间异或的小规律，严谨一点的话，还是需要从表达式来推导。</p>
+<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><ol>
 <li>首先就是之前提到的，当数组中其他的数都出现 2 次时，能够得到唯一只出现过一次的数。对这个问题进行推广，也就是，当数组中其他数都出现<em>偶数次</em>时，可以得到<em>唯一</em>出现<em>奇数次</em>的数。</li>
 <li><p>交换两个数：python 可以直接写作 <code>a, b = b, a</code>，但可能有一些其他的语言不能这样写，所以使用异或还是比较有用滴，可以不需要借助中间变量。</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">3</span></span><br><span class="line">b = <span class="number">5</span></span><br><span class="line">a = a^b		<span class="comment"># a = 3 ^ 5</span></span><br><span class="line">b = a^b		<span class="comment"># b = 3 ^ 5 ^ 5 = 3</span></span><br><span class="line">a = a^b		<span class="comment"># a = 3 ^ 5 ^ 3 = 5</span></span><br></pre></td></tr></table></figure>
@@ -627,6 +824,197 @@
         
           
             
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/爬虫初体验-网站文章/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李一念">
+      <meta itemprop="description" content="好好学习，天天向上">
+      <meta itemprop="image" content="/images/yinian818.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="桃花源">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/05/09/爬虫初体验-网站文章/" class="post-title-link" itemprop="url">爬虫初体验-网站文章</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-09 18:46:36" itemprop="dateCreated datePublished" datetime="2019-05-09T18:46:36+08:00">2019-05-09</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-19 19:55:16" itemprop="dateModified" datetime="2019-05-19T19:55:16+08:00">2019-05-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>日期：2019-05-09<br>天气：没出门我也不知道……<br>啊啊啊啊啊(请自行带入Do、Re、Mi)～今天是有点艹dan又有点满足的一天。艹dan是因为，就因为同学让我帮忙就捣鼓了一天 python 爬虫，茶不思饭不想；满足就是一天过去了还是有很多收获，也掌握了一些 python 爬虫的基本技能。</p>
+<h4 id="目标任务"><a href="#目标任务" class="headerlink" title="目标任务"></a>目标任务</h4><p>需求是爬取<a href="https://www.kangantu.com/news/" target="_blank" rel="noopener">康安途网站医药新闻板块</a>的所有文章，希望得到的包括每一篇文章的标题及其内容(纯文本)。<br>大概浏览了一下页面的内容，新闻版块一共有 2317 页，每一页包含 20 篇文章，也就是实说最后会有 40k+ 条信息，我的小本本还是有点承受不住的……<br>本来我都准被写到一个个文件里了，后来嘞，需求改了，变成把 [标题，日期，链接] 存到一个 excel 表格里，大概就酱紫。<br>最后我还是手欠把内容给加上了。</p>
+<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><p>anaconda 安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ conda install requests</span><br><span class="line">$ conda install beautifulsoup4</span><br></pre></td></tr></table></figure></p>
+<p>pip 安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pip install requests</span><br><span class="line">$ pip install beautifulsoup4</span><br></pre></td></tr></table></figure></p>
+<h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><ul>
+<li>使用 requests + BeautifulSoup 获取网页的源代码并对其解析</li>
+<li>使用 BeautifulSoup 中的 find 函数找到 文章名称、链接网址、发表时间 所在的 tag </li>
+<li>使用 BeautifulSoup 中的 string/属性 从我们找到的 tag 提取需要的信息</li>
+<li>通过之前提取出的网址，抓取该页面中的文章内容，大致步骤同上</li>
+<li>使用 pandas 生成 excel 文件，我是感觉这个比较简便快捷</li>
+<li>因为信息数量太大了，所以使用多个文件来保存</li>
+</ul>
+<h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><p>一开始由于完全没经验，直接就去网上开始搜 “python爬取网站所有文章”，还是找到了两片比较有用的，虽然说由于每个网站的结构相差比较多，不一样的地方还是多，不过因为这两篇文章还是知道了常用的库以及基本用法。</p>
+<h5 id="requests-BeautifulSoup-乱码问题"><a href="#requests-BeautifulSoup-乱码问题" class="headerlink" title="requests - BeautifulSoup 乱码问题"></a>requests - BeautifulSoup 乱码问题</h5><p>! 叮！这里的代码是错误不完全示范！<br>使用 requests - BeautifulSoup 解析网页源代码，最开始两篇文章中是这样的：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line">bs = BeautifulSoup(req.text)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>然后就发现什么也找不到，相当于一部分内容直接丢失了……然后看了看 BeautifulSoup 的文档，借鉴了一下别人的代码。如下修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#新增：</span></span><br><span class="line">req.encoding = <span class="string">'utf-8'</span></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure></p>
+<p>倒腾来倒腾去，还是不对，虽然没有内容丢失，但中文部分还是会乱码。大半天被这问题困扰，终于我灵机一动，搜索 “BeautifulSoup 乱码” ，成功找到<a href="https://www.jianshu.com/p/69401b84419e" target="_blank" rel="noopener">这篇文章</a>，解决了问题，不过没有完全按照这个修改哈。<br>总结以下嘞，就是在使用 requests + BeautifulSoup 获取源代码的时候，最好能够声明网页的编码格式，编码格式源代码里可以看到，最终如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#修改：</span></span><br><span class="line">req.encoding = <span class="string">'gb2312'</span></span><br><span class="line"></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
+<h5 id="如何获得需要的部分"><a href="#如何获得需要的部分" class="headerlink" title="如何获得需要的部分"></a>如何获得需要的部分</h5><p>一开始因为信息丢失和乱码问题，止步不前，一发同学用 python-2.7 + urllib2 + re 解决了文章标题和链接地址的问题，但是我真的非常不喜欢用 re ，看到就晕那种，磨啊磨一直到解决了乱码问题，后面的也就迎刃而解了，如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">htmlr = requests.get(url)</span><br><span class="line">htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line">date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line">link_list = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含网址的列表</span></span><br><span class="line">date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="窝嘞代码"><a href="#窝嘞代码" class="headerlink" title="窝嘞代码"></a>窝嘞代码</h4><p>最后，贴一下所有的代码～<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">date: 2019-5-9</span></span><br><span class="line"><span class="string">fucntion: get all the article of a network station</span></span><br><span class="line"><span class="string">author: Li yinian</span></span><br><span class="line"><span class="string">version: v-1.1</span></span><br><span class="line"><span class="string">python-3.7</span></span><br><span class="line"><span class="string">新增：对不完整网址的补全</span></span><br><span class="line"><span class="string">新增：抓取文章的内容</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#引入模块</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成包含所有网址的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_url_list</span><span class="params">(page_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：页码范围，要求格式为 list</span></span><br><span class="line"><span class="string">    输出：包含要抓取信息的所页面网址的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    basic_url = <span class="string">"https://www.kangantu.com/news/list_"</span> </span><br><span class="line">    url_list = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> page_list:</span><br><span class="line">        url = basic_url+str(i)+<span class="string">".html"</span></span><br><span class="line">        url_list.append(url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增函数，用于转换不完整网址</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">url_trans</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[:<span class="number">5</span>] != <span class="string">'https'</span>:</span><br><span class="line">        link = <span class="string">"https://www.kangantu.com"</span> + url</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        link = url</span><br><span class="line">    <span class="keyword">return</span> link</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取页面的文章题目，时间，以及文章链接</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_title_link_date</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：网址链接(str)</span></span><br><span class="line"><span class="string">    输出：DataFrame, columns=["title", "data", "link"]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    htmlr = requests.get(url)</span><br><span class="line">    htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">    bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">    title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">    date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">    title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#修改：url_trans()函数补全网址</span></span><br><span class="line">    <span class="comment">#link_list = list(item['href'] if for item in title_link)</span></span><br><span class="line">    link_list_0 = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)</span><br><span class="line">    link_list = list(map(url_trans, link_list_0))	<span class="comment">#得到包含网址的列表</span></span><br><span class="line"></span><br><span class="line">    date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br><span class="line"></span><br><span class="line">    title_date_link_df = pd.DataFrame(&#123;<span class="string">'title'</span>: title_list, <span class="string">'date'</span>: date_list, <span class="string">'link'</span>: link_list&#125;)     <span class="comment">#</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> title_date_link_df </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增：通过已获得的文章地址抓取文章的内容，得到包含日期的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_content</span><span class="params">(link_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：列表-内容为已获取的文章网址</span></span><br><span class="line"><span class="string">    输出：对应文章内容的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    content_list = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> link_list:</span><br><span class="line">        htmlr = requests.get(url)</span><br><span class="line">        htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">        bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">        content = bs.find(<span class="string">"div"</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">        content_list.append(content.get_text())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成excel文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">to_excel_file</span><span class="params">(file_df, file_path)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：DataFrame格式的文件，文件路径-包括名称，sheet编号</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment">#writer = pd.ExcelWriter(file_path)</span></span><br><span class="line">    file_df.to_excel(file_path, index=<span class="literal">False</span>, encoding=<span class="string">'utf-8'</span>, sheet_name=str(file_index))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">last_func</span><span class="params">(page_list, file_index)</span>:</span></span><br><span class="line">    urls = generate_url_list(page_list)</span><br><span class="line">    df = pd.DataFrame()</span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:</span><br><span class="line">        title_date_link_df = get_title_link_date(url)	</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#新增：加入文章内容</span></span><br><span class="line">        link_list = title_date_link_df[<span class="string">'link'</span>]</span><br><span class="line">        title_date_link_df[<span class="string">'content'</span>] = get_content(link_list)</span><br><span class="line"></span><br><span class="line">        df = pd.concat([df, title_date_link_df], axis=<span class="number">0</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment">#修改：修改文件夹名称</span></span><br><span class="line">    to_excel_file(df, <span class="string">"/home/may/daydayup/kangantu-more/kangantu-news-"</span>+str(file_index)+<span class="string">".xls"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#正式的代码部分，网站需要爬取的共 2317 页-rang(1,2318)</span></span><br><span class="line">list_n = list(range(<span class="number">1</span>, <span class="number">2318</span>, <span class="number">50</span>))</span><br><span class="line">list_n.append(<span class="number">2318</span>)</span><br><span class="line">page_hole_list = [list(range(list_n[i<span class="number">-1</span>], list_n[i])) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(list_n))]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(page_hole_list)):</span><br><span class="line">    file_index = i</span><br><span class="line">    page_list = page_hole_list[i]</span><br><span class="line">    last_func(page_list, file_index+<span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+
           
         
       
@@ -924,7 +1312,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-16 23:38:20" itemprop="dateModified" datetime="2019-05-16T23:38:20+08:00">2019-05-16</time>
+                <time title="修改时间：2019-05-19 19:56:17" itemprop="dateModified" datetime="2019-05-19T19:56:17+08:00">2019-05-19</time>
               
             
           </span>
@@ -941,7 +1329,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/机器学习/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Machine-Learning/" itemprop="url" rel="index"><span itemprop="name">Machine Learning</span></a></span>
 
                 
                 
@@ -1058,357 +1446,6 @@ c4(yes)->op4->opB
 c5(no)->opC
 c5(yes)->opD->io2->e
 -->
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/23/sklearn-小贴士/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="好好学习，天天向上">
-      <meta itemprop="image" content="/images/yinian818.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="桃花源">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/23/sklearn-小贴士/" class="post-title-link" itemprop="url">sklearn-小贴士</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-23 23:07:01" itemprop="dateCreated datePublished" datetime="2019-04-23T23:07:01+08:00">2019-04-23</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-08 23:33:31" itemprop="dateModified" datetime="2019-05-08T23:33:31+08:00">2019-05-08</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/sklearn/" itemprop="url" rel="index"><span itemprop="name">sklearn</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/23/pandas-小贴士/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="好好学习，天天向上">
-      <meta itemprop="image" content="/images/yinian818.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="桃花源">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/23/pandas-小贴士/" class="post-title-link" itemprop="url">pandas-小贴士</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-23 14:04:22" itemprop="dateCreated datePublished" datetime="2019-04-23T14:04:22+08:00">2019-04-23</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-05-04 19:21:17" itemprop="dateModified" datetime="2019-05-04T19:21:17+08:00">2019-05-04</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/pandas/" itemprop="url" rel="index"><span itemprop="name">pandas</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="样本随机采样"><a href="#样本随机采样" class="headerlink" title="样本随机采样"></a>样本随机采样</h4><p>有时候拿到的数据集中有很多个样本，但如果用所有的数据一起训练，由于计算机性能的限制会花费很多时间。或者想要先在一部分数据集上实验哪一种算法得到的效果更好，可以使用pandas.DataFrame.sample 进行随机抽样，先在一部分数据集上做试验。</p>
-<blockquote>
-<p>sample(n=None, frac=None, replace=False, weights=None, random_state=None, axis=None)<br><code>n=None</code> 期望抽取的样本数量。当frac=None默认为1<br><code>frac=None</code> 期望抽取的样本占所有样本的百分比<br>！n / frac 只要设置其中一个就好了<br><code>replace=False</code> 抽样放回还是不放回<br><code>weights=None</code><br><code>random_state=None</code> 随机数生成器种子。int or numpy.random.RandomState<br><code>axis=None</code> 样本的轴 int or string, optional</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.DataFrame(...)</span><br><span class="line">df.sample(n=<span class="number">20</span>, random_state=<span class="number">1</span>)</span><br><span class="line">df.sample(frac=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="数据填充"><a href="#数据填充" class="headerlink" title="数据填充"></a>数据填充</h4><p>pd.DataFrame.fillna(x)<br>x可以是要填充的值(字符串或者数字)，也可以是列名对应填充值的字典…</p>
-<h4 id="重置索引-列名"><a href="#重置索引-列名" class="headerlink" title="重置索引/列名"></a>重置索引/列名</h4><p>df.reset_index()<br>什么也不输入就默认从0开始，或者可以是列表，或者新旧名称对应的字典。</p>
-
           
         
       
@@ -2102,7 +2139,7 @@ c5(yes)->opD->io2->e
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -2164,7 +2201,9 @@ c5(yes)->opD->io2->e
                     
                       
                     
-                    <span class="site-state-item-count">9</span>
+                      
+                    
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -2340,6 +2379,326 @@ c5(yes)->opD->io2->e
 
 
   
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
@@ -2355,7 +2714,7 @@ c5(yes)->opD->io2->e
   
     
       
-    
+        
       
     
       
@@ -2374,6 +2733,46 @@ c5(yes)->opD->io2->e
     
   
 
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for (i = 0; i < all.length; i += 1) {
+      document.getElementById(all[i].inputID + '-Frame').parentNode.className += ' has-jax';
+    }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
   
 
 
