@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[consuption-recording]]></title>
+    <url>%2F2020%2F05%2F02%2Fconsuption-recording%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>记账</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hadoop-buiding]]></title>
     <url>%2F2019%2F12%2F03%2FHadoop-buiding%2F</url>
-    <content type="text"><![CDATA[– 环境：三台腾讯云服务器–配置：sudo echo ‘ssh’ 》》 /etc/pdsh/rcmd_default 云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改 core-xtml.sh 配置备份到 hdsf。。 把自己的公钥加到自己的 auto。。。]]></content>
-      <tags>
-        <tag>分布式</tag>
-      </tags>
+    <content type="text"><![CDATA[– 环境：三台腾讯云服务器–配置：sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default 云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改 core-xtml.sh 配置备份到 hdsf。。 把自己的公钥加到自己的 auto。。。]]></content>
   </entry>
   <entry>
     <title><![CDATA[Python-re]]></title>
@@ -34,6 +42,12 @@
     <title><![CDATA[Python虚拟环境]]></title>
     <url>%2F2019%2F11%2F19%2FPython-VirtualEnv%2F</url>
     <content type="text"></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>配置</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[虚拟机安装]]></title>
@@ -42,6 +56,9 @@
       <categories>
         <category>Code Word</category>
       </categories>
+      <tags>
+        <tag>配置</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[群晖 NAS 远程访问]]></title>
@@ -50,11 +67,9 @@
       <categories>
         <category>Code Word</category>
       </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[python_virtual_enviroments]]></title>
-    <url>%2F2019%2F07%2F28%2Fpython-virtual-enviroments%2F</url>
-    <content type="text"></content>
+      <tags>
+        <tag>配置</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[对异或运算(xor)的探索]]></title>
@@ -72,8 +87,11 @@
     <url>%2F2019%2F05%2F16%2FSQL%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"></content>
       <categories>
-        <category>SQL</category>
+        <category>数据库</category>
       </categories>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[爬虫初体验-网站文章]]></title>
@@ -91,9 +109,10 @@
     <url>%2F2019%2F05%2F08%2Fsklearn-model-selection%2F</url>
     <content type="text"><![CDATA[整理sklearn.model_selection中一些常用的类及其基本用法。 拆分数据(sklearn.model_selection.train_test_split)用于将数据集拆分为两部分，一部分用于模型训练，一部分用于模型评估。 train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, shuffle=True, stratify=None)*arrays 相同长度的一系列n个数据集，接受格式有[lists, numpy arrays, scipy-sparse matrices or pandas dataframes]。返回2n个数据集，一个输入对应两个输出。test_size=0.25 整数或小数。代表个数或比例train_size=None 同上，两个_size指定一个就好了random_state=None 随机数种子shuffle=True 拆分前是否打乱数据。If shuffle=False then stratify must be None.stratify=None 12from sklearn.model_selection import train_test_splitX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=1) 网格搜索(sklearn.model_selection.GridSearchCV)这个呢，hei好用，可以便捷的帮我们确定最优参数，并且设置好需要训练的模型还有对应的参数，会在每一组参数进行训练，然后使用最优的一组参数来训练最终的模型，设置起来也不复杂。 GridSearchCV(estimator, param_grid, scoring=None, fit_params=None, n_jobs=None, iid=’warn’, refit=True, cv=’warn’, verbose=0, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’, return_train_score=’warn’)estimator 学习器接口，设定用于训练模型的算法，比如 sklearn.svm.SVR()。需要有 scoring 参数，否则不对模型进行评估param_grid 参数网格，传入字典或 value为列表的字典。e.g. {‘C’: [1, 10, 100]}scoring=None 模型的评分方式，如果为 None，则使用模型默认的度量。可以是字符串、可调用对象、列表 / 元组、字典。fit_params=None 传给fit方法的参数n_jobs=None 并行作业数iid=&#39;warn&#39; (Changed in version 0.20: Parameter iid will change from True to False by default in version 0.22, and will be removed in 0.24)refit=True 是否在整个数据集上使用得到的最佳参数重新训练。cv=&#39;warn&#39; 交叉验证策略，默认为 3折交叉验证。verbose=0 控制冗余，越高，信息越多。pre_dispatch=&#39;2*n_jobs&#39; 控制并行作业期间分配的作业数量，可以是 int、str(关于 n_jobs的函数表达式)。error_score=&#39;raise-deprecating&#39; 如果训练出错返回的分数。return_train_score=&#39;warn&#39; 如果 False，cv_results_属性不包含分数。 123456789101112131415from sklearn.model_selection.GridSearchCVfrom sklearn.svm import SVCmodel = SVC()param_range = &#123;'C': [1, 10, 100]&#125;clf = GridSearchCV(model, param_range, scoring='roc_auc', cv=10, verbose=1, n_jobs=4)clf.fit(X_train, y_train)y_pre = clf.predict(X_test)clf.score(X_test, y_test)clf.cv_results_ #可以转化为DataFrame格式的字典，keys是列名称，values是对应的列clf.best_score_ #最高得分clf.best_params_ #最佳的一组参数clf.refit_time_ #在整个数据集上使用最优参数训练模型所花的时间 交叉验证(sklearn.model_selection.cross_val_score)可以返回值为每一次交叉验证后得分的数组，每一次只能针对一组参数值进行训练，所以如果要确定最优的参数，得自己写一个循环，比较麻烦，得到最优参数之后还要重新在所有数据上自己训练一遍…… cross_val_score(estimator, X, y=None, groups=None, scoring=None, cv=’warn’, n_jobs=None, verbose=0, fit_params=None, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’)X 需要训练的数据y=None 数据的标签值groups=None 划分数据为 train/test set 时使用的分类标签(其余同上) 123456789101112131415from sklearn.model_selection import cross_val_scorefrom sklearn.svm import SVCimport numpy as npC_list = [1, 10, 100]cv_scores = []for c_value in C_list: model = SVC(C=c_value) score = cross_val_score(model, X_train, y_train, scoring='roc_auc', cv=10, verbose=1, n_jobs=4) #score是一个数组哦哦哦 cv_score = np.means(score) cv_scores.append(cv_score) best_c = C_list[cv_scores.index(max(cv_scores))]...... 验证曲线(sklearn.model_selection.validation_curve)这个函数嘞，会返回两个数组：train_scores、test_scores ，比较方便用来画针对某一个参数的学习曲线。两个分别是在进行交叉验证时在训练集s以及验证集上的得分，大小为 (传入的参数数量，交叉验证折数) validation_curve(estimator, X, y, param_name, param_range, groups=None, cv=’warn’, scoring=None, n_jobs=None, pre_dispatch=’all’, verbose=0, error_score=’raise-deprecating’)param_name 变化的参数的名称param_range array-like，用于训练的参数值，对应参数名称 123456789101112131415from sklearn.model_selection import validation_curvefrom sklearn.tree import DecisionTreeClassifierimport matplotlib.pyplot as pltparam_range = list(range(1:9))train_score, test_score = validation_curve(DecisionTreeClassifier(), X_train, y_train, param_name='max_depth', param_range=param_range, cv=10, scoring='roc_auc')train_score = np.mean(train_score, axis=1)test_score = np.mean(test_score, axis=1)plt.plot(param_range, train_score, 'o-',color='r', label='training')plt.plot(param_range, test_score, 'o-',color='g', label='testing')plt.legend(loc='best')plt.xlabel('depth')plt.ylabel('AUC measurement')plt.show()]]></content>
       <categories>
-        <category>sklearn</category>
+        <category>Machine Learning</category>
       </categories>
       <tags>
+        <tag>sklearn</tag>
         <tag>数据拆分</tag>
         <tag>交叉验证</tag>
         <tag>网格搜索</tag>
@@ -106,15 +125,19 @@
       <categories>
         <category>Machine Learning</category>
       </categories>
+      <tags>
+        <tag>总结</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[sklearn入门-非监督学习]]></title>
     <url>%2F2019%2F04%2F22%2Fsklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。 KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, copy_x=True, n_jobs=None, algorithm=’auto’)n_clusters=8 聚类数。init=&#39;k-means++&#39; 初始化聚类中心方法。/ ‘auto’ / 数组shape (n_clusters, n_features)n_init=1 算法选择不同聚类中心运行的次数，保留最好的结果。max_iter=300 单次运行的最大迭代数目。tol=0.0001 停止迭代的相对误差界限。precompute_distances=&#39;auto&#39; {‘auto’, True, False}是否预先计算距离，选择’auto’时，当n_samples * n_clusters&gt;1,000,000 则不预先计算。verbose=0 intrandom_state=None 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。copy_x=True 是否拷贝训练数据。n_jobs=None 并行作业数。algorithm=&#39;auto&#39; “auto”, “full” or “elkan”. 指定要使用的算法。 12345from sklearn.cluster import KMeanskm_model = KMeans(n_clusters=8, random_state=None)km_model.fit_transform()centers = km_model.cluster_centers_ #聚类中心y_pre = km_model.labels_ #每个样本点的标签 自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)层次聚类可分为两类：自顶向下, diverse；自底向上, agglomerative。 AgglomerativeClustering(n_clusters=2, affinity=’euclidean’, memory=None, connectivity=None, compute_full_tree=’auto’, linkage=’ward’, pooling_func=’deprecated’)n_clusters=2 最终的聚类数。affinity=&#39;euclidean&#39; {‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’, ‘cosine’, ‘precomputed’}. 用于计算距离，当linkage=’ward’，只支持’euclidean’。memory=None 默认不缓存计算树的输出，以字符指定缓存路径。connectivity=None 一个数组或者可调用对象或者None，用于指定连接矩阵compute_full_tree=&#39;auto&#39; 通常当训练了n_clusters后，训练过程就会停止，但是如果compute_full_tree=True，则会继续训练从而生成一颗完整的树。linkage=&#39;ward&#39; 一个字符串，用于指定链接算法。’ward’：单链接； ‘complete’：全链接； ‘average’：均连接。pooling_func=&#39;deprecated&#39; 一个可调用对象，它的输入是一组特征的值，输出是一个数 12from sklearn.cluster import AgglomerativeClusteringagg_cluster = AAgglomerativeClustering(n_clusters=2, linkage='ward')]]></content>
       <categories>
-        <category>sklearn</category>
+        <category>Machine Learning</category>
       </categories>
       <tags>
+        <tag>sklearn</tag>
         <tag>非监督学习</tag>
       </tags>
   </entry>
@@ -123,9 +146,10 @@
     <url>%2F2019%2F04%2F22%2Fsklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0%2F</url>
     <content type="text"><![CDATA[这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。 k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier) KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’auto’, leaf_size=30, p=2, metric=’minkowski’, metric_params=None, n_jobs=None, **kwargs)n_neighbors=5 分类数目，这个参数一般都要自己设置啊啊啊。weights=&#39;uniform&#39; 权重，默认为’uniform’类别中的所有点权重相同。支持’distance’，此时权重时距离的倒数，离分类点越近，权重越大；也可传入一个自己定义的函数名，要求接受一个距离数组，并返回一个包含权重的相同形状的数组。algorithm=&#39;auto&#39; 用于计算最近分类点的算法，默认’auto’尝试根据传递给fit方法的值来确定最合适的算法。其他：’ball_tree’将使用BallTree，’kd_tree’将使用KDTree，’brute’将使用暴力搜索。leaf_size=30 传递给BallTree或KDTree的叶子大小。 这可能会影响构造和查询的速度，以及存储树所需的内存。 最佳值取决于问题的性质。p=2 整数。Minkowski距离度量的参数。 当p = 1：曼哈顿距离(L1)；p = 2：欧几里得距离(L2)。对于任意p，使用minkowski_distance(Lp)。metric=&#39;minkowski 距离度量函数。metric_params=None 度量函数的其他关键字参数n_job=None 并行作业数 12345678910111213141516#导入kNNfrom sklearn.neighbors import KNeighborsClassifier"""以下四步即为sklearn用于模型训练，数据预测，模型评估的一般基本使用方法"""#定义模型kNN_model = DescisionTreeClassifier(n_neighbors=5) #训练模型kNN_model.fit(X_train, y_train)#使用训练好的模型进行预测y_predict = kNN_model.predic(X_test)#使用测试集对模型进行评分kNN_score = kNN_model.score(y_test, y_predict) 决策树(sklearn.tree) 分类树(sklearn.tree.DecisionTreeClassifier) DecisionTreeClassifier(criterion=’gini’, splitter=’best’, max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features=None, random_state=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, class_weight=None, presort=False)criterion=&#39;gini&#39; 特征选择标准。’gini’: 基尼指数，’entropy’: 信息增益splitter=&#39;best&#39; 每个节点选择如何分类的策略。’best’/‘random’max_depth=None 最大深度（深度小可提高泛化能力,避免过拟合）min_samples_split=2 拆分内部节点所需的最小样本数。int(个数)/float(比例)min_samples_leaf=1 每一个叶子节点的最小样本数。min_wight_fraction_leaf=0.0 每一个叶子节点的最小样本权重和，小于该值会被剪枝。max_faetures=None 寻找最佳分类特征时考虑的分类数量。’auto’/‘sqrt’: sqrt(n_features); ‘log2’:log2(n_features); None:n_featuresrandom_state=None 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。max_leaf_nodes=None 最大叶子节点数，防止过拟合min_impurity_decrease=0.0 如果该分裂导致不纯度的减少大于或等于该值，则将分裂节点。min_impurity_split=None 树提前停止生成的阈值，若某节点的不纯度小于/等于该值，停止分裂class_weight=None 指定样本各类别的的权重，防止训练集某些类别的样本过多，导致训练的决策树过于偏向这些类别。可以自己指定各个样本的权重，或者用“balanced”，如果使用“balanced”，则算法会自己计算权重，样本量少的类别所对应的样本权重会高。如果样本类别分布没有明显的偏倚，可以不管这个参数，选择默认的”None”。{class_label: weight}presort=False 是否提前排序。 回归树(sklearn.tree.DecisionTreeRegressor) DecisionTreeRegressor(criterion=’mse’,splitter=’best’,max_depth=None,min_samples_split=2,min_samples_leaf=1,min_weight_fraction_leaf=0.0,max_features=None,random_state=None,max_leaf_nodes=None,min_impurity_decrease=0.0,min_impurity_split=None, presort=False)criterion=&#39;mse&#39; 误差计算。 ‘mse’: 均方误差，’friedman_mse’: L2，’mae’: L1(其余同上) 1234567#分别导入分类树和回归树from sklearn.tree import DecisionTreeClassifierfrom sklearn.tree import DecisionTreeRegressor#定义模型DTC_model = DescisionTreeClassifier(max_depth=None, random_state=None)DTR_model = DescisionTreeRegressor(max_depth=None, random_state=None)...... 朴素贝叶斯(sklearn.naive_bayes)高斯模型：GaussianNB(priors=None, var_smoothing=1e-09)，适用于连续值。伯努利模型：BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None)，适用于离散值。多项式模型：MultinomialNB(alpha=1.0, fit_prior=True, class_prior=None)，适用于离散值。 priors=None 类的先验概率var_smoothing=1e-09 为使计算稳定添加的特征最大方差的部分(？)alpha=1.0 平滑参数binarize=0.0 样本特征的二值化（映射到布尔值）的阈值。 如果为None，则假定输入已包含二进制向量。fit_prior=True 是否学习先验概率class_prior=None 类的先验概率(目前这几种模型，不调参，对这些参数的理解还不够清晰透彻) 线性回归(sklearn.linear_model.LinearRegression)线性回归主要用于对连续值的预测。该模块在未对样本进行特别处理时，只能对数据进行简单的线性拟合，但配合其他一些数据处理模块却能够进行更复杂的曲线拟合等，此处暂不过多介绍。 LinearRegression(fit_intercept=True, normalize=False, copy_X=True, n_jobs=None)fit_intercept=True 训练时是否考虑截距。 如果设置为False，则不会在计算中使用截距(e.g. 预计数据已经居中)。normalize=False 当fit_intercept设置为False时，将忽略此参数。 如果为True，则回归量X将在回归之前通过减去平均值并除以L2范数来归一化。copy_X=True 如果为True，则将复制X; 否则，它可能会被覆盖。n_jobs=None 并行作业数。 逻辑回归(sklearn.linear_model.LogisticRegression)逻辑回归用于处理二分类问题，多个分类器组合也可用于多分类问题。在应用于多分类问题时，需要softmax(其实我觉着也可以不需要，直接选值最高的就行，不过处理之后可以让不同类的预测值为1，近似于概率)。 LogisticRegression(penalty=’l2’, dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver=’warn’, max_iter=100, multi_class=’warn’, verbose=0, warm_start=False, n_jobs=None)penaity=&#39;l2&#39; 用于指定惩罚项(正则项)。’l2’(默认)或者’l1’，L2很好用，一般别动它dual=False 对偶或者原始方法。Dual只适用于正则化相为l2 liblinear的情况，通常样本数大于特征数的情况下，默认为False。tol=0.0001 停止训练的误差值大小。C=1 C为正则化系数λ的倒数，通常默认为1。C越大，正则化系数越小，一般设置它小于1fit_intercept=True 是否存在截距，默认存在intercept_scaling=1 仅在正则化项为”liblinear”，且fit_intercept设置为True时有用。class_weight=None 类的权重。dict / ‘balanced’random_state=None 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。solver=&#39;warn&#39; str, {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}.默认：’liblinear’其中，’liblinear’: 适用于小数据集，仅可用于二元分类。&lt;’newton-cg’: ‘lbfgs’: ‘liblinear’: ‘sag’: ‘saga’:&gt;max_iter=&#39;100&#39; 求解器收敛的最大迭代次数。仅适用于newton-cg，sag和lbfgs求解器。multi_class=&#39;warn&#39; str，{‘ovr’，’multinomial’，’auto’}，默认值：’ovr’。verbose=0 对于liblinear和lbfgs求解器，将详细设置为任何正数以表示详细程度。warm_start=False 设置为True时，重用上一次调用的解决方案以适合初始化，否则，只需擦除以前的解决方案。对于liblinear解算器无效。n_jobs=None 并行作业数。 1234from sklearn.linear_model import LogisticRegression#定义模型及常用参数RL_model = LogisticRegression(C=1, randomstate=None)...... 支持向量机(SVM)(sklearn.svm)sklearn中的SVM模块既可用于分类问题(SVC)，也可以用于回归问题(SVR)。 用于分类问题(sklearn.svm.SVC) SVC(C=1.0, kernel=’rbf’, degree=3, gamma=’auto_deprecated’, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape=’ovr’, random_state=None)C=1.0 正则项系数的倒数kernel=&#39;rbf&#39; 算法使用的核函数。必须是’linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’之一或者可传入对象degree=3 多项式核函数的次数(‘poly’)。对其余核函数忽略gamma=’auto_deprecated’ ‘rbf’,’poly’ 和’sigmoid’的核函数参数。默认是’auto’，会选择1/n_features。coef0=0.0 核函数的常数项。对于’poly’和’sigmoid’有校。shrinking=True 是否采用shrinking heuristic方法，默认为trueprobability=Falsetol=0.001 停止训练的误差值大小，默认为1e-3cache_size=200 核函数cache缓存大小，默认为200class_weight=None 类别的权重，字典形式传递。verbose=False 是否允许冗余输出。max_iter=-1 最大迭代次数。-1为无限制。decision_function_shape=’ovr’ ‘ovo’ / ‘ovr’random_state=None 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。 用于回归问题(sklearn.svm.SVR) SVR(kernel=’rbf’, degree=3, gamma=’auto_deprecated’, coef0=0.0, tol=0.001, C=1.0, epsilon=0.1, shrinking=True, cache_size=200, verbose=False, max_iter=-1)epsilon=0.1 Epsilon in the epsilon-SVR model. It specifies the epsilon-tube within which no penalty is associated in the training loss function with points predicted within a distance epsilon from the actual value.(其余同上) 12345from sklearn.svm import SVC #分类from sklearn.svm import SVR #回归svc_model = SVC(C=1.0, kernel='rbf', degree=3, random_state=None)svr_model = SVR(kernal='rbf', C=1) (完)]]></content>
       <categories>
-        <category>sklearn</category>
+        <category>Machine Learning</category>
       </categories>
       <tags>
+        <tag>sklearn</tag>
         <tag>监督学习</tag>
       </tags>
   </entry>
@@ -134,9 +158,10 @@
     <url>%2F2019%2F04%2F20%2Fsklearn%E5%85%A5%E9%97%A8-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
     <content type="text"><![CDATA[sklearn.preprocessing 数据填充(sklearn.preprocessing.Imputer)收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～ Imputer(missing_values=’NaN’, strategy=’mean’, axis=0, verbose=0, copy=True)missing_values=&#39;NaN&#39; 用于匹配缺失值strategy=&#39;mean&#39; 填充策略，[‘mean’, ‘median’, ‘most_frequent’]，均值、中位数、众数。axis=0 填充方向，默认为列verbose=0 控制imputer的详细程度copy=True 是否拷贝 数据标准化(skleaarn.preprocessing.StandardScaler)z = (x - u) / s ，转换使得数据均值为0，方差为1。 StandardScaler(copy=True, with_mean=True, with_std=True)with_mean=True 若为False，则 u=0with_std=True 若为False，则 z=1 数据归一化(sklearn.preprocessing.MinMaxScaler)缩放数据到一定范围。 MinMaxScaler(feature_range=(0, 1), copy=True) 独热编码对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。1～k sklearn.preprocessing.OneHotEncoder() OneHotEncoder(n_values=’auto’, categorical_features=’all’, categories=’auto’, dtype=&lt;class‘numpy.float64’&gt;, sparse=True, handle_unknown=’error’)n_values 每个特征使用几维数据，默认由数据集自动决定categorial_features 指定对哪些特征进行编码，默认为传入的所有值，通过bool值或索引进行指定(e.g. [True, True, False] / [0, 1])categories 每个特征的类别dtype 编码数值格式sparse 默认返回稀疏矩阵，设置为False可直接返回array，否则需要.toarray()转换handle_unknown ‘error’/‘ignore’，遇到未知类别，返回错误/忽略 12345678910from sklearn.preprocessing import OneHotEncoderOneHot_enc = OneHotEncoder(sparse=False)#第一次对数据进行编码直接使用 fit_transform()data1_coded = OneHot_enc.fit_transform(data1)#对相同结构数据集再次编码，仅需 transform()data2_coded = OneHot_enc.transform(data2)array.reshape(-1, 1) #数据仅包含一个特征，转化为n×1维矩阵array.reshape(1, -1) #数据仅包含一个样本，转化为1×n维矩阵 使用OneHotEncoder编码后，返回为一个数组(np.array)，且编码后的数据会丢失原来的列名称。 pandas.get_dummies()get_dummies()只对输入数据中类型为 object 的数据进行独热编码 (故使用该方法进行独热编码时可以不分离出数值型特征) 。对数据进行编码后，返回 pd.DataFrame ，并且可以根据特征中不同的值自动生成列名称。 get_dummies(data, prefix=None, prefix_sep=’_’, dummy_na=False, columns=None, sparse=False, drop_first=False, dtype=None)prefix 列表或这字符串用于添加列名称prefix_sep 字符串/列表/字典，基于prefix，用作分隔符dummy_na 默认’False’忽略空值，设置为’True’则新增列用于指示空值columns 需要编码的列名称drop_first 是否删除特征的第一类 12import pandas as pddata_coded = pd.get_dummies(data) #不改参数就可以表现的很优秀啦 标签编码(sklearn.preprocessing.OrdinalEncoeder)对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。1～1 若使用 LabelEncoder，则每次只能对一列数据进行编码，输入的数据也需要是一维，本身是适用于对样本标签进行编码。 特征降维-主成分分析法PCA(sklearn.decomposition.PCA) 特征降维能在尽可能多的保留数据信息的情况下减少特征的数量，在数据样本不足而特征值过多的时可以是模型得到较好的解，还能提高模型泛化能力……此外，还能减少模型的训练成本，加快运算速度。 PCA(n_components=None, copy=True, whiten=False, svd_solver=’auto’, tol=0.0, iterated_power=’auto’, random_state=None)n_components=None 期望保留的主成分个数。为整数时，即为保留的个数；若为小于1的正整数，则保留使得方差百分比大于该值的最少数目的成分。还可以传入字符型参数，比如’mle’，将自动选取特征个数n，使得满足所要求的方差百分比。copy=True 是否复制原始数据。whiten=False 白化，是否要使得每个特征具有相同的方差。svd_solver=&#39;auto&#39; string {‘auto’，’full’，’arpack’，’randomized’}.(老实说，下面这一段是谷歌翻译得来的，还没有时间细究，因为我也还不太明白)auto：解析器由基于X.shape和n_components的默认策略选择：如果输入数据大于500x500且要提取的组件数低于数据最小维数的80％，那么效率更高’随机化’方法已启用。否则，计算精确的完整SVD并随后截断。full：运行完全完整的SVD通过scipy.linalg.svd调用标准LAPACK解算器并通过后处理选择组arpack：运行SVD截断为n_components通过scipy.sparse.linalg.svds调用ARPACK解算器。它严格要求0 &lt;n_components &lt;min（X.shape）随机的：通过Halko等方法进行随机SVD。tol=0.0 由svd_solver ==’arpack’计算的奇异值的容差iterated_power=&#39;auto&#39; int&gt; = 0，或’auto’，由svd_solver ==’randomized’计算的幂方法的迭代次数。random_state=None (略) 1234567from sklearn.decomposition import PCApca = PCA(n_components=None) #这里最好要指定一个数的啊，可能小数会比较方便pca.fit_transform(data) #对数据进行训练并降维components = pca.components_ #可获得方差比由大到小排列的所有主成分var = pca.explained_variance_ #转换后个主成分的方差var_atio = pca.explained_variance_ratio_ #转换后个主成分的方差比n_components = pca.n_components_ #可返回需要的特征数 (完)]]></content>
       <categories>
-        <category>sklearn</category>
+        <category>Machine Learning</category>
       </categories>
       <tags>
+        <tag>skealrn</tag>
         <tag>数据处理</tag>
       </tags>
   </entry>
