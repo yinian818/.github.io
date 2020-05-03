@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="sklearn.preprocessing 数据填充(sklearn.preprocessing.Imputer)收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～  Imputer(missing_values=’NaN’, s">
-<meta name="keywords" content="sklearn,数据处理">
+  <meta name="description" content="好好学习，天天向上">
+<meta name="keywords" content="效率">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sklearn入门-数据预处理">
-<meta property="og:url" content="http://yoursite.com/2019/04/20/sklearn入门-数据预处理/index.html">
+<meta property="og:title" content="GTD在滴答清单帮助下的实现">
+<meta property="og:url" content="http://yoursite.com/2020/05/02/GTD-TickTick/index.html">
 <meta property="og:site_name" content="桃花源">
-<meta property="og:description" content="sklearn.preprocessing 数据填充(sklearn.preprocessing.Imputer)收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～  Imputer(missing_values=’NaN’, s">
+<meta property="og:description" content="好好学习，天天向上">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-02T12:13:33.802Z">
+<meta property="og:updated_time" content="2020-05-02T12:12:54.482Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sklearn入门-数据预处理">
-<meta name="twitter:description" content="sklearn.preprocessing 数据填充(sklearn.preprocessing.Imputer)收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～  Imputer(missing_values=’NaN’, s">
+<meta name="twitter:title" content="GTD在滴答清单帮助下的实现">
+<meta name="twitter:description" content="好好学习，天天向上">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/20/sklearn入门-数据预处理/">
+  <link rel="canonical" href="http://yoursite.com/2020/05/02/GTD-TickTick/">
 
 
 
@@ -125,7 +125,7 @@
   };
 </script>
 
-  <title>sklearn入门-数据预处理 | 桃花源</title>
+  <title>GTD在滴答清单帮助下的实现 | 桃花源</title>
   
 
 
@@ -359,7 +359,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/20/sklearn入门-数据预处理/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/02/GTD-TickTick/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="李一念">
@@ -376,7 +376,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">sklearn入门-数据预处理
+          <h1 class="post-title" itemprop="name headline">GTD在滴答清单帮助下的实现
 
               
             
@@ -402,24 +402,12 @@
                 
               
 
-              <time title="创建时间：2019-04-20 18:48:37" itemprop="dateCreated datePublished" datetime="2019-04-20T18:48:37+08:00">2019-04-20</time>
+              <time title="创建时间：2020-05-02 20:07:56 / 修改时间：20:12:54" itemprop="dateCreated datePublished" datetime="2020-05-02T20:07:56+08:00">2020-05-02</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2020-05-02 20:13:33" itemprop="dateModified" datetime="2020-05-02T20:13:33+08:00">2020-05-02</time>
               
             
           </span>
@@ -436,7 +424,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Machine-Learning/" itemprop="url" rel="index"><span itemprop="name">Machine Learning</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/生活/" itemprop="url" rel="index"><span itemprop="name">生活</span></a></span>
 
                 
                 
@@ -471,45 +459,7 @@
       
 
       
-        <p><strong>sklearn.preprocessing</strong></p>
-<h4 id="数据填充-sklearn-preprocessing-Imputer"><a href="#数据填充-sklearn-preprocessing-Imputer" class="headerlink" title="数据填充(sklearn.preprocessing.Imputer)"></a>数据填充(sklearn.preprocessing.Imputer)</h4><p>收集到的数据总会遇到一些残缺值，如果不想丢弃这个样本，就只能想办法最数据进行填充了，一般的填充方法有：向上填充、向下填充、均值填充、中位数填充等等。填充数据可以使用sklearn中的类，也可以使用pandas里面的方法～</p>
-<blockquote>
-<p>Imputer(missing_values=’NaN’, strategy=’mean’, axis=0, verbose=0, copy=True)<br><code>missing_values=&#39;NaN&#39;</code> 用于匹配缺失值<br><code>strategy=&#39;mean&#39;</code> 填充策略，[‘mean’, ‘median’, ‘most_frequent’]，均值、中位数、众数。<br><code>axis=0</code> 填充方向，默认为列<br><code>verbose=0</code> 控制imputer的详细程度<br><code>copy=True</code> 是否拷贝</p>
-</blockquote>
-<h4 id="数据标准化-skleaarn-preprocessing-StandardScaler"><a href="#数据标准化-skleaarn-preprocessing-StandardScaler" class="headerlink" title="数据标准化(skleaarn.preprocessing.StandardScaler)"></a>数据标准化(skleaarn.preprocessing.StandardScaler)</h4><p>z = (x - u) / s ，转换使得数据均值为0，方差为1。</p>
-<blockquote>
-<p>StandardScaler(copy=True, with_mean=True, with_std=True)<br><code>with_mean=True</code> 若为False，则 u=0<br><code>with_std=True</code> 若为False，则 z=1</p>
-</blockquote>
-<h4 id="数据归一化-sklearn-preprocessing-MinMaxScaler"><a href="#数据归一化-sklearn-preprocessing-MinMaxScaler" class="headerlink" title="数据归一化(sklearn.preprocessing.MinMaxScaler)"></a>数据归一化(sklearn.preprocessing.MinMaxScaler)</h4><p>缩放数据到一定范围。</p>
-<blockquote>
-<p>MinMaxScaler(feature_range=(0, 1), copy=True)</p>
-</blockquote>
-<h4 id="独热编码"><a href="#独热编码" class="headerlink" title="独热编码"></a>独热编码</h4><p>对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。<strong>1～k</strong></p>
-<ol>
-<li>sklearn.preprocessing.OneHotEncoder()<blockquote>
-<p>OneHotEncoder(n_values=’auto’, categorical_features=’all’, categories=’auto’, dtype=&lt;class‘numpy.float64’&gt;, sparse=True, handle_unknown=’error’)<br><code>n_values</code> 每个特征使用几维数据，默认由数据集自动决定<br><code>categorial_features</code> 指定对哪些特征进行编码，默认为传入的所有值，通过bool值或索引进行指定(e.g. [True, True, False] / [0, 1])<br><code>categories</code> 每个特征的类别<br><code>dtype</code> 编码数值格式<br><code>sparse</code> 默认返回稀疏矩阵，设置为False可直接返回array，否则需要<code>.toarray()</code>转换<br><code>handle_unknown</code> ‘error’/‘ignore’，遇到未知类别，返回错误/忽略</p>
-</blockquote>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> OneHotEncoder</span><br><span class="line">OneHot_enc = OneHotEncoder(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#第一次对数据进行编码直接使用 fit_transform()</span></span><br><span class="line">data1_coded = OneHot_enc.fit_transform(data1)</span><br><span class="line"><span class="comment">#对相同结构数据集再次编码，仅需 transform()</span></span><br><span class="line">data2_coded = OneHot_enc.transform(data2)</span><br><span class="line"></span><br><span class="line">array.reshape(<span class="number">-1</span>, <span class="number">1</span>)    <span class="comment">#数据仅包含一个特征，转化为n×1维矩阵</span></span><br><span class="line">array.reshape(<span class="number">1</span>, <span class="number">-1</span>)    <span class="comment">#数据仅包含一个样本，转化为1×n维矩阵</span></span><br></pre></td></tr></table></figure>
-<p><strong>使用OneHotEncoder编码后，返回为一个数组(np.array)，且编码后的数据会丢失原来的列名称。</strong></p>
-<ol start="2">
-<li>pandas.get_dummies()<br><code>get_dummies()</code>只对输入数据中类型为 object 的数据进行独热编码 (故使用该方法进行独热编码时可以不分离出数值型特征) 。对数据进行编码后，返回 pd.DataFrame ，并且可以根据特征中不同的值自动生成列名称。<blockquote>
-<p>get_dummies(data, prefix=None, prefix_sep=’_’, dummy_na=False, columns=None, sparse=False,  drop_first=False, dtype=None)<br><code>prefix</code> 列表或这字符串用于添加列名称<br><code>prefix_sep</code> 字符串/列表/字典，基于prefix，用作分隔符<br><code>dummy_na</code> 默认’False’忽略空值，设置为’True’则新增列用于指示空值<br><code>columns</code> 需要编码的列名称<br><code>drop_first</code> 是否删除特征的第一类</p>
-</blockquote>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_coded = pd.get_dummies(data)    <span class="comment">#不改参数就可以表现的很优秀啦</span></span><br></pre></td></tr></table></figure>
-<h4 id="标签编码-sklearn-preprocessing-OrdinalEncoeder"><a href="#标签编码-sklearn-preprocessing-OrdinalEncoeder" class="headerlink" title="标签编码(sklearn.preprocessing.OrdinalEncoeder)"></a>标签编码(sklearn.preprocessing.OrdinalEncoeder)</h4><p>对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。<strong>1～1</strong></p>
-<p><em>若使用 LabelEncoder，则每次只能对一列数据进行编码，输入的数据也需要是一维，本身是适用于对样本标签进行编码。</em></p>
-<p>特征降维-主成分分析法PCA(sklearn.decomposition.PCA)</p>
-<p>特征降维能在尽可能多的保留数据信息的情况下减少特征的数量，在数据样本不足而特征值过多的时可以是模型得到较好的解，还能提高模型泛化能力……此外，还能减少模型的训练成本，加快运算速度。</p>
-<blockquote>
-<p>PCA(n_components=None, copy=True, whiten=False, svd_solver=’auto’, tol=0.0, iterated_power=’auto’, random_state=None)<br><code>n_components=None</code> 期望保留的主成分个数。为整数时，即为保留的个数；若为小于1的正整数，则保留使得方差百分比大于该值的最少数目的成分。还可以传入字符型参数，比如’mle’，将自动选取特征个数n，使得满足所要求的方差百分比。<br><code>copy=True</code> 是否复制原始数据。<br><code>whiten=False</code> 白化，是否要使得每个特征具有相同的方差。<br><code>svd_solver=&#39;auto&#39;</code> string {‘auto’，’full’，’arpack’，’randomized’}.<br>(老实说，下面这一段是谷歌翻译得来的，还没有时间细究，因为我也还不太明白)<br>auto：解析器由基于X.shape和n_components的默认策略选择：如果输入数据大于500x500且要提取的组件数低于数据最小维数的80％，那么效率更高’随机化’方法已启用。否则，计算精确的完整SVD并随后截断。<br>full：运行完全完整的SVD通过scipy.linalg.svd调用标准LAPACK解算器并通过后处理选择组<br>arpack：运行SVD截断为n_components通过scipy.sparse.linalg.svds调用ARPACK解算器。它严格要求0 &lt;n_components &lt;min（X.shape）<br>随机的：通过Halko等方法进行随机SVD。<br><code>tol=0.0</code> 由svd_solver ==’arpack’计算的奇异值的容差<br><code>iterated_power=&#39;auto&#39;</code> int&gt; = 0，或’auto’，由svd_solver ==’randomized’计算的幂方法的迭代次数。<br><code>random_state=None</code> (略)</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA</span><br><span class="line">pca = PCA(n_components=<span class="literal">None</span>)    <span class="comment">#这里最好要指定一个数的啊，可能小数会比较方便</span></span><br><span class="line">pca.fit_transform(data)    <span class="comment">#对数据进行训练并降维</span></span><br><span class="line">components = pca.components_    <span class="comment">#可获得方差比由大到小排列的所有主成分</span></span><br><span class="line">var = pca.explained_variance_    <span class="comment">#转换后个主成分的方差</span></span><br><span class="line">var_atio = pca.explained_variance_ratio_    <span class="comment">#转换后个主成分的方差比</span></span><br><span class="line">n_components = pca.n_components_    <span class="comment">#可返回需要的特征数</span></span><br></pre></td></tr></table></figure>
-<p>(完)</p>
-
+        
       
     </div>
 
@@ -532,9 +482,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/sklearn/" rel="tag"># sklearn</a>
-          
-            <a href="/tags/数据处理/" rel="tag"># 数据处理</a>
+            <a href="/tags/效率/" rel="tag"># 效率</a>
           
         </div>
       
@@ -547,15 +495,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2020/05/02/consuption-recording/" rel="next" title="我的记账日常(MoneyWiz)">
+                <i class="fa fa-chevron-left"></i> 我的记账日常(MoneyWiz)
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/22/sklearn入门-监督学习/" rel="prev" title="sklearn入门-监督学习">
-                sklearn入门-监督学习 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -599,17 +547,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <div class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -727,23 +666,6 @@
         </div>
       </div>
 
-      
-      <!--noindex-->
-        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-            
-            
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据填充-sklearn-preprocessing-Imputer"><span class="nav-number">1.</span> <span class="nav-text">数据填充(sklearn.preprocessing.Imputer)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据标准化-skleaarn-preprocessing-StandardScaler"><span class="nav-number">2.</span> <span class="nav-text">数据标准化(skleaarn.preprocessing.StandardScaler)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数据归一化-sklearn-preprocessing-MinMaxScaler"><span class="nav-number">3.</span> <span class="nav-text">数据归一化(sklearn.preprocessing.MinMaxScaler)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#独热编码"><span class="nav-number">4.</span> <span class="nav-text">独热编码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标签编码-sklearn-preprocessing-OrdinalEncoeder"><span class="nav-number">5.</span> <span class="nav-text">标签编码(sklearn.preprocessing.OrdinalEncoeder)</span></a></li></ol></div>
-            
-
-          </div>
-        </div>
-      <!--/noindex-->
       
 
       
