@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="桃花源">
 <meta property="og:description" content="基本运算 变量自身参与运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再自">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-06-29T14:17:57.242Z">
+<meta property="og:updated_time" content="2020-06-29T14:28:29.980Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++知识点归纳">
 <meta name="twitter:description" content="基本运算 变量自身参与运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再自">
@@ -402,7 +402,7 @@
                 
               
 
-              <time title="创建时间：2020-06-29 21:07:10 / 修改时间：22:17:57" itemprop="dateCreated datePublished" datetime="2020-06-29T21:07:10+08:00">2020-06-29</time>
+              <time title="创建时间：2020-06-29 21:07:10 / 修改时间：22:28:29" itemprop="dateCreated datePublished" datetime="2020-06-29T21:07:10+08:00">2020-06-29</time>
             
 
             
@@ -478,7 +478,7 @@
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> str;</span><br><span class="line"><span class="keyword">int</span> len1 = str.size();</span><br><span class="line"><span class="keyword">int</span> len2 = str.leng();</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p>4.</p>
+<p>4.在字符串固定位位置插入字符 <code></code><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> ret;</span><br><span class="line"><span class="comment">// string.insert(pos, count, char*count);</span></span><br><span class="line"><span class="comment">// pos = the index the char is to be inserted</span></span><br><span class="line"><span class="comment">// count = the number of the char to be inserted</span></span><br><span class="line"><span class="comment">// the inserted char</span></span><br><span class="line">ret.insert(<span class="number">0</span>, <span class="number">2</span>, <span class="string">"hi"</span>);</span><br></pre></td></tr></table></figure></p>
 <h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><ol>
 <li><p>使用结构体数组单元或结构体变量对结构体指针进行赋值时，必须要使用取址符号。（一般数组则可以不用）</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">char</span> gender;</span><br><span class="line">    <span class="built_in">string</span> id;</span><br><span class="line">    <span class="keyword">short</span> grade;</span><br><span class="line">&#125; Student;</span><br><span class="line"></span><br><span class="line">Student stu[<span class="number">100</span>];</span><br><span class="line">Student *p_stu = &amp;stu[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
