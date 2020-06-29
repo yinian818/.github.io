@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="基本运算 变量自身与常数运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再">
+  <meta name="description" content="基本运算 变量自身参与运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再自">
 <meta name="keywords" content="C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++知识点归纳">
 <meta property="og:url" content="http://yoursite.com/2020/06/29/cppTips/index.html">
 <meta property="og:site_name" content="桃花源">
-<meta property="og:description" content="基本运算 变量自身与常数运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再">
+<meta property="og:description" content="基本运算 变量自身参与运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再自">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-06-29T14:07:03.142Z">
+<meta property="og:updated_time" content="2020-06-29T14:17:57.242Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++知识点归纳">
-<meta name="twitter:description" content="基本运算 变量自身与常数运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再">
+<meta name="twitter:description" content="基本运算 变量自身参与运算简便写法 123456789// 完整写法int aa = a + 1; a = a - 5; a = a*2; a = a / 8; a = a % 3;// 简便写法a += 1; a -= 5; a *= 1; a /= 8; a %= 3;// 当运算常数为1时，可写作a++; a--;// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再自">
 
 
 
@@ -402,7 +402,7 @@
                 
               
 
-              <time title="创建时间：2020-06-29 21:07:10 / 修改时间：22:07:03" itemprop="dateCreated datePublished" datetime="2020-06-29T21:07:10+08:00">2020-06-29</time>
+              <time title="创建时间：2020-06-29 21:07:10 / 修改时间：22:17:57" itemprop="dateCreated datePublished" datetime="2020-06-29T21:07:10+08:00">2020-06-29</time>
             
 
             
@@ -460,10 +460,12 @@
 
       
         <h3 id="基本运算"><a href="#基本运算" class="headerlink" title="基本运算"></a>基本运算</h3><ol>
-<li><p>变量自身与常数运算简便写法</p>
+<li><p>变量自身参与运算简便写法</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 完整写法</span></span><br><span class="line"><span class="keyword">int</span> a</span><br><span class="line">a = a + <span class="number">1</span>; a = a - <span class="number">5</span>; a = a*<span class="number">2</span>; a = a / <span class="number">8</span>; a = a % <span class="number">3</span>;</span><br><span class="line"><span class="comment">// 简便写法</span></span><br><span class="line">a += <span class="number">1</span>; a -= <span class="number">5</span>; a *= <span class="number">1</span>; a /= <span class="number">8</span>; a %= <span class="number">3</span>;</span><br><span class="line"><span class="comment">// 当运算常数为1时，可写作</span></span><br><span class="line">a++; a--;</span><br><span class="line"><span class="comment">// 两个+在前表示用加之后结果参与其他运算，在字母后面表示现参与其他运算再自加；</span></span><br><span class="line"><span class="comment">// 减号同理</span></span><br></pre></td></tr></table></figure>
 </li>
-<li></li>
+<li><p>字符和数字之间的转换， ‘0’-‘9’ 的字符 -‘0’ 可转换为等值的数字；反之，0-9 数字 +’0’ 即等于对应的字符</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 把字符串的每一位数字相加</span></span><br><span class="line"><span class="built_in">string</span> str = <span class="string">"1326538"</span></span><br><span class="line"><span class="keyword">int</span> ret = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span> ( <span class="keyword">int</span> i = <span class="number">0</span>; i &lt; str.length(); i++) ret += ( str[i] - <span class="string">'0'</span> );</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
 <h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ol>
 <li><p>字符串截取</p>
@@ -475,10 +477,10 @@
 <li><p>获取字符串长度</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> str;</span><br><span class="line"><span class="keyword">int</span> len1 = str.size();</span><br><span class="line"><span class="keyword">int</span> len2 = str.leng();</span><br></pre></td></tr></table></figure>
 </li>
-<li></li>
 </ol>
+<p>4.</p>
 <h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><ol>
-<li><p>使用结构体数组单元对结构体指针进行赋值时，必须要使用取址符号。（一般数组则可以不用）</p>
+<li><p>使用结构体数组单元或结构体变量对结构体指针进行赋值时，必须要使用取址符号。（一般数组则可以不用）</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">    <span class="built_in">string</span> name;</span><br><span class="line">    <span class="keyword">char</span> gender;</span><br><span class="line">    <span class="built_in">string</span> id;</span><br><span class="line">    <span class="keyword">short</span> grade;</span><br><span class="line">&#125; Student;</span><br><span class="line"></span><br><span class="line">Student stu[<span class="number">100</span>];</span><br><span class="line">Student *p_stu = &amp;stu[<span class="number">0</span>];</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>结构体变量及结构体指针的元素访问</p>
