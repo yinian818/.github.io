@@ -15,11 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -44,9 +44,9 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+<link rel="stylesheet" href="/css/main.css?v=7.1.0"/>
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
@@ -96,18 +96,21 @@
 
 
 
-  <meta name="description" content="整理sklearn.model_selection中一些常用的类及其基本用法。 拆分数据(sklearn.model_selection.train_test_split)用于将数据集拆分为两部分，一部分用于模型训练，一部分用于模型评估。  train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, s">
-<meta name="keywords" content="sklearn,数据拆分,交叉验证,网格搜索">
+  <meta name="description" content="整理sklearn.model_selection中一些常用的类及其基本用法。 拆分数据(sklearn.model_selection.train_test_split)用于将数据集拆分为两部分，一部分用于模型训练，一部分用于模型评估。  train_test_split(*arrays, test_size&#x3D;0.25, train_size&#x3D;None, random_state&#x3D;None, s">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sklearn.model_selection">
 <meta property="og:url" content="http://yoursite.com/2019/05/08/sklearn-model-selection/index.html">
 <meta property="og:site_name" content="桃花源">
-<meta property="og:description" content="整理sklearn.model_selection中一些常用的类及其基本用法。 拆分数据(sklearn.model_selection.train_test_split)用于将数据集拆分为两部分，一部分用于模型训练，一部分用于模型评估。  train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, s">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-02T12:00:24.742Z">
+<meta property="og:description" content="整理sklearn.model_selection中一些常用的类及其基本用法。 拆分数据(sklearn.model_selection.train_test_split)用于将数据集拆分为两部分，一部分用于模型训练，一部分用于模型评估。  train_test_split(*arrays, test_size&#x3D;0.25, train_size&#x3D;None, random_state&#x3D;None, s">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-05-08T13:23:37.000Z">
+<meta property="article:modified_time" content="2020-05-02T12:00:24.000Z">
+<meta property="article:author" content="李一念">
+<meta property="article:tag" content="sklearn">
+<meta property="article:tag" content="数据拆分">
+<meta property="article:tag" content="交叉验证">
+<meta property="article:tag" content="网格搜索">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sklearn.model_selection">
-<meta name="twitter:description" content="整理sklearn.model_selection中一些常用的类及其基本用法。 拆分数据(sklearn.model_selection.train_test_split)用于将数据集拆分为两部分，一部分用于模型训练，一部分用于模型评估。  train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, s">
 
 
 
@@ -115,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/08/sklearn-model-selection/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/08/sklearn-model-selection/"/>
 
 
 
@@ -162,9 +165,9 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -175,7 +178,7 @@
 
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband">
-        <a href="https://github.com/yinian818" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <a href="https://github.com/yinian818" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     </div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,7 +230,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
 
   </li>
         
@@ -244,7 +247,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签</a>
 
   </li>
         
@@ -261,7 +264,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类</a>
 
   </li>
         
@@ -278,7 +281,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档</a>
 
   </li>
 
@@ -289,7 +292,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
         </li>
       
     </ul>
@@ -309,7 +312,9 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -359,16 +364,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/sklearn-model-selection/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/08/sklearn-model-selection/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="好好学习，天天向上">
-      <meta itemprop="image" content="/images/yinian818.jpeg">
+      <meta itemprop="name" content="李一念"/>
+      <meta itemprop="description" content="好好学习，天天向上"/>
+      <meta itemprop="image" content="/images/yinian818.jpeg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="桃花源">
+      <meta itemprop="name" content="桃花源"/>
     </span>
 
     
@@ -477,16 +482,19 @@
 <p>train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, shuffle=True, stratify=None)<br><code>*arrays</code> 相同长度的一系列n个数据集，接受格式有[lists, numpy arrays, scipy-sparse matrices or pandas dataframes]。返回2n个数据集，一个输入对应两个输出。<br><code>test_size=0.25</code> 整数或小数。代表个数或比例<br><code>train_size=None</code> 同上，两个_size指定一个就好了<br><code>random_state=None</code> 随机数种子<br><code>shuffle=True</code> 拆分前是否打乱数据。If shuffle=False then stratify must be None.<br><code>stratify=None</code> </p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
 <h4 id="网格搜索-sklearn-model-selection-GridSearchCV"><a href="#网格搜索-sklearn-model-selection-GridSearchCV" class="headerlink" title="网格搜索(sklearn.model_selection.GridSearchCV)"></a>网格搜索(sklearn.model_selection.GridSearchCV)</h4><p>这个呢，hei好用，可以便捷的帮我们确定最优参数，并且设置好需要训练的模型还有对应的参数，会在每一组参数进行训练，然后使用最优的一组参数来训练最终的模型，设置起来也不复杂。</p>
 <blockquote>
 <p>GridSearchCV(estimator, param_grid, scoring=None, fit_params=None, n_jobs=None, iid=’warn’, refit=True, cv=’warn’, verbose=0, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’, return_train_score=’warn’)<br><code>estimator</code> 学习器接口，设定用于训练模型的算法，比如 sklearn.svm.SVR()。需要有 scoring 参数，否则不对模型进行评估<br><code>param_grid</code> 参数网格，传入字典或 value为列表的字典。e.g. {‘C’: [1, 10, 100]}<br><code>scoring=None</code> 模型的评分方式，如果为 None，则使用模型默认的度量。可以是字符串、可调用对象、列表 / 元组、字典。<br><code>fit_params=None</code> 传给<code>fit</code>方法的参数<br><code>n_jobs=None</code> 并行作业数<br><code>iid=&#39;warn&#39;</code> (Changed in version 0.20: Parameter iid will change from True to False by default in version 0.22, and will be removed in 0.24)<br><code>refit=True</code> 是否在整个数据集上使用得到的最佳参数重新训练。<br><code>cv=&#39;warn&#39;</code> 交叉验证策略，默认为 3折交叉验证。<br><code>verbose=0</code> 控制冗余，越高，信息越多。<br><code>pre_dispatch=&#39;2*n_jobs&#39;</code> 控制并行作业期间分配的作业数量，可以是 int、str(关于 n_jobs的函数表达式)。<br><code>error_score=&#39;raise-deprecating&#39;</code> 如果训练出错返回的分数。<br><code>return_train_score=&#39;warn&#39;</code> 如果 False，cv_results_属性不包含分数。</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection.GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC</span><br><span class="line"></span><br><span class="line">model = SVC()</span><br><span class="line">param_range = &#123;<span class="string">'C'</span>: [<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>]&#125;</span><br><span class="line">clf = GridSearchCV(model, param_range, scoring=<span class="string">'roc_auc'</span>, cv=<span class="number">10</span>, verbose=<span class="number">1</span>, n_jobs=<span class="number">4</span>)</span><br><span class="line">clf.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line">y_pre = clf.predict(X_test)</span><br><span class="line">clf.score(X_test, y_test)</span><br><span class="line"></span><br><span class="line">clf.cv_results_    <span class="comment">#可以转化为DataFrame格式的字典，keys是列名称，values是对应的列</span></span><br><span class="line">clf.best_score_    <span class="comment">#最高得分</span></span><br><span class="line">clf.best_params_    <span class="comment">#最佳的一组参数</span></span><br><span class="line">clf.refit_time_    <span class="comment">#在整个数据集上使用最优参数训练模型所花的时间</span></span><br></pre></td></tr></table></figure>
+
 <h4 id="交叉验证-sklearn-model-selection-cross-val-score"><a href="#交叉验证-sklearn-model-selection-cross-val-score" class="headerlink" title="交叉验证(sklearn.model_selection.cross_val_score)"></a>交叉验证(sklearn.model_selection.cross_val_score)</h4><p>可以返回值为每一次交叉验证后得分的数组，每一次只能针对一组参数值进行训练，所以如果要确定最优的参数，得自己写一个循环，比较麻烦，得到最优参数之后还要重新在所有数据上自己训练一遍……</p>
 <blockquote>
 <p>cross_val_score(estimator, X, y=None, groups=None, scoring=None, cv=’warn’, n_jobs=None, verbose=0, fit_params=None, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’)<br><code>X</code> 需要训练的数据<br><code>y=None</code> 数据的标签值<br><code>groups=None</code> 划分数据为 train/test set 时使用的分类标签<br>(其余同上)</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">C_list = [<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>]</span><br><span class="line">cv_scores = []</span><br><span class="line"><span class="keyword">for</span> c_value <span class="keyword">in</span> C_list:</span><br><span class="line">	model = SVC(C=c_value)</span><br><span class="line">	score = cross_val_score(model, X_train, y_train, scoring=<span class="string">'roc_auc'</span>, cv=<span class="number">10</span>, verbose=<span class="number">1</span>, n_jobs=<span class="number">4</span>)</span><br><span class="line">	<span class="comment">#score是一个数组哦哦哦</span></span><br><span class="line">	cv_score = np.means(score)</span><br><span class="line">	cv_scores.append(cv_score)</span><br><span class="line">	</span><br><span class="line">best_c = C_list[cv_scores.index(max(cv_scores))]</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
 <h4 id="验证曲线-sklearn-model-selection-validation-curve"><a href="#验证曲线-sklearn-model-selection-validation-curve" class="headerlink" title="验证曲线(sklearn.model_selection.validation_curve)"></a>验证曲线(sklearn.model_selection.validation_curve)</h4><p>这个函数嘞，会返回两个数组：train_scores、test_scores ，比较方便用来画针对某一个参数的学习曲线。两个分别是在进行交叉验证时在训练集s以及验证集上的得分，大小为 (传入的参数数量，交叉验证折数)</p>
 <blockquote>
 <p>validation_curve(estimator, X, y, param_name, param_range, groups=None, cv=’warn’, scoring=None, n_jobs=None, pre_dispatch=’all’, verbose=0, error_score=’raise-deprecating’)<br><code>param_name</code> 变化的参数的名称<br><code>param_range</code> array-like，用于训练的参数值，对应参数名称</p>
@@ -516,11 +524,11 @@
           
             <a href="/tags/sklearn/" rel="tag"># sklearn</a>
           
-            <a href="/tags/数据拆分/" rel="tag"># 数据拆分</a>
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E6%8B%86%E5%88%86/" rel="tag"># 数据拆分</a>
           
-            <a href="/tags/交叉验证/" rel="tag"># 交叉验证</a>
+            <a href="/tags/%E4%BA%A4%E5%8F%89%E9%AA%8C%E8%AF%81/" rel="tag"># 交叉验证</a>
           
-            <a href="/tags/网格搜索/" rel="tag"># 网格搜索</a>
+            <a href="/tags/%E7%BD%91%E6%A0%BC%E6%90%9C%E7%B4%A2/" rel="tag"># 网格搜索</a>
           
         </div>
       
@@ -533,7 +541,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/28/小象学院《python人工智能》课程总结/" rel="next" title="小象学院《python人工智能》课程总结">
+              <a href="/2019/04/28/%E5%B0%8F%E8%B1%A1%E5%AD%A6%E9%99%A2%E3%80%8Apython%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93/" rel="next" title="小象学院《python人工智能》课程总结">
                 <i class="fa fa-chevron-left"></i> 小象学院《python人工智能》课程总结
               </a>
             
@@ -543,7 +551,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/09/爬虫初体验-网站文章/" rel="prev" title="爬虫初体验-网站文章">
+              <a href="/2019/05/09/%E7%88%AC%E8%99%AB%E5%88%9D%E4%BD%93%E9%AA%8C-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0/" rel="prev" title="爬虫初体验-网站文章">
                 爬虫初体验-网站文章 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -603,7 +611,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/yinian818.jpeg" alt="李一念">
+              <img class="site-author-image" itemprop="image"
+                src="/images/yinian818.jpeg"
+                alt="李一念"/>
             
               <p class="site-author-name" itemprop="name">李一念</p>
               <div class="site-description motion-element" itemprop="description">好好学习，天天向上</div>
@@ -614,7 +624,7 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives/%20%7C%7C%20archive">
                 
                     <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
@@ -628,7 +638,7 @@
                 <div class="site-state-item site-state-categories">
                   
                     
-                      <a href="/categories/">
+                      <a href="/categories/%20%7C%7C%20th">
                     
                   
                     
@@ -657,7 +667,7 @@
                 <div class="site-state-item site-state-tags">
                   
                     
-                      <a href="/tags/">
+                      <a href="/tags/%20%7C%7C%20tags">
                     
                   
                     
@@ -765,7 +775,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1</div>
 
 
 
@@ -773,7 +783,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
 
 
 
@@ -1211,7 +1221,24 @@
         onPopupClose();
       }
     });
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 

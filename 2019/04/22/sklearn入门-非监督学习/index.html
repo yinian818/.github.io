@@ -15,11 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -44,9 +44,9 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+<link rel="stylesheet" href="/css/main.css?v=7.1.0"/>
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
@@ -96,18 +96,19 @@
 
 
 
-  <meta name="description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, co">
-<meta name="keywords" content="sklearn,非监督学习">
+  <meta name="description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters&#x3D;8, init&#x3D;’k-means++’, n_init&#x3D;10, max_iter&#x3D;300, tol&#x3D;0.0001, precompute_distances&#x3D;’auto’, verbose&#x3D;0, random_state&#x3D;None, co">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sklearn入门-非监督学习">
-<meta property="og:url" content="http://yoursite.com/2019/04/22/sklearn入门-非监督学习/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="桃花源">
-<meta property="og:description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, co">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-02T12:06:02.226Z">
+<meta property="og:description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters&#x3D;8, init&#x3D;’k-means++’, n_init&#x3D;10, max_iter&#x3D;300, tol&#x3D;0.0001, precompute_distances&#x3D;’auto’, verbose&#x3D;0, random_state&#x3D;None, co">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-04-22T08:44:03.000Z">
+<meta property="article:modified_time" content="2020-05-02T12:06:02.000Z">
+<meta property="article:author" content="李一念">
+<meta property="article:tag" content="sklearn">
+<meta property="article:tag" content="非监督学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sklearn入门-非监督学习">
-<meta name="twitter:description" content="对不带标签的数据进行学习。 k均值算法(k-Means)(sklearn.cluster.KMeans)最基本的聚类算法。  KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, co">
 
 
 
@@ -115,7 +116,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/22/sklearn入门-非监督学习/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/"/>
 
 
 
@@ -162,9 +163,9 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -175,7 +176,7 @@
 
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband">
-        <a href="https://github.com/yinian818" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <a href="https://github.com/yinian818" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     </div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,7 +228,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
 
   </li>
         
@@ -244,7 +245,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签</a>
 
   </li>
         
@@ -261,7 +262,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类</a>
 
   </li>
         
@@ -278,7 +279,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档</a>
 
   </li>
 
@@ -289,7 +290,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
         </li>
       
     </ul>
@@ -309,7 +310,9 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -359,16 +362,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/sklearn入门-非监督学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="好好学习，天天向上">
-      <meta itemprop="image" content="/images/yinian818.jpeg">
+      <meta itemprop="name" content="李一念"/>
+      <meta itemprop="description" content="好好学习，天天向上"/>
+      <meta itemprop="image" content="/images/yinian818.jpeg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="桃花源">
+      <meta itemprop="name" content="桃花源"/>
     </span>
 
     
@@ -477,11 +480,19 @@
 <p>KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, copy_x=True, n_jobs=None, algorithm=’auto’)<br><code>n_clusters=8</code> 聚类数。<br><code>init=&#39;k-means++&#39;</code> 初始化聚类中心方法。/ ‘auto’ / 数组shape (n_clusters, n_features)<br><code>n_init=1</code> 算法选择不同聚类中心运行的次数，保留最好的结果。<br><code>max_iter=300</code> 单次运行的最大迭代数目。<br><code>tol=0.0001</code> 停止迭代的相对误差界限。<br><code>precompute_distances=&#39;auto&#39;</code> {‘auto’, True, False}是否预先计算距离，选择’auto’时，当n_samples * n_clusters&gt;1,000,000 则不预先计算。<br><code>verbose=0</code> int<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>copy_x=True</code> 是否拷贝训练数据。<br><code>n_jobs=None</code> 并行作业数。<br><code>algorithm=&#39;auto&#39;</code> “auto”, “full” or “elkan”. 指定要使用的算法。</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line">km_model = KMeans(n_clusters=<span class="number">8</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">km_model.fit_transform()</span><br><span class="line">centers = km_model.cluster_centers_    <span class="comment">#聚类中心</span></span><br><span class="line">y_pre = km_model.labels_    <span class="comment">#每个样本点的标签</span></span><br></pre></td></tr></table></figure>
+
 <h4 id="自底向上层次聚类-sklearn-cluster-AgglomerativeClustering"><a href="#自底向上层次聚类-sklearn-cluster-AgglomerativeClustering" class="headerlink" title="自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)"></a>自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)</h4><p>层次聚类可分为两类：自顶向下, diverse；自底向上, agglomerative。</p>
 <blockquote>
 <p>AgglomerativeClustering(n_clusters=2, affinity=’euclidean’, memory=None, connectivity=None, compute_full_tree=’auto’, linkage=’ward’, pooling_func=’deprecated’)<br><code>n_clusters=2</code> 最终的聚类数。<br><code>affinity=&#39;euclidean&#39;</code> {‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’, ‘cosine’, ‘precomputed’}. 用于计算距离，当linkage=’ward’，只支持’euclidean’。<br><code>memory=None</code> 默认不缓存计算树的输出，以字符指定缓存路径。<br><code>connectivity=None</code> 一个数组或者可调用对象或者None，用于指定连接矩阵<br><code>compute_full_tree=&#39;auto&#39;</code> 通常当训练了n_clusters后，训练过程就会停止，但是如果compute_full_tree=True，则会继续训练从而生成一颗完整的树。<br><code>linkage=&#39;ward&#39;</code> 一个字符串，用于指定链接算法。’ward’：单链接； ‘complete’：全链接； ‘average’：均连接。<br><code>pooling_func=&#39;deprecated&#39;</code> 一个可调用对象，它的输入是一组特征的值，输出是一个数</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> AgglomerativeClustering</span><br><span class="line">agg_cluster = AAgglomerativeClustering(n_clusters=<span class="number">2</span>, linkage=<span class="string">'ward'</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
 
       
     </div>
@@ -507,7 +518,7 @@
           
             <a href="/tags/sklearn/" rel="tag"># sklearn</a>
           
-            <a href="/tags/非监督学习/" rel="tag"># 非监督学习</a>
+            <a href="/tags/%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="tag"># 非监督学习</a>
           
         </div>
       
@@ -520,7 +531,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/22/sklearn入门-监督学习/" rel="next" title="sklearn入门-监督学习">
+              <a href="/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="next" title="sklearn入门-监督学习">
                 <i class="fa fa-chevron-left"></i> sklearn入门-监督学习
               </a>
             
@@ -530,7 +541,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/28/小象学院《python人工智能》课程总结/" rel="prev" title="小象学院《python人工智能》课程总结">
+              <a href="/2019/04/28/%E5%B0%8F%E8%B1%A1%E5%AD%A6%E9%99%A2%E3%80%8Apython%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%8B%E8%AF%BE%E7%A8%8B%E6%80%BB%E7%BB%93/" rel="prev" title="小象学院《python人工智能》课程总结">
                 小象学院《python人工智能》课程总结 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -590,7 +601,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/yinian818.jpeg" alt="李一念">
+              <img class="site-author-image" itemprop="image"
+                src="/images/yinian818.jpeg"
+                alt="李一念"/>
             
               <p class="site-author-name" itemprop="name">李一念</p>
               <div class="site-description motion-element" itemprop="description">好好学习，天天向上</div>
@@ -601,7 +614,7 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives/%20%7C%7C%20archive">
                 
                     <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
@@ -615,7 +628,7 @@
                 <div class="site-state-item site-state-categories">
                   
                     
-                      <a href="/categories/">
+                      <a href="/categories/%20%7C%7C%20th">
                     
                   
                     
@@ -644,7 +657,7 @@
                 <div class="site-state-item site-state-tags">
                   
                     
-                      <a href="/tags/">
+                      <a href="/tags/%20%7C%7C%20tags">
                     
                   
                     
@@ -752,7 +765,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1</div>
 
 
 
@@ -760,7 +773,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
 
 
 
@@ -1198,7 +1211,24 @@
         onPopupClose();
       }
     });
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 

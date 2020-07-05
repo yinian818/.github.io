@@ -15,11 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -44,9 +44,9 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+<link rel="stylesheet" href="/css/main.css?v=7.1.0"/>
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
@@ -97,17 +97,17 @@
 
 
   <meta name="description" content="日期：2019-05-09天气：没出门我也不知道……啊啊啊啊啊(请自行带入Do、Re、Mi)～今天是有点艹dan又有点满足的一天。艹dan是因为，就因为同学让我帮忙就捣鼓了一天 python 爬虫，茶不思饭不想；满足就是一天过去了还是有很多收获，也掌握了一些 python 爬虫的基本技能。 目标任务需求是爬取康安途网站医药新闻板块的所有文章，希望得到的包括每一篇文章的标题及其内容(纯文本)。大概浏">
-<meta name="keywords" content="网络爬虫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="爬虫初体验-网站文章">
-<meta property="og:url" content="http://yoursite.com/2019/05/09/爬虫初体验-网站文章/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/05/09/%E7%88%AC%E8%99%AB%E5%88%9D%E4%BD%93%E9%AA%8C-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="桃花源">
 <meta property="og:description" content="日期：2019-05-09天气：没出门我也不知道……啊啊啊啊啊(请自行带入Do、Re、Mi)～今天是有点艹dan又有点满足的一天。艹dan是因为，就因为同学让我帮忙就捣鼓了一天 python 爬虫，茶不思饭不想；满足就是一天过去了还是有很多收获，也掌握了一些 python 爬虫的基本技能。 目标任务需求是爬取康安途网站医药新闻板块的所有文章，希望得到的包括每一篇文章的标题及其内容(纯文本)。大概浏">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-24T03:58:23.767Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-05-09T10:46:36.000Z">
+<meta property="article:modified_time" content="2019-11-24T03:58:23.000Z">
+<meta property="article:author" content="李一念">
+<meta property="article:tag" content="网络爬虫">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="爬虫初体验-网站文章">
-<meta name="twitter:description" content="日期：2019-05-09天气：没出门我也不知道……啊啊啊啊啊(请自行带入Do、Re、Mi)～今天是有点艹dan又有点满足的一天。艹dan是因为，就因为同学让我帮忙就捣鼓了一天 python 爬虫，茶不思饭不想；满足就是一天过去了还是有很多收获，也掌握了一些 python 爬虫的基本技能。 目标任务需求是爬取康安途网站医药新闻板块的所有文章，希望得到的包括每一篇文章的标题及其内容(纯文本)。大概浏">
 
 
 
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/05/09/爬虫初体验-网站文章/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/09/%E7%88%AC%E8%99%AB%E5%88%9D%E4%BD%93%E9%AA%8C-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0/"/>
 
 
 
@@ -162,9 +162,9 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -175,7 +175,7 @@
 
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband">
-        <a href="https://github.com/yinian818" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <a href="https://github.com/yinian818" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     </div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,7 +227,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
 
   </li>
         
@@ -244,7 +244,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签</a>
 
   </li>
         
@@ -261,7 +261,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类</a>
 
   </li>
         
@@ -278,7 +278,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档</a>
 
   </li>
 
@@ -289,7 +289,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
         </li>
       
     </ul>
@@ -309,7 +309,9 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -359,16 +361,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/爬虫初体验-网站文章/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/09/%E7%88%AC%E8%99%AB%E5%88%9D%E4%BD%93%E9%AA%8C-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="好好学习，天天向上">
-      <meta itemprop="image" content="/images/yinian818.jpeg">
+      <meta itemprop="name" content="李一念"/>
+      <meta itemprop="description" content="好好学习，天天向上"/>
+      <meta itemprop="image" content="/images/yinian818.jpeg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="桃花源">
+      <meta itemprop="name" content="桃花源"/>
     </span>
 
     
@@ -473,8 +475,11 @@
       
         <p>日期：2019-05-09<br>天气：没出门我也不知道……<br>啊啊啊啊啊(请自行带入Do、Re、Mi)～今天是有点艹dan又有点满足的一天。艹dan是因为，就因为同学让我帮忙就捣鼓了一天 python 爬虫，茶不思饭不想；满足就是一天过去了还是有很多收获，也掌握了一些 python 爬虫的基本技能。</p>
 <h4 id="目标任务"><a href="#目标任务" class="headerlink" title="目标任务"></a>目标任务</h4><p>需求是爬取<a href="https://www.kangantu.com/news/" target="_blank" rel="noopener">康安途网站医药新闻板块</a>的所有文章，希望得到的包括每一篇文章的标题及其内容(纯文本)。<br>大概浏览了一下页面的内容，新闻版块一共有 2317 页，每一页包含 20 篇文章，也就是实说最后会有 40k+ 条信息，我的小本本还是有点承受不住的……<br>本来我都准被写到一个个文件里了，后来嘞，需求改了，变成把 [标题，日期，链接] 存到一个 excel 表格里，大概就酱紫。<br>最后我还是手欠把内容给加上了。</p>
-<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><p>anaconda 安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ conda install requests</span><br><span class="line">$ conda install beautifulsoup4</span><br></pre></td></tr></table></figure></p>
-<p>pip 安装<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pip install requests</span><br><span class="line">$ pip install beautifulsoup4</span><br></pre></td></tr></table></figure></p>
+<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><p>anaconda 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ conda install requests</span><br><span class="line">$ conda install beautifulsoup4</span><br></pre></td></tr></table></figure>
+<p>pip 安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ pip install requests</span><br><span class="line">$ pip install beautifulsoup4</span><br></pre></td></tr></table></figure>
+
 <h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><ul>
 <li>使用 requests + BeautifulSoup 获取网页的源代码并对其解析</li>
 <li>使用 BeautifulSoup 中的 find 函数找到 文章名称、链接网址、发表时间 所在的 tag </li>
@@ -484,15 +489,24 @@
 <li>因为信息数量太大了，所以使用多个文件来保存</li>
 </ul>
 <h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><p>一开始由于完全没经验，直接就去网上开始搜 “python爬取网站所有文章”，还是找到了两片比较有用的，虽然说由于每个网站的结构相差比较多，不一样的地方还是多，不过因为这两篇文章还是知道了常用的库以及基本用法。</p>
-<h5 id="requests-BeautifulSoup-乱码问题"><a href="#requests-BeautifulSoup-乱码问题" class="headerlink" title="requests - BeautifulSoup 乱码问题"></a>requests - BeautifulSoup 乱码问题</h5><p>! 叮！这里的代码是错误不完全示范！<br>使用 requests - BeautifulSoup 解析网页源代码，最开始两篇文章中是这样的：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line">bs = BeautifulSoup(req.text)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure></p>
-<p>然后就发现什么也找不到，相当于一部分内容直接丢失了……然后看了看 BeautifulSoup 的文档，借鉴了一下别人的代码。如下修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#新增：</span></span><br><span class="line">req.encoding = <span class="string">'utf-8'</span></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure></p>
+<h5 id="requests-BeautifulSoup-乱码问题"><a href="#requests-BeautifulSoup-乱码问题" class="headerlink" title="requests - BeautifulSoup 乱码问题"></a>requests - BeautifulSoup 乱码问题</h5><p>! 叮！这里的代码是错误不完全示范！<br>使用 requests - BeautifulSoup 解析网页源代码，最开始两篇文章中是这样的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line">bs = BeautifulSoup(req.text)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
+<p>然后就发现什么也找不到，相当于一部分内容直接丢失了……然后看了看 BeautifulSoup 的文档，借鉴了一下别人的代码。如下修改：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#新增：</span></span><br><span class="line">req.encoding = <span class="string">'utf-8'</span></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
 <p>倒腾来倒腾去，还是不对，虽然没有内容丢失，但中文部分还是会乱码。大半天被这问题困扰，终于我灵机一动，搜索 “BeautifulSoup 乱码” ，成功找到<a href="https://www.jianshu.com/p/69401b84419e" target="_blank" rel="noopener">这篇文章</a>，解决了问题，不过没有完全按照这个修改哈。<br>总结以下嘞，就是在使用 requests + BeautifulSoup 获取源代码的时候，最好能够声明网页的编码格式，编码格式源代码里可以看到，最终如下：</p>
 <blockquote>
 <p><em>如何获得网站编码格式：<br>使用 Chrome 浏览器，进入需要爬取的网页，鼠标右键进入源代码界面；<br>Ctrl + f 搜索 “charset” 即可</em></p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#修改：</span></span><br><span class="line">req.encoding = <span class="string">'gb2312'</span></span><br><span class="line"></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
-<h5 id="如何获得需要的部分"><a href="#如何获得需要的部分" class="headerlink" title="如何获得需要的部分"></a>如何获得需要的部分</h5><p>一开始因为信息丢失和乱码问题，止步不前，一发同学用 python-2.7 + urllib2 + re 解决了文章标题和链接地址的问题，但是我真的非常不喜欢用 re ，看到就晕那种，磨啊磨一直到解决了乱码问题，后面的也就迎刃而解了，如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">htmlr = requests.get(url)</span><br><span class="line">htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line">date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line">link_list = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含网址的列表</span></span><br><span class="line">date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="窝嘞代码"><a href="#窝嘞代码" class="headerlink" title="窝嘞代码"></a>窝嘞代码</h4><p>最后，贴一下所有的代码～<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">date: 2019-5-9</span></span><br><span class="line"><span class="string">fucntion: get all the article of a network station</span></span><br><span class="line"><span class="string">author: Li yinian</span></span><br><span class="line"><span class="string">version: v-1.1</span></span><br><span class="line"><span class="string">python-3.7</span></span><br><span class="line"><span class="string">新增：对不完整网址的补全</span></span><br><span class="line"><span class="string">新增：抓取文章的内容</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#引入模块</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成包含所有网址的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_url_list</span><span class="params">(page_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：页码范围，要求格式为 list</span></span><br><span class="line"><span class="string">    输出：包含要抓取信息的所页面网址的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    basic_url = <span class="string">"https://www.kangantu.com/news/list_"</span> </span><br><span class="line">    url_list = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> page_list:</span><br><span class="line">        url = basic_url+str(i)+<span class="string">".html"</span></span><br><span class="line">        url_list.append(url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增函数，用于转换不完整网址</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">url_trans</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[:<span class="number">5</span>] != <span class="string">'https'</span>:</span><br><span class="line">        link = <span class="string">"https://www.kangantu.com"</span> + url</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        link = url</span><br><span class="line">    <span class="keyword">return</span> link</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取页面的文章题目，时间，以及文章链接</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_title_link_date</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：网址链接(str)</span></span><br><span class="line"><span class="string">    输出：DataFrame, columns=["title", "data", "link"]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    htmlr = requests.get(url)</span><br><span class="line">    htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">    bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">    title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">    date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">    title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#修改：url_trans()函数补全网址</span></span><br><span class="line">    <span class="comment">#link_list = list(item['href'] if for item in title_link)</span></span><br><span class="line">    link_list_0 = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)</span><br><span class="line">    link_list = list(map(url_trans, link_list_0))	<span class="comment">#得到包含网址的列表</span></span><br><span class="line"></span><br><span class="line">    date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br><span class="line"></span><br><span class="line">    title_date_link_df = pd.DataFrame(&#123;<span class="string">'title'</span>: title_list, <span class="string">'date'</span>: date_list, <span class="string">'link'</span>: link_list&#125;)     <span class="comment">#</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> title_date_link_df </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增：通过已获得的文章地址抓取文章的内容，得到包含日期的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_content</span><span class="params">(link_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：列表-内容为已获取的文章网址</span></span><br><span class="line"><span class="string">    输出：对应文章内容的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    content_list = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> link_list:</span><br><span class="line">        htmlr = requests.get(url)</span><br><span class="line">        htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">        bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">        content = bs.find(<span class="string">"div"</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">        content_list.append(content.get_text())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成excel文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">to_excel_file</span><span class="params">(file_df, file_path)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：DataFrame格式的文件，文件路径-包括名称，sheet编号</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment">#writer = pd.ExcelWriter(file_path)</span></span><br><span class="line">    file_df.to_excel(file_path, index=<span class="literal">False</span>, encoding=<span class="string">'utf-8'</span>, sheet_name=str(file_index))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">last_func</span><span class="params">(page_list, file_index)</span>:</span></span><br><span class="line">    urls = generate_url_list(page_list)</span><br><span class="line">    df = pd.DataFrame()</span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:</span><br><span class="line">        title_date_link_df = get_title_link_date(url)	</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#新增：加入文章内容</span></span><br><span class="line">        link_list = title_date_link_df[<span class="string">'link'</span>]</span><br><span class="line">        title_date_link_df[<span class="string">'content'</span>] = get_content(link_list)</span><br><span class="line"></span><br><span class="line">        df = pd.concat([df, title_date_link_df], axis=<span class="number">0</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment">#修改：修改文件夹名称</span></span><br><span class="line">    to_excel_file(df, <span class="string">"/home/may/daydayup/kangantu-more/kangantu-news-"</span>+str(file_index)+<span class="string">".xls"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#正式的代码部分，网站需要爬取的共 2317 页-rang(1,2318)</span></span><br><span class="line">list_n = list(range(<span class="number">1</span>, <span class="number">2318</span>, <span class="number">50</span>))</span><br><span class="line">list_n.append(<span class="number">2318</span>)</span><br><span class="line">page_hole_list = [list(range(list_n[i<span class="number">-1</span>], list_n[i])) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(list_n))]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(page_hole_list)):</span><br><span class="line">    file_index = i</span><br><span class="line">    page_list = page_hole_list[i]</span><br><span class="line">    last_func(page_list, file_index+<span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
+
+<h5 id="如何获得需要的部分"><a href="#如何获得需要的部分" class="headerlink" title="如何获得需要的部分"></a>如何获得需要的部分</h5><p>一开始因为信息丢失和乱码问题，止步不前，一发同学用 python-2.7 + urllib2 + re 解决了文章标题和链接地址的问题，但是我真的非常不喜欢用 re ，看到就晕那种，磨啊磨一直到解决了乱码问题，后面的也就迎刃而解了，如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">htmlr = requests.get(url)</span><br><span class="line">htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line">date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line">link_list = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含网址的列表</span></span><br><span class="line">date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="窝嘞代码"><a href="#窝嘞代码" class="headerlink" title="窝嘞代码"></a>窝嘞代码</h4><p>最后，贴一下所有的代码～</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">date: 2019-5-9</span></span><br><span class="line"><span class="string">fucntion: get all the article of a network station</span></span><br><span class="line"><span class="string">author: Li yinian</span></span><br><span class="line"><span class="string">version: v-1.1</span></span><br><span class="line"><span class="string">python-3.7</span></span><br><span class="line"><span class="string">新增：对不完整网址的补全</span></span><br><span class="line"><span class="string">新增：抓取文章的内容</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#引入模块</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成包含所有网址的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_url_list</span><span class="params">(page_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：页码范围，要求格式为 list</span></span><br><span class="line"><span class="string">    输出：包含要抓取信息的所页面网址的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    basic_url = <span class="string">"https://www.kangantu.com/news/list_"</span> </span><br><span class="line">    url_list = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> page_list:</span><br><span class="line">        url = basic_url+str(i)+<span class="string">".html"</span></span><br><span class="line">        url_list.append(url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增函数，用于转换不完整网址</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">url_trans</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[:<span class="number">5</span>] != <span class="string">'https'</span>:</span><br><span class="line">        link = <span class="string">"https://www.kangantu.com"</span> + url</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        link = url</span><br><span class="line">    <span class="keyword">return</span> link</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取页面的文章题目，时间，以及文章链接</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_title_link_date</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：网址链接(str)</span></span><br><span class="line"><span class="string">    输出：DataFrame, columns=["title", "data", "link"]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    htmlr = requests.get(url)</span><br><span class="line">    htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">    bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">    title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">    date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">    title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#修改：url_trans()函数补全网址</span></span><br><span class="line">    <span class="comment">#link_list = list(item['href'] if for item in title_link)</span></span><br><span class="line">    link_list_0 = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)</span><br><span class="line">    link_list = list(map(url_trans, link_list_0))	<span class="comment">#得到包含网址的列表</span></span><br><span class="line"></span><br><span class="line">    date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br><span class="line"></span><br><span class="line">    title_date_link_df = pd.DataFrame(&#123;<span class="string">'title'</span>: title_list, <span class="string">'date'</span>: date_list, <span class="string">'link'</span>: link_list&#125;)     <span class="comment">#</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> title_date_link_df </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增：通过已获得的文章地址抓取文章的内容，得到包含日期的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_content</span><span class="params">(link_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：列表-内容为已获取的文章网址</span></span><br><span class="line"><span class="string">    输出：对应文章内容的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    content_list = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> link_list:</span><br><span class="line">        htmlr = requests.get(url)</span><br><span class="line">        htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">        bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">        content = bs.find(<span class="string">"div"</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">        content_list.append(content.get_text())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成excel文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">to_excel_file</span><span class="params">(file_df, file_path)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：DataFrame格式的文件，文件路径-包括名称，sheet编号</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment">#writer = pd.ExcelWriter(file_path)</span></span><br><span class="line">    file_df.to_excel(file_path, index=<span class="literal">False</span>, encoding=<span class="string">'utf-8'</span>, sheet_name=str(file_index))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">last_func</span><span class="params">(page_list, file_index)</span>:</span></span><br><span class="line">    urls = generate_url_list(page_list)</span><br><span class="line">    df = pd.DataFrame()</span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:</span><br><span class="line">        title_date_link_df = get_title_link_date(url)	</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#新增：加入文章内容</span></span><br><span class="line">        link_list = title_date_link_df[<span class="string">'link'</span>]</span><br><span class="line">        title_date_link_df[<span class="string">'content'</span>] = get_content(link_list)</span><br><span class="line"></span><br><span class="line">        df = pd.concat([df, title_date_link_df], axis=<span class="number">0</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment">#修改：修改文件夹名称</span></span><br><span class="line">    to_excel_file(df, <span class="string">"/home/may/daydayup/kangantu-more/kangantu-news-"</span>+str(file_index)+<span class="string">".xls"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#正式的代码部分，网站需要爬取的共 2317 页-rang(1,2318)</span></span><br><span class="line">list_n = list(range(<span class="number">1</span>, <span class="number">2318</span>, <span class="number">50</span>))</span><br><span class="line">list_n.append(<span class="number">2318</span>)</span><br><span class="line">page_hole_list = [list(range(list_n[i<span class="number">-1</span>], list_n[i])) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(list_n))]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(page_hole_list)):</span><br><span class="line">    file_index = i</span><br><span class="line">    page_list = page_hole_list[i]</span><br><span class="line">    last_func(page_list, file_index+<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
+
+
 
       
     </div>
@@ -516,7 +530,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网络爬虫/" rel="tag"># 网络爬虫</a>
+            <a href="/tags/%E7%BD%91%E7%BB%9C%E7%88%AC%E8%99%AB/" rel="tag"># 网络爬虫</a>
           
         </div>
       
@@ -539,7 +553,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/16/SQL入门学习笔记/" rel="prev" title="SQL入门学习笔记">
+              <a href="/2019/05/16/SQL%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="SQL入门学习笔记">
                 SQL入门学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -599,7 +613,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/yinian818.jpeg" alt="李一念">
+              <img class="site-author-image" itemprop="image"
+                src="/images/yinian818.jpeg"
+                alt="李一念"/>
             
               <p class="site-author-name" itemprop="name">李一念</p>
               <div class="site-description motion-element" itemprop="description">好好学习，天天向上</div>
@@ -610,7 +626,7 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives/%20%7C%7C%20archive">
                 
                     <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
@@ -624,7 +640,7 @@
                 <div class="site-state-item site-state-categories">
                   
                     
-                      <a href="/categories/">
+                      <a href="/categories/%20%7C%7C%20th">
                     
                   
                     
@@ -653,7 +669,7 @@
                 <div class="site-state-item site-state-tags">
                   
                     
-                      <a href="/tags/">
+                      <a href="/tags/%20%7C%7C%20tags">
                     
                   
                     
@@ -761,7 +777,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1</div>
 
 
 
@@ -769,7 +785,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
 
 
 
@@ -1207,7 +1223,24 @@
         onPopupClose();
       }
     });
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 

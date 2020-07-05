@@ -15,11 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+<head>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -44,9 +44,9 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.0">
+<link rel="stylesheet" href="/css/main.css?v=7.1.0"/>
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.0">
@@ -96,18 +96,19 @@
 
 
 
-  <meta name="description" content="这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。 k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier) KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’">
-<meta name="keywords" content="sklearn,监督学习">
+  <meta name="description" content="这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。 k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier) KNeighborsClassifier(n_neighbors&#x3D;5, weights&#x3D;’uniform’, algorithm&#x3D;’">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sklearn入门-监督学习">
-<meta property="og:url" content="http://yoursite.com/2019/04/22/sklearn入门-监督学习/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="桃花源">
-<meta property="og:description" content="这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。 k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier) KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-05-02T12:01:15.869Z">
+<meta property="og:description" content="这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。 k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier) KNeighborsClassifier(n_neighbors&#x3D;5, weights&#x3D;’uniform’, algorithm&#x3D;’">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-04-22T08:43:34.000Z">
+<meta property="article:modified_time" content="2020-05-02T12:01:15.000Z">
+<meta property="article:author" content="李一念">
+<meta property="article:tag" content="sklearn">
+<meta property="article:tag" content="监督学习">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sklearn入门-监督学习">
-<meta name="twitter:description" content="这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。 k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier) KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’">
 
 
 
@@ -115,7 +116,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/04/22/sklearn入门-监督学习/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/"/>
 
 
 
@@ -162,9 +163,9 @@
   .use-motion .logo-line-before i { left: initial; }
   .use-motion .logo-line-after i { right: initial; }
   </style>
-</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+</noscript>
 
-</head>
+<meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -175,7 +176,7 @@
 
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband">
-        <a href="https://github.com/yinian818" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <a href="https://github.com/yinian818" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     </div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -227,7 +228,7 @@
 
     
 
-    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+    <a href="/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-home&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;首页</a>
 
   </li>
         
@@ -244,7 +245,7 @@
 
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+    <a href="/tags/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-tags&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;标签</a>
 
   </li>
         
@@ -261,7 +262,7 @@
 
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+    <a href="/categories/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-th&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;分类</a>
 
   </li>
         
@@ -278,7 +279,7 @@
 
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+    <a href="/archives/" rel="section">&lt;i class&#x3D;&quot;menu-item-icon fa fa-fw fa-archive&quot;&gt;&lt;&#x2F;i&gt; &lt;br&#x2F;&gt;归档</a>
 
   </li>
 
@@ -289,7 +290,7 @@
             <a href="javascript:;" class="popup-trigger">
           
             
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>搜索</a>
         </li>
       
     </ul>
@@ -309,7 +310,9 @@
       <i class="fa fa-times-circle"></i>
     </span>
     <div class="local-search-input-wrapper">
-      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
   <div id="local-search-result"></div>
@@ -359,16 +362,16 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/sklearn入门-监督学习/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="好好学习，天天向上">
-      <meta itemprop="image" content="/images/yinian818.jpeg">
+      <meta itemprop="name" content="李一念"/>
+      <meta itemprop="description" content="好好学习，天天向上"/>
+      <meta itemprop="image" content="/images/yinian818.jpeg"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="桃花源">
+      <meta itemprop="name" content="桃花源"/>
     </span>
 
     
@@ -476,6 +479,7 @@
 <p>KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’auto’, leaf_size=30, p=2, metric=’minkowski’, metric_params=None, n_jobs=None, **kwargs)<br><code>n_neighbors=5</code> 分类数目，这个参数一般都要自己设置啊啊啊。<br><code>weights=&#39;uniform&#39;</code> 权重，默认为’uniform’类别中的所有点权重相同。支持’distance’，此时权重时距离的倒数，离分类点越近，权重越大；也可传入一个自己定义的函数名，要求接受一个距离数组，并返回一个包含权重的相同形状的数组。<br><code>algorithm=&#39;auto&#39;</code> 用于计算最近分类点的算法，默认’auto’尝试根据传递给fit方法的值来确定最合适的算法。其他：’ball_tree’将使用BallTree，’kd_tree’将使用KDTree，’brute’将使用暴力搜索。<br><code>leaf_size=30</code> 传递给BallTree或KDTree的叶子大小。 这可能会影响构造和查询的速度，以及存储树所需的内存。 最佳值取决于问题的性质。<br><code>p=2</code> 整数。Minkowski距离度量的参数。 当p = 1：曼哈顿距离(L1)；p = 2：欧几里得距离(L2)。对于任意p，使用minkowski_distance(Lp)。<br><code>metric=&#39;minkowski</code> 距离度量函数。<br><code>metric_params=None</code> 度量函数的其他关键字参数<br><code>n_job=None</code> 并行作业数</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#导入kNN</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">以下四步即为sklearn用于</span></span><br><span class="line"><span class="string">模型训练，数据预测，模型评估</span></span><br><span class="line"><span class="string">的一般基本使用方法</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">kNN_model = DescisionTreeClassifier(n_neighbors=<span class="number">5</span>)    </span><br><span class="line"><span class="comment">#训练模型</span></span><br><span class="line">kNN_model.fit(X_train, y_train)</span><br><span class="line"><span class="comment">#使用训练好的模型进行预测</span></span><br><span class="line">y_predict = kNN_model.predic(X_test)</span><br><span class="line"><span class="comment">#使用测试集对模型进行评分</span></span><br><span class="line">kNN_score = kNN_model.score(y_test, y_predict)</span><br></pre></td></tr></table></figure>
+
 <h4 id="决策树-sklearn-tree"><a href="#决策树-sklearn-tree" class="headerlink" title="决策树(sklearn.tree)"></a>决策树(sklearn.tree)</h4><ol>
 <li><p>分类树(sklearn.tree.DecisionTreeClassifier)</p>
 <blockquote>
@@ -489,6 +493,7 @@
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#分别导入分类树和回归树</span></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeRegressor</span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">DTC_model = DescisionTreeClassifier(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">DTR_model = DescisionTreeRegressor(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
 <h4 id="朴素贝叶斯-sklearn-naive-bayes"><a href="#朴素贝叶斯-sklearn-naive-bayes" class="headerlink" title="朴素贝叶斯(sklearn.naive_bayes)"></a>朴素贝叶斯(sklearn.naive_bayes)</h4><p>高斯模型：GaussianNB(priors=None, var_smoothing=1e-09)，适用于连续值。<br>伯努利模型：BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None)，适用于离散值。<br>多项式模型：MultinomialNB(alpha=1.0, fit_prior=True, class_prior=None)，适用于离散值。</p>
 <blockquote>
 <p><code>priors=None</code> 类的先验概率<br><code>var_smoothing=1e-09</code> 为使计算稳定添加的特征最大方差的部分(？)<br><code>alpha=1.0</code> 平滑参数<br><code>binarize=0.0</code> 样本特征的二值化（映射到布尔值）的阈值。 如果为None，则假定输入已包含二进制向量。<br><code>fit_prior=True</code> 是否学习先验概率<br><code>class_prior=None</code> 类的先验概率<br>(目前这几种模型，不调参，对这些参数的理解还不够清晰透彻)</p>
@@ -502,6 +507,7 @@
 <p>LogisticRegression(penalty=’l2’, dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver=’warn’, max_iter=100, multi_class=’warn’, verbose=0, warm_start=False, n_jobs=None)<br><code>penaity=&#39;l2&#39;</code> 用于指定惩罚项(正则项)。’l2’(默认)或者’l1’，L2很好用，一般别动它<br><code>dual=False</code> 对偶或者原始方法。Dual只适用于正则化相为l2 liblinear的情况，通常样本数大于特征数的情况下，默认为False。<br><code>tol=0.0001</code> 停止训练的误差值大小。<br><code>C=1</code> C为正则化系数λ的倒数，通常默认为1。C越大，正则化系数越小，一般设置它小于1<br><code>fit_intercept=True</code> 是否存在截距，默认存在<br><code>intercept_scaling=1</code> 仅在正则化项为”liblinear”，且fit_intercept设置为True时有用。<br><code>class_weight=None</code> 类的权重。dict / ‘balanced’<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>solver=&#39;warn&#39;</code> str, {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}.默认：’liblinear’<br>其中，’liblinear’: 适用于小数据集，仅可用于二元分类。&lt;’newton-cg’: ‘lbfgs’: ‘liblinear’: ‘sag’: ‘saga’:&gt;<br><code>max_iter=&#39;100&#39;</code> 求解器收敛的最大迭代次数。仅适用于newton-cg，sag和lbfgs求解器。<br><code>multi_class=&#39;warn&#39;</code> str，{‘ovr’，’multinomial’，’auto’}，默认值：’ovr’。<br><code>verbose=0</code> 对于liblinear和lbfgs求解器，将详细设置为任何正数以表示详细程度。<br><code>warm_start=False</code> 设置为True时，重用上一次调用的解决方案以适合初始化，否则，只需擦除以前的解决方案。对于liblinear解算器无效。<br><code>n_jobs=None</code> 并行作业数。</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line"><span class="comment">#定义模型及常用参数</span></span><br><span class="line">RL_model = LogisticRegression(C=<span class="number">1</span>, randomstate=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+
 <h4 id="支持向量机-SVM-sklearn-svm"><a href="#支持向量机-SVM-sklearn-svm" class="headerlink" title="支持向量机(SVM)(sklearn.svm)"></a>支持向量机(SVM)(sklearn.svm)</h4><p>sklearn中的SVM模块既可用于分类问题(SVC)，也可以用于回归问题(SVR)。</p>
 <ol>
 <li><p>用于分类问题(sklearn.svm.SVC)</p>
@@ -516,6 +522,7 @@
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC    <span class="comment">#分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR    <span class="comment">#回归</span></span><br><span class="line"></span><br><span class="line">svc_model = SVC(C=<span class="number">1.0</span>, kernel=<span class="string">'rbf'</span>, degree=<span class="number">3</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">svr_model = SVR(kernal=<span class="string">'rbf'</span>, C=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+
 <p>(完)</p>
 
       
@@ -542,7 +549,7 @@
           
             <a href="/tags/sklearn/" rel="tag"># sklearn</a>
           
-            <a href="/tags/监督学习/" rel="tag"># 监督学习</a>
+            <a href="/tags/%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="tag"># 监督学习</a>
           
         </div>
       
@@ -555,7 +562,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/20/sklearn入门-数据预处理/" rel="next" title="sklearn入门-数据预处理">
+              <a href="/2019/04/20/sklearn%E5%85%A5%E9%97%A8-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/" rel="next" title="sklearn入门-数据预处理">
                 <i class="fa fa-chevron-left"></i> sklearn入门-数据预处理
               </a>
             
@@ -565,7 +572,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/22/sklearn入门-非监督学习/" rel="prev" title="sklearn入门-非监督学习">
+              <a href="/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" rel="prev" title="sklearn入门-非监督学习">
                 sklearn入门-非监督学习 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -625,7 +632,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/yinian818.jpeg" alt="李一念">
+              <img class="site-author-image" itemprop="image"
+                src="/images/yinian818.jpeg"
+                alt="李一念"/>
             
               <p class="site-author-name" itemprop="name">李一念</p>
               <div class="site-description motion-element" itemprop="description">好好学习，天天向上</div>
@@ -636,7 +645,7 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives/%20%7C%7C%20archive">
                 
                     <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
@@ -650,7 +659,7 @@
                 <div class="site-state-item site-state-categories">
                   
                     
-                      <a href="/categories/">
+                      <a href="/categories/%20%7C%7C%20th">
                     
                   
                     
@@ -679,7 +688,7 @@
                 <div class="site-state-item site-state-tags">
                   
                     
-                      <a href="/tags/">
+                      <a href="/tags/%20%7C%7C%20tags">
                     
                   
                     
@@ -787,7 +796,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.2.1</div>
 
 
 
@@ -795,7 +804,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.1.0</div>
 
 
 
@@ -1233,7 +1242,24 @@
         onPopupClose();
       }
     });
-  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+      all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+</script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+</script>
+<!-- End: Injected MathJax -->
+<!-- hexo-inject:end -->
 
 
 
