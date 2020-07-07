@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hadoop-buiding</title>
+    <url>/2019/12/03/Hadoop-buiding/</url>
+    <content><![CDATA[<p>– 环境：三台腾讯云服务器–<br>配置：<br>sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default </p>
+<p>云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改</p>
+<p>core-xtml.sh 配置备份到 hdsf。。</p>
+<p>把自己的公钥加到自己的 auto。。。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>GTD在滴答清单帮助下的实现</title>
     <url>/2020/05/02/GTD-TickTick/</url>
     <content><![CDATA[<h4 id="GTD简介"><a href="#GTD简介" class="headerlink" title="GTD简介"></a>GTD简介</h4><p>GTD 是 getting things done 的英文缩写，是 戴维·艾伦 在《搞定：无压工作的艺术》中的主要方法。其主要目的是帮助人们减轻工作压力，让事情变得井井有条。<br>GTD主要核心内容是将所有的事务从大脑赶出去，以便我们在做一件事时可以专注的沉浸其中。</p>
@@ -24,26 +33,6 @@
       </categories>
       <tags>
         <tag>效率</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hadoop-buiding</title>
-    <url>/2019/12/03/Hadoop-buiding/</url>
-    <content><![CDATA[<p>– 环境：三台腾讯云服务器–<br>配置：<br>sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default </p>
-<p>云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改</p>
-<p>core-xtml.sh 配置备份到 hdsf。。</p>
-<p>把自己的公钥加到自己的 auto。。。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>Python虚拟环境</title>
-    <url>/2019/11/19/Python-VirtualEnv/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>配置</tag>
       </tags>
   </entry>
   <entry>
@@ -283,6 +272,17 @@
       </tags>
   </entry>
   <entry>
+    <title>Python虚拟环境</title>
+    <url>/2019/11/19/Python-VirtualEnv/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>我的记账日常(MoneyWiz)</title>
     <url>/2020/05/02/consuption-recording/</url>
     <content><![CDATA[<p>2020年1月底，新冠肺炎肆虐全国，我们开始了史无前例的全国性居家隔离，往常的春节假后复工因此而收到了严重影响，餐饮行业的龙头企业如海底捞西北等也遭受巨创。停薪留职、薪资打折、公司倒闭，为了保命所有企业都采取了一定的措施，而对于我等小员工来说，最直接的影响就是“收入降低”。<br>残酷的事实让我突然意识到了在这个飞速变化、意外频生的时代，管理好个人财产是一件多么重要的事。尽管我本就从不是一个花钱大手大脚的人，但很多时候，日常的节省反倒成为了我可以买不必要物品的借口。所以我想，开始记账，对自己花钱的去向有一个清晰地了解，可以在此基础上更好的节流，足够的积蓄可以在面对危机时让我多一一些选择的余地。</p>
@@ -514,37 +514,6 @@
       </tags>
   </entry>
   <entry>
-    <title>sklearn入门-非监督学习</title>
-    <url>/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>对不带标签的数据进行学习。</p>
-<h4 id="k均值算法-k-Means-sklearn-cluster-KMeans"><a href="#k均值算法-k-Means-sklearn-cluster-KMeans" class="headerlink" title="k均值算法(k-Means)(sklearn.cluster.KMeans)"></a>k均值算法(k-Means)(sklearn.cluster.KMeans)</h4><p>最基本的聚类算法。</p>
-<blockquote>
-<p>KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, copy_x=True, n_jobs=None, algorithm=’auto’)<br><code>n_clusters=8</code> 聚类数。<br><code>init=&#39;k-means++&#39;</code> 初始化聚类中心方法。/ ‘auto’ / 数组shape (n_clusters, n_features)<br><code>n_init=1</code> 算法选择不同聚类中心运行的次数，保留最好的结果。<br><code>max_iter=300</code> 单次运行的最大迭代数目。<br><code>tol=0.0001</code> 停止迭代的相对误差界限。<br><code>precompute_distances=&#39;auto&#39;</code> {‘auto’, True, False}是否预先计算距离，选择’auto’时，当n_samples * n_clusters&gt;1,000,000 则不预先计算。<br><code>verbose=0</code> int<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>copy_x=True</code> 是否拷贝训练数据。<br><code>n_jobs=None</code> 并行作业数。<br><code>algorithm=&#39;auto&#39;</code> “auto”, “full” or “elkan”. 指定要使用的算法。</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line">km_model = KMeans(n_clusters=<span class="number">8</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">km_model.fit_transform()</span><br><span class="line">centers = km_model.cluster_centers_    <span class="comment">#聚类中心</span></span><br><span class="line">y_pre = km_model.labels_    <span class="comment">#每个样本点的标签</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="自底向上层次聚类-sklearn-cluster-AgglomerativeClustering"><a href="#自底向上层次聚类-sklearn-cluster-AgglomerativeClustering" class="headerlink" title="自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)"></a>自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)</h4><p>层次聚类可分为两类：自顶向下, diverse；自底向上, agglomerative。</p>
-<blockquote>
-<p>AgglomerativeClustering(n_clusters=2, affinity=’euclidean’, memory=None, connectivity=None, compute_full_tree=’auto’, linkage=’ward’, pooling_func=’deprecated’)<br><code>n_clusters=2</code> 最终的聚类数。<br><code>affinity=&#39;euclidean&#39;</code> {‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’, ‘cosine’, ‘precomputed’}. 用于计算距离，当linkage=’ward’，只支持’euclidean’。<br><code>memory=None</code> 默认不缓存计算树的输出，以字符指定缓存路径。<br><code>connectivity=None</code> 一个数组或者可调用对象或者None，用于指定连接矩阵<br><code>compute_full_tree=&#39;auto&#39;</code> 通常当训练了n_clusters后，训练过程就会停止，但是如果compute_full_tree=True，则会继续训练从而生成一颗完整的树。<br><code>linkage=&#39;ward&#39;</code> 一个字符串，用于指定链接算法。’ward’：单链接； ‘complete’：全链接； ‘average’：均连接。<br><code>pooling_func=&#39;deprecated&#39;</code> 一个可调用对象，它的输入是一组特征的值，输出是一个数</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> AgglomerativeClustering</span><br><span class="line">agg_cluster = AAgglomerativeClustering(n_clusters=<span class="number">2</span>, linkage=<span class="string">'ward'</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>Machine Learning</category>
-      </categories>
-      <tags>
-        <tag>sklearn</tag>
-        <tag>非监督学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>sklearn入门-监督学习</title>
     <url>/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<p>这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。<br>在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。</p>
@@ -604,6 +573,37 @@
       <tags>
         <tag>sklearn</tag>
         <tag>监督学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>sklearn入门-非监督学习</title>
+    <url>/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E9%9D%9E%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>对不带标签的数据进行学习。</p>
+<h4 id="k均值算法-k-Means-sklearn-cluster-KMeans"><a href="#k均值算法-k-Means-sklearn-cluster-KMeans" class="headerlink" title="k均值算法(k-Means)(sklearn.cluster.KMeans)"></a>k均值算法(k-Means)(sklearn.cluster.KMeans)</h4><p>最基本的聚类算法。</p>
+<blockquote>
+<p>KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, copy_x=True, n_jobs=None, algorithm=’auto’)<br><code>n_clusters=8</code> 聚类数。<br><code>init=&#39;k-means++&#39;</code> 初始化聚类中心方法。/ ‘auto’ / 数组shape (n_clusters, n_features)<br><code>n_init=1</code> 算法选择不同聚类中心运行的次数，保留最好的结果。<br><code>max_iter=300</code> 单次运行的最大迭代数目。<br><code>tol=0.0001</code> 停止迭代的相对误差界限。<br><code>precompute_distances=&#39;auto&#39;</code> {‘auto’, True, False}是否预先计算距离，选择’auto’时，当n_samples * n_clusters&gt;1,000,000 则不预先计算。<br><code>verbose=0</code> int<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>copy_x=True</code> 是否拷贝训练数据。<br><code>n_jobs=None</code> 并行作业数。<br><code>algorithm=&#39;auto&#39;</code> “auto”, “full” or “elkan”. 指定要使用的算法。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line">km_model = KMeans(n_clusters=<span class="number">8</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">km_model.fit_transform()</span><br><span class="line">centers = km_model.cluster_centers_    <span class="comment">#聚类中心</span></span><br><span class="line">y_pre = km_model.labels_    <span class="comment">#每个样本点的标签</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="自底向上层次聚类-sklearn-cluster-AgglomerativeClustering"><a href="#自底向上层次聚类-sklearn-cluster-AgglomerativeClustering" class="headerlink" title="自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)"></a>自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)</h4><p>层次聚类可分为两类：自顶向下, diverse；自底向上, agglomerative。</p>
+<blockquote>
+<p>AgglomerativeClustering(n_clusters=2, affinity=’euclidean’, memory=None, connectivity=None, compute_full_tree=’auto’, linkage=’ward’, pooling_func=’deprecated’)<br><code>n_clusters=2</code> 最终的聚类数。<br><code>affinity=&#39;euclidean&#39;</code> {‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’, ‘cosine’, ‘precomputed’}. 用于计算距离，当linkage=’ward’，只支持’euclidean’。<br><code>memory=None</code> 默认不缓存计算树的输出，以字符指定缓存路径。<br><code>connectivity=None</code> 一个数组或者可调用对象或者None，用于指定连接矩阵<br><code>compute_full_tree=&#39;auto&#39;</code> 通常当训练了n_clusters后，训练过程就会停止，但是如果compute_full_tree=True，则会继续训练从而生成一颗完整的树。<br><code>linkage=&#39;ward&#39;</code> 一个字符串，用于指定链接算法。’ward’：单链接； ‘complete’：全链接； ‘average’：均连接。<br><code>pooling_func=&#39;deprecated&#39;</code> 一个可调用对象，它的输入是一组特征的值，输出是一个数</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> AgglomerativeClustering</span><br><span class="line">agg_cluster = AAgglomerativeClustering(n_clusters=<span class="number">2</span>, linkage=<span class="string">'ward'</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>sklearn</tag>
+        <tag>非监督学习</tag>
       </tags>
   </entry>
   <entry>
