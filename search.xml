@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hadoop-buiding</title>
-    <url>/2019/12/03/Hadoop-buiding/</url>
-    <content><![CDATA[<p>– 环境：三台腾讯云服务器–<br>配置：<br>sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default </p>
-<p>云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改</p>
-<p>core-xtml.sh 配置备份到 hdsf。。</p>
-<p>把自己的公钥加到自己的 auto。。。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>GTD在滴答清单帮助下的实现</title>
     <url>/2020/05/02/GTD-TickTick/</url>
     <content><![CDATA[<h4 id="GTD简介"><a href="#GTD简介" class="headerlink" title="GTD简介"></a>GTD简介</h4><p>GTD 是 getting things done 的英文缩写，是 戴维·艾伦 在《搞定：无压工作的艺术》中的主要方法。其主要目的是帮助人们减轻工作压力，让事情变得井井有条。<br>GTD主要核心内容是将所有的事务从大脑赶出去，以便我们在做一件事时可以专注的沉浸其中。</p>
@@ -36,6 +27,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Python虚拟环境</title>
+    <url>/2019/11/19/Python-VirtualEnv/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hadoop-buiding</title>
+    <url>/2019/12/03/Hadoop-buiding/</url>
+    <content><![CDATA[<p>— 环境：三台腾讯云服务器—<br>配置：<br>sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default </p>
+<p>云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改</p>
+<p>core-xtml.sh 配置备份到 hdsf。。</p>
+<p>把自己的公钥加到自己的 auto。。。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Python-re</title>
     <url>/2019/11/24/Python-re/</url>
     <content><![CDATA[<p>Python 语言使用 re 模块实现正则匹配的所有功能。</p>
@@ -46,6 +57,112 @@
       </categories>
       <tags>
         <tag>正则匹配</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>SQL入门学习笔记</title>
+    <url>/2019/05/16/SQL%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>数据库</category>
+      </categories>
+      <tags>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的记账日常(MoneyWiz)</title>
+    <url>/2020/05/02/consuption-recording/</url>
+    <content><![CDATA[<p>2020年1月底，新冠肺炎肆虐全国，我们开始了史无前例的全国性居家隔离，往常的春节假后复工因此而收到了严重影响，餐饮行业的龙头企业如海底捞西北等也遭受巨创。停薪留职、薪资打折、公司倒闭，为了保命所有企业都采取了一定的措施，而对于我等小员工来说，最直接的影响就是“收入降低”。<br>残酷的事实让我突然意识到了在这个飞速变化、意外频生的时代，管理好个人财产是一件多么重要的事。尽管我本就从不是一个花钱大手大脚的人，但很多时候，日常的节省反倒成为了我可以买不必要物品的借口。所以我想，开始记账，对自己花钱的去向有一个清晰地了解，可以在此基础上更好的节流，足够的积蓄可以在面对危机时让我多一一些选择的余地。</p>
+<h4 id="为什么要记账？"><a href="#为什么要记账？" class="headerlink" title="为什么要记账？"></a>为什么要记账？</h4><ol>
+<li><strong>明确当前的财务状况</strong>，做到对消费心中有数。<br>比如现在使用花呗付账，同时个人的钱有放在好几个不同的地方，支付宝、余额宝、微信钱包等等，平常很难记清楚每一个账户有多少钱，消费时没有扣款消息甚至会觉得自己根本没花多少钱，然后就一直花……<br>通过记账明确当前的个人资产，在遇到一个想买的东西或一笔大额支出时，也可以迅速判断决策是不是可以负担，花这一笔钱到底值不值。<br><em>看看那一目了然的资产净值负债，真的会更想好好学习了呢……</em></li>
+<li>数据分析。<br>通过对记录数据的分析，可以清楚每月/每年的消费情况，每月的结余，净值的变化情况等等。</li>
+<li>优化支出预算。<br>结合当前情况和消费状况，对预算开支进行以及之后的支出走向进行调整，减少不必要支出，在<strong>进一步节流</strong>的同时，也可以<strong>提高生活的幸福感</strong>。</li>
+</ol>
+<h4 id="记什么？"><a href="#记什么？" class="headerlink" title="记什么？"></a>记什么？</h4><p><strong>每一笔支出都要记</strong>！<br>在记账时，每一笔支出的收入都不能漏，如此才能真是反映消费情况，也能保证所记录的数据和实际数据是匹配的。</p>
+<h4 id="怎么记？"><a href="#怎么记？" class="headerlink" title="怎么记？"></a>怎么记？</h4><p><strong>记支出类别</strong><br>每个月的消费少说也有近百笔，对于一些零碎的消费，可能之后并不会在细看，重点是这些账目所反映的消费状况，也就是对每一笔消费的记录，要包含可以用于分析的内容，通常为支出类别。<br><strong>当天的同类支出合并记</strong><br>每天出上班，来回都是地铁，可以合并记为一项-通勤；去菜场买菜，买了土豆、番茄、黄瓜，合并记为一项-蔬菜……<br><strong>每天晚核对当天消费</strong><br>现在多用手机支付，因此可以通过app查到每一笔消费情况，日常消费也就可以在一天结束后再通过电子账单归纳核对。<br>随用随记也是很好的，每日核对是通过将核对工作分散至每天的3-5分钟来减轻记账的压力，账户数目对不上或是月底对账太繁琐都会打击记账的积极性<br><strong>月底核对当月消费，分析支出情况</strong><br>主要查看各类别支出所占比例，预算是否有超支，超支原因是什么？下一个月可以在哪些方面采取措施，进行改进？<br><strong>年末分析当年开支情况</strong><br>对自己这一年的消费情况进行一个大总结，分析每月的数据走势，可以看出自己在这一年内的财务管理上是否有好的进展，根据这一件的消费情况，对下一年的预算和计划进行调整。</p>
+<h4 id="怎么分类？"><a href="#怎么分类？" class="headerlink" title="怎么分类？"></a>怎么分类？</h4><p>这个分类问题反倒是最困扰的部分，想要补充不漏又合理分类真的很难，最后我灵机一动，参照了国家的<a href="http://www.stats.gov.cn/statsinfo/auto2073/201310/P020131030594724947923.pdf" target="_blank" rel="noopener">居民消费支出分类</a>，在此基础上根据个人实际情况调整后，最终的分类如下：</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">一级分类</th>
+<th style="text-align:left">二级分类</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">餐饮</td>
+<td style="text-align:left">粮油副食、工作餐、鲜果牛奶、外卖聚餐、零食小吃、茶饮甜点、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">交通</td>
+<td style="text-align:left">公交地铁、出租滴滴、火车动车、飞机高铁、私家车、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">服饰</td>
+<td style="text-align:left">衣服、鞋子、配饰、箱包、珠宝、服务、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">家居生活</td>
+<td style="text-align:left">家具、加点、纺织品、日用杂货、个人护理、装饰、家庭服务、工具、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">文化教育</td>
+<td style="text-align:left">学历提升、技能培训、兴趣培养、书籍、文具、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">数码电子</td>
+<td style="text-align:left">电子设备、电子配件、订阅/会员、付费App、电信服务、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">休闲娱乐</td>
+<td style="text-align:left">朋友聚会、游戏玩乐、展馆参观、话剧演出、游戏充值、跟团旅游、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">运动健康</td>
+<td style="text-align:left">运动器械、滋补保养</td>
+</tr>
+<tr>
+<td style="text-align:left">住宿</td>
+<td style="text-align:left">租金、水电燃气、保养维修、旅店、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">医保</td>
+<td style="text-align:left">医院、药店、眼部护理、牙医、保险、保健器具、其他</td>
+</tr>
+<tr>
+<td style="text-align:left">人情往来</td>
+<td style="text-align:left">/</td>
+</tr>
+<tr>
+<td style="text-align:left">贷款</td>
+<td style="text-align:left">/</td>
+</tr>
+<tr>
+<td style="text-align:left">税款</td>
+<td style="text-align:left">/</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h4 id="记账工具—-MoneyWiz"><a href="#记账工具—-MoneyWiz" class="headerlink" title="记账工具— MoneyWiz"></a>记账工具— MoneyWiz</h4><p>借助App记账，省时省力，经过多番比较，最终选择了好用也看的顺眼的 MoneyWiz3 。<br>MoneyWiz 主要有 4 大功能模块，包含 账户、预算、预定、报表。账户功能使得为自己的每一个资金存放账户在app中间一个账户，如此可以清晰准确的反映真实财务状况；预算功能用于规划一个周期内在某一类或几类的预计花费；预定功能可以提前记录未来的某一比支出，在起到提醒作用的同时也可以减轻记账的负担；报表功能用于分析消费数据。<br>除分类以外，还可以使用 标签、交易对象 来筛选分析。<br>附 <a href="https://support.wiz.money/hc/en-us/categories/360001994314-MoneyWiz-3-Mobile" target="_blank" rel="noopener">MoneyWiz使用手册</a></p>
+<h5 id="账户"><a href="#账户" class="headerlink" title="账户"></a>账户</h5><p>活期账户：支付宝余额、余额宝、微信钱包、各类银行卡<br>信用卡账户：蚂蚁花呗、京东白条、各类信用卡<br>储蓄账户：可设置项和活期账户差别不大<br>贷款账户：车贷、房贷、各类贷款<br>现金账户：记录当前的现金金额<br>投资账户：可方便记录基金股票等，有买入卖出功能</p>
+<blockquote>
+<p>使用技巧<br>如果同一银行有多张卡片，可在添加尾号用以区分；<br>信用卡账户末尾可添加还款日期作为提醒；<br>不常用的账户用一个账户组收纳；<br><strong>不删除已有账户</strong>，删除已有账户的同时会删除相关交易；<br>个人借贷可以对每个用户使用一个账户表示，命名为“借入-张三”或“借出-李四”，和朋友之间的借账欠账可以迅速掌握，正确表示资产负债，也不会造成个人净值的虚高。</p>
+</blockquote>
+<h5 id="预算"><a href="#预算" class="headerlink" title="预算"></a>预算</h5><p>对常用消费设置预算，在能力允许的范围内满足自己，也能做到对这些常用消费情况心中有数，合理的规划支出。</p>
+<h5 id="预定"><a href="#预定" class="headerlink" title="预定"></a>预定</h5><p>把为来已经确定或者可能存在的支出在该模块记录。<br>对于每月固定支出，如电话费、各类会员费、服务订阅费，设置每月自动付款，无需重复记录，可以大大减轻记账压力；<br>对于可能存在的支出，比如学费、朋友还钱等，在此处提前记录可以起到提醒作用，也能预测未来的净值及支出走势。</p>
+<h5 id="报表"><a href="#报表" class="headerlink" title="报表"></a>报表</h5><p>通过图标对消费数据进行分析。可根据 账户、预算、分类、交易对象、标签 进行分析，也可自定义分析。</p>
+<h5 id="交易对象"><a href="#交易对象" class="headerlink" title="交易对象"></a>交易对象</h5><p>可以用来表示钱通过什么渠道花出去，比如 淘宝、京东、美团、一般超市 等等，可以反映消费习惯。</p>
+<h5 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h5><p>使用标签来临时标记一个项目的支出，比如一次出国游；<br>使用标签来标记和朋友之间的人情往来。</p>
+<p>（未完，待补充）</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>记账</tag>
       </tags>
   </entry>
   <entry>
@@ -60,148 +177,165 @@
 </ul>
 <h4 id="常用元字符"><a href="#常用元字符" class="headerlink" title="常用元字符"></a>常用元字符</h4><p>注：所有用到的特殊符号如 $ 等，在用于原义匹配是需要使用 <code>/</code> 转义。</p>
 <h5 id="打印字符"><a href="#打印字符" class="headerlink" title="打印字符"></a>打印字符</h5><p>打印字符可以用于匹配一个显示字符。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>等价表达</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">\w</td>
+<tbody>
+<tr>
+<td style="text-align:center">\w</td>
 <td>匹配一个<strong>数字、字母或下划线</strong></td>
 <td>[A-Za-z0-9_]</td>
 </tr>
 <tr>
-<td align="center">\W</td>
+<td style="text-align:center">\W</td>
 <td>匹配一个<strong>非字母数字下划线</strong>的字符</td>
-<td>[^A-Za-z0-9_]</td>
+<td><sup><a href="#fn_A-Za-z0-9\_" id="reffn_A-Za-z0-9\_">A-Za-z0-9\_</a></sup></td>
 </tr>
 <tr>
-<td align="center">\d</td>
+<td style="text-align:center">\d</td>
 <td>匹配一个<strong>数字</strong></td>
 <td>[0-9]</td>
 </tr>
 <tr>
-<td align="center">\D</td>
+<td style="text-align:center">\D</td>
 <td>匹配一个<strong>非数字</strong>的字符</td>
-<td>[^0-9]</td>
+<td><sup><a href="#fn_0-9" id="reffn_0-9">0-9</a></sup></td>
 </tr>
 <tr>
-<td align="center">.</td>
+<td style="text-align:center">.</td>
 <td>匹配一个<strong>任意字符</strong></td>
 <td>略</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h5 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h5><p>定位符用于确定匹配项的位置。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>例子</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">^</td>
+<tbody>
+<tr>
+<td style="text-align:center">^</td>
 <td>匹配字符串的开头位置</td>
 <td><code>&#39;^\d&#39;</code> 匹配以数字开头的字符串</td>
 </tr>
 <tr>
-<td align="center">$</td>
+<td style="text-align:center">$</td>
 <td>匹配字符串的<strong>结尾</strong>位置</td>
 <td><code>&#39;\d$&#39;</code> 匹配以数字结尾的字符串</td>
 </tr>
 <tr>
-<td align="center">\b</td>
+<td style="text-align:center">\b</td>
 <td>匹配一个单词的边界，即字符和空格交界处</td>
 <td><code>&#39;ty\b&#39;</code> 匹配在单词最后两位的 ty</td>
 </tr>
 <tr>
-<td align="center">\B</td>
+<td style="text-align:center">\B</td>
 <td>非单词边界匹配</td>
 <td><code>&#39;\Bty&#39;</code> 匹配不在单词开头两位的 ty</td>
 </tr>
-</tbody></table>
-<h5 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h5><table>
+</tbody>
+</table>
+</div>
+<h5 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h5><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>例子</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">*</td>
+<tbody>
+<tr>
+<td style="text-align:center">*</td>
 <td>匹配前面的表达式<strong>0 或 多 次</strong></td>
 <td><code>&#39;\d*&#39;</code> 匹配任意个数字</td>
 </tr>
 <tr>
-<td align="center">+</td>
+<td style="text-align:center">+</td>
 <td>匹配前面的表达式<strong>至少一次</strong></td>
 <td><code>&#39;\d+&#39;</code> 匹配至少一个数字</td>
 </tr>
 <tr>
-<td align="center">？</td>
+<td style="text-align:center">？</td>
 <td>匹配前面的表达式 <strong>0 或 1 次</strong></td>
 <td><code>&#39;\d+&#39;</code> 匹配 0 或 1 个数字</td>
 </tr>
 <tr>
-<td align="center">{n}</td>
+<td style="text-align:center">{n}</td>
 <td>匹配 n 个字符</td>
 <td><code>\d{2}&#39;</code> 匹配 2 位数字</td>
 </tr>
 <tr>
-<td align="center">{m, n}</td>
+<td style="text-align:center">{m, n}</td>
 <td>匹配 m - n 个字符</td>
 <td><code>&#39;\d{3, 5}&#39;</code> 匹配 3 - 5 个数字</td>
 </tr>
 <tr>
-<td align="center">{n, }</td>
+<td style="text-align:center">{n, }</td>
 <td>匹配至少 n 个字符</td>
 <td><code>&#39;\d{2, }&#39;</code> 匹配至少 2 位数字</td>
 </tr>
-</tbody></table>
-<h5 id="选择符"><a href="#选择符" class="headerlink" title="选择符"></a>选择符</h5><table>
+</tbody>
+</table>
+</div>
+<h5 id="选择符"><a href="#选择符" class="headerlink" title="选择符"></a>选择符</h5><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>例子</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">&#124;</td>
+<tbody>
+<tr>
+<td style="text-align:center">&#124;</td>
 <td>“或”，<strong>两项取其一</strong></td>
 <td>略</td>
 </tr>
 <tr>
-<td align="center">[xyz]</td>
+<td style="text-align:center">[xyz]</td>
 <td>字符集和，表示<strong>范围</strong>，匹配 x、y、z 中的一个</td>
 <td><code>&#39;[a-zA-Z0-9]&#39;</code> 匹配一个大小写字母或数字</td>
 </tr>
 <tr>
-<td align="center">[^xyz]</td>
+<td style="text-align:center"><sup><a href="#fn_xyz" id="reffn_xyz">xyz</a></sup></td>
 <td>字符集和，表示<strong>范围</strong>，匹配不在 x、y、z 中的一个字符</td>
 <td><code>&#39;[^a-zA-Z0-9]&#39;</code> 匹配既不是字母又不是数字的字符</td>
 </tr>
 <tr>
-<td align="center">()</td>
+<td style="text-align:center">()</td>
 <td><strong>匹配 pattern 并缓存</strong>这一匹配，使用 \n 可匹配第 n 个缓存项</td>
 <td><code>&#39;(.)(.)\2\1&#39;</code> 可匹配 ABBA 形式的字符串</td>
 </tr>
 <tr>
-<td align="center">(?:)</td>
-<td>*<em>匹配 pattern *</em>这一匹配，这里可以使用 “或” 字符 (&#124;) 来组合一个模式的各个部分</td>
+<td style="text-align:center">(?:)</td>
+<td><strong>匹配 pattern </strong>这一匹配，这里可以使用 “或” 字符 (&#124;) 来组合一个模式的各个部分</td>
 <td><code>&#39;industr(?:y&amp;#124;ies) &#39;</code>可匹配 industry 或 industries</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="贪婪模式和非贪婪模式"><a href="#贪婪模式和非贪婪模式" class="headerlink" title="贪婪模式和非贪婪模式"></a>贪婪模式和非贪婪模式</h4><p><code>*</code>、<code>+</code> 限定符都是贪婪的，会尽可能多的匹配符合条件的字符串。<br>若使用 <code>&lt;.*&gt;</code> 来匹配字符串 <code>&#39;&lt;h1&gt;dream land&lt;/h1&gt;&#39;</code> ，会匹配整个字符串。<br>如果想要得到标签内容 <code>&#39;h1&#39;</code> ，则可以使用 <code>&#39;.*?&#39;</code> 匹配。<br><strong>添加 ？ 即可实现非贪婪或最小匹配</strong>。</p>
 <h4 id="常用匹配"><a href="#常用匹配" class="headerlink" title="常用匹配"></a>常用匹配</h4><h5 id="匹配电子邮箱"><a href="#匹配电子邮箱" class="headerlink" title="匹配电子邮箱"></a>匹配电子邮箱</h5><p><code>&#39;\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}&#39;</code></p>
 <h5 id="匹配手机号"><a href="#匹配手机号" class="headerlink" title="匹配手机号"></a>匹配手机号</h5><p><code>&#39;(13\d|14[579]|15[^4\D]|17[^49\D]|18\d)\d{8}&#39;</code></p>
 <h5 id="匹配时间-时：分：秒"><a href="#匹配时间-时：分：秒" class="headerlink" title="匹配时间(时：分：秒)"></a>匹配时间(时：分：秒)</h5><p><code>&#39;([01]?\d|2[0-3]):[0-5]?\d:[0-5]?\d&#39;</code></p>
-<h4 id="其他元字符"><a href="#其他元字符" class="headerlink" title="其他元字符"></a>其他元字符</h4><h5 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h5><table>
+<h4 id="其他元字符"><a href="#其他元字符" class="headerlink" title="其他元字符"></a>其他元字符</h4><h5 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h5><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字符</th>
@@ -209,7 +343,8 @@
 <th>举例/等价表达</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>\cx</td>
 <td>匹配<strong>由 x 指明的控制字符</strong></td>
 <td><code>&#39;\cM&#39;</code> 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 c 字符</td>
@@ -247,10 +382,13 @@
 <tr>
 <td>\S</td>
 <td>匹配一个<strong>任意非空白字符</strong></td>
-<td>[^ \f\n\r\t\v]</td>
+<td><sup><a href="#fn_ \f\n\r\t\v" id="reffn_ \f\n\r\t\v"> \f\n\r\t\v</a></sup></td>
 </tr>
-</tbody></table>
-<p>*<br>最后，推荐两个网站：<br><a href="https://alf.nu/RegexGolf" target="_blank" rel="noopener">Regex Golf</a> - 用于正表达式练习<br><a href="https://tool.lu/regex/" target="_blank" rel="noopener">正则表达式测试工具</a> - 写正则表达式时用于检测是否有效，还可生成代码<br>*</p>
+</tbody>
+</table>
+</div>
+<p><em><br>最后，推荐两个网站：<br><a href="https://alf.nu/RegexGolf" target="_blank" rel="noopener">Regex Golf</a> - 用于正表达式练习<br><a href="https://tool.lu/regex/" target="_blank" rel="noopener">正则表达式测试工具</a> - 写正则表达式时用于检测是否有效，还可生成代码
+</em></p>
 <h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p><a href="https://www.runoob.com/regexp/regexp-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a><br><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664" target="_blank" rel="noopener">廖雪峰官网</a></p>
 ]]></content>
       <categories>
@@ -258,118 +396,6 @@
       </categories>
       <tags>
         <tag>正则匹配</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SQL入门学习笔记</title>
-    <url>/2019/05/16/SQL%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>数据库</category>
-      </categories>
-      <tags>
-        <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python虚拟环境</title>
-    <url>/2019/11/19/Python-VirtualEnv/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>配置</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的记账日常(MoneyWiz)</title>
-    <url>/2020/05/02/consuption-recording/</url>
-    <content><![CDATA[<p>2020年1月底，新冠肺炎肆虐全国，我们开始了史无前例的全国性居家隔离，往常的春节假后复工因此而收到了严重影响，餐饮行业的龙头企业如海底捞西北等也遭受巨创。停薪留职、薪资打折、公司倒闭，为了保命所有企业都采取了一定的措施，而对于我等小员工来说，最直接的影响就是“收入降低”。<br>残酷的事实让我突然意识到了在这个飞速变化、意外频生的时代，管理好个人财产是一件多么重要的事。尽管我本就从不是一个花钱大手大脚的人，但很多时候，日常的节省反倒成为了我可以买不必要物品的借口。所以我想，开始记账，对自己花钱的去向有一个清晰地了解，可以在此基础上更好的节流，足够的积蓄可以在面对危机时让我多一一些选择的余地。</p>
-<h4 id="为什么要记账？"><a href="#为什么要记账？" class="headerlink" title="为什么要记账？"></a>为什么要记账？</h4><ol>
-<li><strong>明确当前的财务状况</strong>，做到对消费心中有数。<br>比如现在使用花呗付账，同时个人的钱有放在好几个不同的地方，支付宝、余额宝、微信钱包等等，平常很难记清楚每一个账户有多少钱，消费时没有扣款消息甚至会觉得自己根本没花多少钱，然后就一直花……<br>通过记账明确当前的个人资产，在遇到一个想买的东西或一笔大额支出时，也可以迅速判断决策是不是可以负担，花这一笔钱到底值不值。</li>
-</ol>
-<p><em>看看那一目了然的资产净值负债，真的会更想好好学习了呢……</em><br>2. 数据分析。<br>通过对记录数据的分析，可以清楚每月/每年的消费情况，每月的结余，净值的变化情况等等。<br>3. 优化支出预算。<br> 结合当前情况和消费状况，对预算开支进行以及之后的支出走向进行调整，减少不必要支出，在<strong>进一步节流</strong>的同时，也可以<strong>提高生活的幸福感</strong>。</p>
-<h4 id="记什么？"><a href="#记什么？" class="headerlink" title="记什么？"></a>记什么？</h4><p><strong>每一笔支出都要记</strong>！<br>在记账时，每一笔支出的收入都不能漏，如此才能真是反映消费情况，也能保证所记录的数据和实际数据是匹配的。</p>
-<h4 id="怎么记？"><a href="#怎么记？" class="headerlink" title="怎么记？"></a>怎么记？</h4><p><strong>记支出类别</strong><br>每个月的消费少说也有近百笔，对于一些零碎的消费，可能之后并不会在细看，重点是这些账目所反映的消费状况，也就是对每一笔消费的记录，要包含可以用于分析的内容，通常为支出类别。<br><strong>当天的同类支出合并记</strong><br>每天出上班，来回都是地铁，可以合并记为一项-通勤；去菜场买菜，买了土豆、番茄、黄瓜，合并记为一项-蔬菜……<br><strong>每天晚核对当天消费</strong><br>现在多用手机支付，因此可以通过app查到每一笔消费情况，日常消费也就可以在一天结束后再通过电子账单归纳核对。<br>随用随记也是很好的，每日核对是通过将核对工作分散至每天的3-5分钟来减轻记账的压力，账户数目对不上或是月底对账太繁琐都会打击记账的积极性<br><strong>月底核对当月消费，分析支出情况</strong><br>主要查看各类别支出所占比例，预算是否有超支，超支原因是什么？下一个月可以在哪些方面采取措施，进行改进？<br><strong>年末分析当年开支情况</strong><br>对自己这一年的消费情况进行一个大总结，分析每月的数据走势，可以看出自己在这一年内的财务管理上是否有好的进展，根据这一件的消费情况，对下一年的预算和计划进行调整。</p>
-<h4 id="怎么分类？"><a href="#怎么分类？" class="headerlink" title="怎么分类？"></a>怎么分类？</h4><p>这个分类问题反倒是最困扰的部分，想要补充不漏又合理分类真的很难，最后我灵机一动，参照了国家的<a href="http://www.stats.gov.cn/statsinfo/auto2073/201310/P020131030594724947923.pdf" target="_blank" rel="noopener">居民消费支出分类</a>，在此基础上根据个人实际情况调整后，最终的分类如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">一级分类</th>
-<th align="left">二级分类</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">餐饮</td>
-<td align="left">粮油副食、工作餐、鲜果牛奶、外卖聚餐、零食小吃、茶饮甜点、其他</td>
-</tr>
-<tr>
-<td align="left">交通</td>
-<td align="left">公交地铁、出租滴滴、火车动车、飞机高铁、私家车、其他</td>
-</tr>
-<tr>
-<td align="left">服饰</td>
-<td align="left">衣服、鞋子、配饰、箱包、珠宝、服务、其他</td>
-</tr>
-<tr>
-<td align="left">家居生活</td>
-<td align="left">家具、加点、纺织品、日用杂货、个人护理、装饰、家庭服务、工具、其他</td>
-</tr>
-<tr>
-<td align="left">文化教育</td>
-<td align="left">学历提升、技能培训、兴趣培养、书籍、文具、其他</td>
-</tr>
-<tr>
-<td align="left">数码电子</td>
-<td align="left">电子设备、电子配件、订阅/会员、付费App、电信服务、其他</td>
-</tr>
-<tr>
-<td align="left">休闲娱乐</td>
-<td align="left">朋友聚会、游戏玩乐、展馆参观、话剧演出、游戏充值、跟团旅游、其他</td>
-</tr>
-<tr>
-<td align="left">运动健康</td>
-<td align="left">运动器械、滋补保养</td>
-</tr>
-<tr>
-<td align="left">住宿</td>
-<td align="left">租金、水电燃气、保养维修、旅店、其他</td>
-</tr>
-<tr>
-<td align="left">医保</td>
-<td align="left">医院、药店、眼部护理、牙医、保险、保健器具、其他</td>
-</tr>
-<tr>
-<td align="left">人情往来</td>
-<td align="left">/</td>
-</tr>
-<tr>
-<td align="left">贷款</td>
-<td align="left">/</td>
-</tr>
-<tr>
-<td align="left">税款</td>
-<td align="left">/</td>
-</tr>
-</tbody></table>
-<h4 id="记账工具–-MoneyWiz"><a href="#记账工具–-MoneyWiz" class="headerlink" title="记账工具– MoneyWiz"></a>记账工具– MoneyWiz</h4><p>借助App记账，省时省力，经过多番比较，最终选择了好用也看的顺眼的 MoneyWiz3 。<br>MoneyWiz 主要有 4 大功能模块，包含 账户、预算、预定、报表。账户功能使得为自己的每一个资金存放账户在app中间一个账户，如此可以清晰准确的反映真实财务状况；预算功能用于规划一个周期内在某一类或几类的预计花费；预定功能可以提前记录未来的某一比支出，在起到提醒作用的同时也可以减轻记账的负担；报表功能用于分析消费数据。<br>除分类以外，还可以使用 标签、交易对象 来筛选分析。<br>附 <a href="https://support.wiz.money/hc/en-us/categories/360001994314-MoneyWiz-3-Mobile" target="_blank" rel="noopener">MoneyWiz使用手册</a></p>
-<h5 id="账户"><a href="#账户" class="headerlink" title="账户"></a>账户</h5><p>活期账户：支付宝余额、余额宝、微信钱包、各类银行卡<br>信用卡账户：蚂蚁花呗、京东白条、各类信用卡<br>储蓄账户：可设置项和活期账户差别不大<br>贷款账户：车贷、房贷、各类贷款<br>现金账户：记录当前的现金金额<br>投资账户：可方便记录基金股票等，有买入卖出功能</p>
-<blockquote>
-<p>使用技巧<br>如果同一银行有多张卡片，可在添加尾号用以区分；<br>信用卡账户末尾可添加还款日期作为提醒；<br>不常用的账户用一个账户组收纳；<br><strong>不删除已有账户</strong>，删除已有账户的同时会删除相关交易；<br>个人借贷可以对每个用户使用一个账户表示，命名为“借入-张三”或“借出-李四”，和朋友之间的借账欠账可以迅速掌握，正确表示资产负债，也不会造成个人净值的虚高。</p>
-</blockquote>
-<h5 id="预算"><a href="#预算" class="headerlink" title="预算"></a>预算</h5><p>对常用消费设置预算，在能力允许的范围内满足自己，也能做到对这些常用消费情况心中有数，合理的规划支出。</p>
-<h5 id="预定"><a href="#预定" class="headerlink" title="预定"></a>预定</h5><p>把为来已经确定或者可能存在的支出在该模块记录。<br>对于每月固定支出，如电话费、各类会员费、服务订阅费，设置每月自动付款，无需重复记录，可以大大减轻记账压力；<br>对于可能存在的支出，比如学费、朋友还钱等，在此处提前记录可以起到提醒作用，也能预测未来的净值及支出走势。</p>
-<h5 id="报表"><a href="#报表" class="headerlink" title="报表"></a>报表</h5><p>通过图标对消费数据进行分析。可根据 账户、预算、分类、交易对象、标签 进行分析，也可自定义分析。</p>
-<h5 id="交易对象"><a href="#交易对象" class="headerlink" title="交易对象"></a>交易对象</h5><p>可以用来表示钱通过什么渠道花出去，比如 淘宝、京东、美团、一般超市 等等，可以反映消费习惯。</p>
-<h5 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h5><p>使用标签来临时标记一个项目的支出，比如一次出国游；<br>使用标签来标记和朋友之间的人情往来。</p>
-<p>（未完，待补充）</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>记账</tag>
       </tags>
   </entry>
   <entry>
@@ -386,10 +412,9 @@
 <h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><ol>
 <li>字符串截取<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="comment">// pos is the start index, count is the whole length;</span></span><br><span class="line"><span class="built_in">string</span>.substr(pos, count);</span><br></pre></td></tr></table></figure></li>
 <li>字符串反转<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 1.使用C的strrev函数</span></span><br><span class="line"><span class="keyword">char</span> charArray = <span class="string">"hello world"</span>;</span><br><span class="line">strrev(charArray);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 2.使用&lt;algorithm&gt;中的reverse</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> str = <span class="string">"hello world"</span>;</span><br><span class="line">reverse(str.<span class="built_in">begin</span>(), str.<span class="built_in">end</span>());</span><br><span class="line"></span><br><span class="line"><span class="comment">// 上面两个函数都会直接修改原字符串内容，</span></span><br><span class="line"><span class="comment">// 若不想改变原字符串，需要拷贝后再反转</span></span><br></pre></td></tr></table></figure></li>
-<li>获取字符串长度<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> str;</span><br><span class="line"><span class="keyword">int</span> len1 = str.<span class="built_in">size</span>();</span><br><span class="line"><span class="keyword">int</span> len2 = str.leng();</span><br></pre></td></tr></table></figure></li>
-<li>在字符串固定位位置插入字符 ``<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> ret;</span><br><span class="line"><span class="comment">// string.insert(pos, count, char*count);</span></span><br><span class="line"><span class="comment">// pos = the index the char is to be inserted</span></span><br><span class="line"><span class="comment">// count = the number of the char to be inserted</span></span><br><span class="line"><span class="comment">// the inserted char</span></span><br><span class="line">ret.insert(<span class="number">0</span>, <span class="number">2</span>, <span class="string">"hi"</span>);</span><br></pre></td></tr></table></figure></li>
+<li>获取字符串长度<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> str;</span><br><span class="line"><span class="keyword">int</span> len1 = str.<span class="built_in">size</span>();</span><br><span class="line"><span class="keyword">int</span> len2 = str.leng();</span><br></pre></td></tr></table></figure>
+4.在字符串固定位位置插入字符 ``<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"><span class="built_in">string</span> ret;</span><br><span class="line"><span class="comment">// string.insert(pos, count, char*count);</span></span><br><span class="line"><span class="comment">// pos = the index the char is to be inserted</span></span><br><span class="line"><span class="comment">// count = the number of the char to be inserted</span></span><br><span class="line"><span class="comment">// the inserted char</span></span><br><span class="line">ret.insert(<span class="number">0</span>, <span class="number">2</span>, <span class="string">"hi"</span>);</span><br></pre></td></tr></table></figure></li>
 <li>字符串中单个字符的替换<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="built_in">string</span> psd=<span class="string">"llll00000"</span>;</span><br><span class="line">replace(psd.<span class="built_in">begin</span>(), psd.<span class="built_in">end</span>(), <span class="string">'1'</span>, <span class="string">'@'</span>);</span><br><span class="line">replace(psd.<span class="built_in">begin</span>(), psd.<span class="built_in">end</span>(), <span class="string">'0'</span>, <span class="string">'%'</span>);</span><br></pre></td></tr></table></figure>
-
 </li>
 </ol>
 <h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3><ol>
@@ -430,19 +455,16 @@
 <p>train_test_split(*arrays, test_size=0.25, train_size=None, random_state=None, shuffle=True, stratify=None)<br><code>*arrays</code> 相同长度的一系列n个数据集，接受格式有[lists, numpy arrays, scipy-sparse matrices or pandas dataframes]。返回2n个数据集，一个输入对应两个输出。<br><code>test_size=0.25</code> 整数或小数。代表个数或比例<br><code>train_size=None</code> 同上，两个_size指定一个就好了<br><code>random_state=None</code> 随机数种子<br><code>shuffle=True</code> 拆分前是否打乱数据。If shuffle=False then stratify must be None.<br><code>stratify=None</code> </p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
 <h4 id="网格搜索-sklearn-model-selection-GridSearchCV"><a href="#网格搜索-sklearn-model-selection-GridSearchCV" class="headerlink" title="网格搜索(sklearn.model_selection.GridSearchCV)"></a>网格搜索(sklearn.model_selection.GridSearchCV)</h4><p>这个呢，hei好用，可以便捷的帮我们确定最优参数，并且设置好需要训练的模型还有对应的参数，会在每一组参数进行训练，然后使用最优的一组参数来训练最终的模型，设置起来也不复杂。</p>
 <blockquote>
-<p>GridSearchCV(estimator, param_grid, scoring=None, fit_params=None, n_jobs=None, iid=’warn’, refit=True, cv=’warn’, verbose=0, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’, return_train_score=’warn’)<br><code>estimator</code> 学习器接口，设定用于训练模型的算法，比如 sklearn.svm.SVR()。需要有 scoring 参数，否则不对模型进行评估<br><code>param_grid</code> 参数网格，传入字典或 value为列表的字典。e.g. {‘C’: [1, 10, 100]}<br><code>scoring=None</code> 模型的评分方式，如果为 None，则使用模型默认的度量。可以是字符串、可调用对象、列表 / 元组、字典。<br><code>fit_params=None</code> 传给<code>fit</code>方法的参数<br><code>n_jobs=None</code> 并行作业数<br><code>iid=&#39;warn&#39;</code> (Changed in version 0.20: Parameter iid will change from True to False by default in version 0.22, and will be removed in 0.24)<br><code>refit=True</code> 是否在整个数据集上使用得到的最佳参数重新训练。<br><code>cv=&#39;warn&#39;</code> 交叉验证策略，默认为 3折交叉验证。<br><code>verbose=0</code> 控制冗余，越高，信息越多。<br><code>pre_dispatch=&#39;2*n_jobs&#39;</code> 控制并行作业期间分配的作业数量，可以是 int、str(关于 n_jobs的函数表达式)。<br><code>error_score=&#39;raise-deprecating&#39;</code> 如果训练出错返回的分数。<br><code>return_train_score=&#39;warn&#39;</code> 如果 False，cv_results_属性不包含分数。</p>
+<p>GridSearchCV(estimator, param<em>grid, scoring=None, fit_params=None, n_jobs=None, iid=’warn’, refit=True, cv=’warn’, verbose=0, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’, return_train_score=’warn’)<br><code>estimator</code> 学习器接口，设定用于训练模型的算法，比如 sklearn.svm.SVR()。需要有 scoring 参数，否则不对模型进行评估<br><code>param_grid</code> 参数网格，传入字典或 value为列表的字典。e.g. {‘C’: [1, 10, 100]}<br><code>scoring=None</code> 模型的评分方式，如果为 None，则使用模型默认的度量。可以是字符串、可调用对象、列表 / 元组、字典。<br><code>fit_params=None</code> 传给<code>fit</code>方法的参数<br><code>n_jobs=None</code> 并行作业数<br><code>iid=&#39;warn&#39;</code> (Changed in version 0.20: Parameter iid will change from True to False by default in version 0.22, and will be removed in 0.24)<br><code>refit=True</code> 是否在整个数据集上使用得到的最佳参数重新训练。<br><code>cv=&#39;warn&#39;</code> 交叉验证策略，默认为 3折交叉验证。<br><code>verbose=0</code> 控制冗余，越高，信息越多。<br><code>pre_dispatch=&#39;2*n_jobs&#39;</code> 控制并行作业期间分配的作业数量，可以是 int、str(关于 n_jobs的函数表达式)。<br><code>error_score=&#39;raise-deprecating&#39;</code> 如果训练出错返回的分数。<br><code>return_train_score=&#39;warn&#39;</code> 如果 False，cv_results</em>属性不包含分数。</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection.GridSearchCV</span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC</span><br><span class="line"></span><br><span class="line">model = SVC()</span><br><span class="line">param_range = &#123;<span class="string">'C'</span>: [<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>]&#125;</span><br><span class="line">clf = GridSearchCV(model, param_range, scoring=<span class="string">'roc_auc'</span>, cv=<span class="number">10</span>, verbose=<span class="number">1</span>, n_jobs=<span class="number">4</span>)</span><br><span class="line">clf.fit(X_train, y_train)</span><br><span class="line"></span><br><span class="line">y_pre = clf.predict(X_test)</span><br><span class="line">clf.score(X_test, y_test)</span><br><span class="line"></span><br><span class="line">clf.cv_results_    <span class="comment">#可以转化为DataFrame格式的字典，keys是列名称，values是对应的列</span></span><br><span class="line">clf.best_score_    <span class="comment">#最高得分</span></span><br><span class="line">clf.best_params_    <span class="comment">#最佳的一组参数</span></span><br><span class="line">clf.refit_time_    <span class="comment">#在整个数据集上使用最优参数训练模型所花的时间</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="交叉验证-sklearn-model-selection-cross-val-score"><a href="#交叉验证-sklearn-model-selection-cross-val-score" class="headerlink" title="交叉验证(sklearn.model_selection.cross_val_score)"></a>交叉验证(sklearn.model_selection.cross_val_score)</h4><p>可以返回值为每一次交叉验证后得分的数组，每一次只能针对一组参数值进行训练，所以如果要确定最优的参数，得自己写一个循环，比较麻烦，得到最优参数之后还要重新在所有数据上自己训练一遍……</p>
 <blockquote>
 <p>cross_val_score(estimator, X, y=None, groups=None, scoring=None, cv=’warn’, n_jobs=None, verbose=0, fit_params=None, pre_dispatch=’2*n_jobs’, error_score=’raise-deprecating’)<br><code>X</code> 需要训练的数据<br><code>y=None</code> 数据的标签值<br><code>groups=None</code> 划分数据为 train/test set 时使用的分类标签<br>(其余同上)</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> cross_val_score</span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">C_list = [<span class="number">1</span>, <span class="number">10</span>, <span class="number">100</span>]</span><br><span class="line">cv_scores = []</span><br><span class="line"><span class="keyword">for</span> c_value <span class="keyword">in</span> C_list:</span><br><span class="line">	model = SVC(C=c_value)</span><br><span class="line">	score = cross_val_score(model, X_train, y_train, scoring=<span class="string">'roc_auc'</span>, cv=<span class="number">10</span>, verbose=<span class="number">1</span>, n_jobs=<span class="number">4</span>)</span><br><span class="line">	<span class="comment">#score是一个数组哦哦哦</span></span><br><span class="line">	cv_score = np.means(score)</span><br><span class="line">	cv_scores.append(cv_score)</span><br><span class="line">	</span><br><span class="line">best_c = C_list[cv_scores.index(max(cv_scores))]</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
 <h4 id="验证曲线-sklearn-model-selection-validation-curve"><a href="#验证曲线-sklearn-model-selection-validation-curve" class="headerlink" title="验证曲线(sklearn.model_selection.validation_curve)"></a>验证曲线(sklearn.model_selection.validation_curve)</h4><p>这个函数嘞，会返回两个数组：train_scores、test_scores ，比较方便用来画针对某一个参数的学习曲线。两个分别是在进行交叉验证时在训练集s以及验证集上的得分，大小为 (传入的参数数量，交叉验证折数)</p>
 <blockquote>
 <p>validation_curve(estimator, X, y, param_name, param_range, groups=None, cv=’warn’, scoring=None, n_jobs=None, pre_dispatch=’all’, verbose=0, error_score=’raise-deprecating’)<br><code>param_name</code> 变化的参数的名称<br><code>param_range</code> array-like，用于训练的参数值，对应参数名称</p>
@@ -483,26 +505,24 @@
 </ol>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> OneHotEncoder</span><br><span class="line">OneHot_enc = OneHotEncoder(sparse=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#第一次对数据进行编码直接使用 fit_transform()</span></span><br><span class="line">data1_coded = OneHot_enc.fit_transform(data1)</span><br><span class="line"><span class="comment">#对相同结构数据集再次编码，仅需 transform()</span></span><br><span class="line">data2_coded = OneHot_enc.transform(data2)</span><br><span class="line"></span><br><span class="line">array.reshape(<span class="number">-1</span>, <span class="number">1</span>)    <span class="comment">#数据仅包含一个特征，转化为n×1维矩阵</span></span><br><span class="line">array.reshape(<span class="number">1</span>, <span class="number">-1</span>)    <span class="comment">#数据仅包含一个样本，转化为1×n维矩阵</span></span><br></pre></td></tr></table></figure>
 <p><strong>使用OneHotEncoder编码后，返回为一个数组(np.array)，且编码后的数据会丢失原来的列名称。</strong></p>
-<ol start="2">
+<ol>
 <li>pandas.get_dummies()<br><code>get_dummies()</code>只对输入数据中类型为 object 的数据进行独热编码 (故使用该方法进行独热编码时可以不分离出数值型特征) 。对数据进行编码后，返回 pd.DataFrame ，并且可以根据特征中不同的值自动生成列名称。<blockquote>
-<p>get_dummies(data, prefix=None, prefix_sep=’_’, dummy_na=False, columns=None, sparse=False,  drop_first=False, dtype=None)<br><code>prefix</code> 列表或这字符串用于添加列名称<br><code>prefix_sep</code> 字符串/列表/字典，基于prefix，用作分隔符<br><code>dummy_na</code> 默认’False’忽略空值，设置为’True’则新增列用于指示空值<br><code>columns</code> 需要编码的列名称<br><code>drop_first</code> 是否删除特征的第一类</p>
+<p>get<em>dummies(data, prefix=None, prefix_sep=’</em>‘, dummy_na=False, columns=None, sparse=False,  drop_first=False, dtype=None)<br><code>prefix</code> 列表或这字符串用于添加列名称<br><code>prefix_sep</code> 字符串/列表/字典，基于prefix，用作分隔符<br><code>dummy_na</code> 默认’False’忽略空值，设置为’True’则新增列用于指示空值<br><code>columns</code> 需要编码的列名称<br><code>drop_first</code> 是否删除特征的第一类</p>
 </blockquote>
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">data_coded = pd.get_dummies(data)    <span class="comment">#不改参数就可以表现的很优秀啦</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="标签编码-sklearn-preprocessing-OrdinalEncoeder"><a href="#标签编码-sklearn-preprocessing-OrdinalEncoeder" class="headerlink" title="标签编码(sklearn.preprocessing.OrdinalEncoeder)"></a>标签编码(sklearn.preprocessing.OrdinalEncoeder)</h4><p>对非数值型的数据进行编码，根据数据每一特征的值的种类，将其生成向量。<strong>1～1</strong></p>
 <p><em>若使用 LabelEncoder，则每次只能对一列数据进行编码，输入的数据也需要是一维，本身是适用于对样本标签进行编码。</em></p>
 <p>特征降维-主成分分析法PCA(sklearn.decomposition.PCA)</p>
 <p>特征降维能在尽可能多的保留数据信息的情况下减少特征的数量，在数据样本不足而特征值过多的时可以是模型得到较好的解，还能提高模型泛化能力……此外，还能减少模型的训练成本，加快运算速度。</p>
 <blockquote>
-<p>PCA(n_components=None, copy=True, whiten=False, svd_solver=’auto’, tol=0.0, iterated_power=’auto’, random_state=None)<br><code>n_components=None</code> 期望保留的主成分个数。为整数时，即为保留的个数；若为小于1的正整数，则保留使得方差百分比大于该值的最少数目的成分。还可以传入字符型参数，比如’mle’，将自动选取特征个数n，使得满足所要求的方差百分比。<br><code>copy=True</code> 是否复制原始数据。<br><code>whiten=False</code> 白化，是否要使得每个特征具有相同的方差。<br><code>svd_solver=&#39;auto&#39;</code> string {‘auto’，’full’，’arpack’，’randomized’}.<br>(老实说，下面这一段是谷歌翻译得来的，还没有时间细究，因为我也还不太明白)<br>auto：解析器由基于X.shape和n_components的默认策略选择：如果输入数据大于500x500且要提取的组件数低于数据最小维数的80％，那么效率更高’随机化’方法已启用。否则，计算精确的完整SVD并随后截断。<br>full：运行完全完整的SVD通过scipy.linalg.svd调用标准LAPACK解算器并通过后处理选择组<br>arpack：运行SVD截断为n_components通过scipy.sparse.linalg.svds调用ARPACK解算器。它严格要求0 &lt;n_components &lt;min（X.shape）<br>随机的：通过Halko等方法进行随机SVD。<br><code>tol=0.0</code> 由svd_solver ==’arpack’计算的奇异值的容差<br><code>iterated_power=&#39;auto&#39;</code> int&gt; = 0，或’auto’，由svd_solver ==’randomized’计算的幂方法的迭代次数。<br><code>random_state=None</code> (略)</p>
+<p>PCA(n_components=None, copy=True, whiten=False, svd_solver=’auto’, tol=0.0, iterated_power=’auto’, random_state=None)<br><code>n_components=None</code> 期望保留的主成分个数。为整数时，即为保留的个数；若为小于1的正整数，则保留使得方差百分比大于该值的最少数目的成分。还可以传入字符型参数，比如’mle’，将自动选取特征个数n，使得满足所要求的方差百分比。<br><code>copy=True</code> 是否复制原始数据。<br><code>whiten=False</code> 白化，是否要使得每个特征具有相同的方差。<br><code>svd_solver=&#39;auto&#39;</code> string {‘auto’，’full’，’arpack’，’randomized’}.<br>(老实说，下面这一段是谷歌翻译得来的，还没有时间细究，因为我也还不太明白)<br>auto：解析器由基于X.shape和n_components的默认策略选择：如果输入数据大于500x500且要提取的组件数低于数据最小维数的80％，那么效率更高’随机化’方法已启用。否则，计算精确的完整SVD并随后截断。<br>full：运行完全完整的SVD通过scipy.linalg.svd调用标准LAPACK解算器并通过后处理选择组<br>arpack：运行SVD截断为n_components通过scipy.sparse.linalg.svds调用ARPACK解算器。它严格要求0 <n_components <min（X.shape）
+随机的：通过Halko等方法进行随机SVD。
+`tol=0.0` 由svd_solver =='arpack'计算的奇异值的容差
+`iterated_power='auto'` int> = 0，或’auto’，由svd_solver ==’randomized’计算的幂方法的迭代次数。<br><code>random_state=None</code> (略)</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA</span><br><span class="line">pca = PCA(n_components=<span class="literal">None</span>)    <span class="comment">#这里最好要指定一个数的啊，可能小数会比较方便</span></span><br><span class="line">pca.fit_transform(data)    <span class="comment">#对数据进行训练并降维</span></span><br><span class="line">components = pca.components_    <span class="comment">#可获得方差比由大到小排列的所有主成分</span></span><br><span class="line">var = pca.explained_variance_    <span class="comment">#转换后个主成分的方差</span></span><br><span class="line">var_atio = pca.explained_variance_ratio_    <span class="comment">#转换后个主成分的方差比</span></span><br><span class="line">n_components = pca.n_components_    <span class="comment">#可返回需要的特征数</span></span><br></pre></td></tr></table></figure>
-
-
-
-
 <p>(完)</p>
 ]]></content>
       <categories>
@@ -521,7 +541,6 @@
 <p>KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’auto’, leaf_size=30, p=2, metric=’minkowski’, metric_params=None, n_jobs=None, **kwargs)<br><code>n_neighbors=5</code> 分类数目，这个参数一般都要自己设置啊啊啊。<br><code>weights=&#39;uniform&#39;</code> 权重，默认为’uniform’类别中的所有点权重相同。支持’distance’，此时权重时距离的倒数，离分类点越近，权重越大；也可传入一个自己定义的函数名，要求接受一个距离数组，并返回一个包含权重的相同形状的数组。<br><code>algorithm=&#39;auto&#39;</code> 用于计算最近分类点的算法，默认’auto’尝试根据传递给fit方法的值来确定最合适的算法。其他：’ball_tree’将使用BallTree，’kd_tree’将使用KDTree，’brute’将使用暴力搜索。<br><code>leaf_size=30</code> 传递给BallTree或KDTree的叶子大小。 这可能会影响构造和查询的速度，以及存储树所需的内存。 最佳值取决于问题的性质。<br><code>p=2</code> 整数。Minkowski距离度量的参数。 当p = 1：曼哈顿距离(L1)；p = 2：欧几里得距离(L2)。对于任意p，使用minkowski_distance(Lp)。<br><code>metric=&#39;minkowski</code> 距离度量函数。<br><code>metric_params=None</code> 度量函数的其他关键字参数<br><code>n_job=None</code> 并行作业数</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#导入kNN</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">以下四步即为sklearn用于</span></span><br><span class="line"><span class="string">模型训练，数据预测，模型评估</span></span><br><span class="line"><span class="string">的一般基本使用方法</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">kNN_model = DescisionTreeClassifier(n_neighbors=<span class="number">5</span>)    </span><br><span class="line"><span class="comment">#训练模型</span></span><br><span class="line">kNN_model.fit(X_train, y_train)</span><br><span class="line"><span class="comment">#使用训练好的模型进行预测</span></span><br><span class="line">y_predict = kNN_model.predic(X_test)</span><br><span class="line"><span class="comment">#使用测试集对模型进行评分</span></span><br><span class="line">kNN_score = kNN_model.score(y_test, y_predict)</span><br></pre></td></tr></table></figure>
-
 <h4 id="决策树-sklearn-tree"><a href="#决策树-sklearn-tree" class="headerlink" title="决策树(sklearn.tree)"></a>决策树(sklearn.tree)</h4><ol>
 <li><p>分类树(sklearn.tree.DecisionTreeClassifier)</p>
 <blockquote>
@@ -535,7 +554,6 @@
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#分别导入分类树和回归树</span></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeRegressor</span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">DTC_model = DescisionTreeClassifier(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">DTR_model = DescisionTreeRegressor(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
 <h4 id="朴素贝叶斯-sklearn-naive-bayes"><a href="#朴素贝叶斯-sklearn-naive-bayes" class="headerlink" title="朴素贝叶斯(sklearn.naive_bayes)"></a>朴素贝叶斯(sklearn.naive_bayes)</h4><p>高斯模型：GaussianNB(priors=None, var_smoothing=1e-09)，适用于连续值。<br>伯努利模型：BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None)，适用于离散值。<br>多项式模型：MultinomialNB(alpha=1.0, fit_prior=True, class_prior=None)，适用于离散值。</p>
 <blockquote>
 <p><code>priors=None</code> 类的先验概率<br><code>var_smoothing=1e-09</code> 为使计算稳定添加的特征最大方差的部分(？)<br><code>alpha=1.0</code> 平滑参数<br><code>binarize=0.0</code> 样本特征的二值化（映射到布尔值）的阈值。 如果为None，则假定输入已包含二进制向量。<br><code>fit_prior=True</code> 是否学习先验概率<br><code>class_prior=None</code> 类的先验概率<br>(目前这几种模型，不调参，对这些参数的理解还不够清晰透彻)</p>
@@ -549,7 +567,6 @@
 <p>LogisticRegression(penalty=’l2’, dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver=’warn’, max_iter=100, multi_class=’warn’, verbose=0, warm_start=False, n_jobs=None)<br><code>penaity=&#39;l2&#39;</code> 用于指定惩罚项(正则项)。’l2’(默认)或者’l1’，L2很好用，一般别动它<br><code>dual=False</code> 对偶或者原始方法。Dual只适用于正则化相为l2 liblinear的情况，通常样本数大于特征数的情况下，默认为False。<br><code>tol=0.0001</code> 停止训练的误差值大小。<br><code>C=1</code> C为正则化系数λ的倒数，通常默认为1。C越大，正则化系数越小，一般设置它小于1<br><code>fit_intercept=True</code> 是否存在截距，默认存在<br><code>intercept_scaling=1</code> 仅在正则化项为”liblinear”，且fit_intercept设置为True时有用。<br><code>class_weight=None</code> 类的权重。dict / ‘balanced’<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>solver=&#39;warn&#39;</code> str, {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}.默认：’liblinear’<br>其中，’liblinear’: 适用于小数据集，仅可用于二元分类。&lt;’newton-cg’: ‘lbfgs’: ‘liblinear’: ‘sag’: ‘saga’:&gt;<br><code>max_iter=&#39;100&#39;</code> 求解器收敛的最大迭代次数。仅适用于newton-cg，sag和lbfgs求解器。<br><code>multi_class=&#39;warn&#39;</code> str，{‘ovr’，’multinomial’，’auto’}，默认值：’ovr’。<br><code>verbose=0</code> 对于liblinear和lbfgs求解器，将详细设置为任何正数以表示详细程度。<br><code>warm_start=False</code> 设置为True时，重用上一次调用的解决方案以适合初始化，否则，只需擦除以前的解决方案。对于liblinear解算器无效。<br><code>n_jobs=None</code> 并行作业数。</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line"><span class="comment">#定义模型及常用参数</span></span><br><span class="line">RL_model = LogisticRegression(C=<span class="number">1</span>, randomstate=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-
 <h4 id="支持向量机-SVM-sklearn-svm"><a href="#支持向量机-SVM-sklearn-svm" class="headerlink" title="支持向量机(SVM)(sklearn.svm)"></a>支持向量机(SVM)(sklearn.svm)</h4><p>sklearn中的SVM模块既可用于分类问题(SVC)，也可以用于回归问题(SVR)。</p>
 <ol>
 <li><p>用于分类问题(sklearn.svm.SVC)</p>
@@ -564,7 +581,6 @@
 </li>
 </ol>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC    <span class="comment">#分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR    <span class="comment">#回归</span></span><br><span class="line"></span><br><span class="line">svc_model = SVC(C=<span class="number">1.0</span>, kernel=<span class="string">'rbf'</span>, degree=<span class="number">3</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">svr_model = SVR(kernal=<span class="string">'rbf'</span>, C=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
 <p>(完)</p>
 ]]></content>
       <categories>
@@ -584,19 +600,11 @@
 <p>KMeans(n_clusters=8, init=’k-means++’, n_init=10, max_iter=300, tol=0.0001, precompute_distances=’auto’, verbose=0, random_state=None, copy_x=True, n_jobs=None, algorithm=’auto’)<br><code>n_clusters=8</code> 聚类数。<br><code>init=&#39;k-means++&#39;</code> 初始化聚类中心方法。/ ‘auto’ / 数组shape (n_clusters, n_features)<br><code>n_init=1</code> 算法选择不同聚类中心运行的次数，保留最好的结果。<br><code>max_iter=300</code> 单次运行的最大迭代数目。<br><code>tol=0.0001</code> 停止迭代的相对误差界限。<br><code>precompute_distances=&#39;auto&#39;</code> {‘auto’, True, False}是否预先计算距离，选择’auto’时，当n_samples * n_clusters&gt;1,000,000 则不预先计算。<br><code>verbose=0</code> int<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>copy_x=True</code> 是否拷贝训练数据。<br><code>n_jobs=None</code> 并行作业数。<br><code>algorithm=&#39;auto&#39;</code> “auto”, “full” or “elkan”. 指定要使用的算法。</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans</span><br><span class="line">km_model = KMeans(n_clusters=<span class="number">8</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">km_model.fit_transform()</span><br><span class="line">centers = km_model.cluster_centers_    <span class="comment">#聚类中心</span></span><br><span class="line">y_pre = km_model.labels_    <span class="comment">#每个样本点的标签</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="自底向上层次聚类-sklearn-cluster-AgglomerativeClustering"><a href="#自底向上层次聚类-sklearn-cluster-AgglomerativeClustering" class="headerlink" title="自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)"></a>自底向上层次聚类(sklearn.cluster.AgglomerativeClustering)</h4><p>层次聚类可分为两类：自顶向下, diverse；自底向上, agglomerative。</p>
 <blockquote>
 <p>AgglomerativeClustering(n_clusters=2, affinity=’euclidean’, memory=None, connectivity=None, compute_full_tree=’auto’, linkage=’ward’, pooling_func=’deprecated’)<br><code>n_clusters=2</code> 最终的聚类数。<br><code>affinity=&#39;euclidean&#39;</code> {‘euclidean’, ‘l1’, ‘l2’, ‘manhattan’, ‘cosine’, ‘precomputed’}. 用于计算距离，当linkage=’ward’，只支持’euclidean’。<br><code>memory=None</code> 默认不缓存计算树的输出，以字符指定缓存路径。<br><code>connectivity=None</code> 一个数组或者可调用对象或者None，用于指定连接矩阵<br><code>compute_full_tree=&#39;auto&#39;</code> 通常当训练了n_clusters后，训练过程就会停止，但是如果compute_full_tree=True，则会继续训练从而生成一颗完整的树。<br><code>linkage=&#39;ward&#39;</code> 一个字符串，用于指定链接算法。’ward’：单链接； ‘complete’：全链接； ‘average’：均连接。<br><code>pooling_func=&#39;deprecated&#39;</code> 一个可调用对象，它的输入是一组特征的值，输出是一个数</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> AgglomerativeClustering</span><br><span class="line">agg_cluster = AAgglomerativeClustering(n_clusters=<span class="number">2</span>, linkage=<span class="string">'ward'</span>)</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
 ]]></content>
       <categories>
         <category>Machine Learning</category>
@@ -621,47 +629,11 @@
       </tags>
   </entry>
   <entry>
-    <title>虚拟机安装</title>
-    <url>/2019/09/15/virtual-machine-setting/</url>
-    <content><![CDATA[<h4 id="虚拟机安装及与主机间的文件共享"><a href="#虚拟机安装及与主机间的文件共享" class="headerlink" title="虚拟机安装及与主机间的文件共享"></a>虚拟机安装<em>及</em>与主机间的文件共享</h4><p><em>啾咪，这是一篇没有图片的教程，额呵呵……咩有图片，大概是因为，懒吧……</em><br><em>想要安装虚拟机是因为很多软件没有 Linux 版本，比如公司常用的钉钉，同时没有百度网盘客户端根本没办法下载一些大文件，虽然说现在百度网盘出了 Linux 版本，但是呵呵哒，根本不能用。而想要利用虚拟机下载文件，那就需要解决如何把虚拟机文件共享到主机的问题。</em></p>
-<h5 id="虚拟机安装"><a href="#虚拟机安装" class="headerlink" title="虚拟机安装"></a>虚拟机安装</h5><p>使用工具：</p>
-<ol>
-<li>VirtualBox</li>
-<li>VMware</li>
-</ol>
-<p>上面两个是常见的虚拟机安装的软件，最后还是选择了 VirtualBox，原因有下面几个</p>
-<ul>
-<li>我需要虚拟机实现的功能不多，VirtualBox 相对来说安装更便捷；</li>
-<li>VMware 需要付费，虽然它也有免费版可以使用，但就总觉得不得劲儿；</li>
-<li>刚开始是准备用 VMware 的，但是在启动虚拟机是遇到了问题，而在尝试使用 VirtualBox 时我有顺手把这个问题解决了，哈哈</li>
-</ul>
-<p>Anyway，其实两个软件的使用操作都是大同小异。<br>首先需要安装好 VirtualBox， Linux 下安装可以直接使用命令行 <code>sudo apt install virtualbox</code> ；如果是 Windows ，那就直接下载安装～<br>安装好之后，点击新建虚拟机，设置好名字，系统，想要分配的大小，虚拟硬盘文件类型选择<strong>磁盘映像</strong>。<br>创建好虚拟机后，选中虚拟机，点击<strong>启动</strong>，这时候就需要选定<strong>下载好的光盘映像文件(.iso)</strong>。<br>之后，就按照正常的系统安装过程进行就 OK 啦～</p>
-<p>在启动虚拟机时，可能会出现这样的报错信息：</p>
-<blockquote>
-<p>本机支持 VT-x ，但 VT-x 未开启。</p>
-</blockquote>
-<p>解决办法就是重启电脑进入 BIOS 模式将它打开。<br>细节问题，比如怎么进入 BIOS 模式？在哪里打开 VT-x ？</p>
-<ul>
-<li>不同电脑按键不一样，一般是在看到系统图标时按 <strong>F2 / F8 / F9 / F11 / F12</strong> ，就直接试试或是百度吧。</li>
-<li>关于第二点，就，多找找总能找到的，不然，也可以继续百度呀。</li>
-</ul>
-<h5 id="虚拟机与主机的文件共享"><a href="#虚拟机与主机的文件共享" class="headerlink" title="虚拟机与主机的文件共享"></a>虚拟机与主机的文件共享</h5><p><em>这里基于 VirtualBox ，跟 VMware 的区别就有些大了。</em><br><em>以下介绍的是使用共享文件夹进行文件共享的方式。</em></p>
-<p>首先，启动需要共享的虚拟机，左上方点击<strong>设备-安装增强功能</strong>，下载好驱动后，安装它（<strong>不同系统对应有不同的安装包</strong>）。<br>接下来新建共享文件夹，左上方点击<strong>控制-设置-共享文件夹</strong>，点击右侧<strong>带加号的文件夹图标</strong>新建，选择想要共享的文件夹，并给它命名。<br>会有三个选项：只读分配，自动挂载，固定分配。<br>如果想要虚拟机可以修改共享文件夹内容（写入），就不要勾选只读分配；之后的自动分配和固定挂载，为了方便我都会勾选。</p>
-]]></content>
-      <categories>
-        <category>Code Word</category>
-      </categories>
-      <tags>
-        <tag>配置</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>对异或运算(xor)的探索</title>
     <url>/2019/05/16/%E5%AF%B9%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97%E7%9A%84%E6%8E%A2%E7%B4%A2/</url>
-    <content><![CDATA[<h4 id="由来"><a href="#由来" class="headerlink" title="由来"></a>由来</h4><p>开始注意到这个问题是因为在 leetcode 上面刷到了这样一道题——<a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">只出现一次的数字</a>。题目要求为：给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次，找出那个只出现了一次的元素。需要注意的是：算法应该具有线性时间复杂度，尽量不使用额外的空间。<br>当时看到这个题，想的思路是：对题目中给出的数组进行遍历，用一个新的数组 N 来存储这些数，如果某个数不存在 N 中，那么就把这个数存进去，如果已经存在，就将 N 中的这个数删除，最后 N 中剩下的一个数就是那个唯一只出现一次的数了。<br>上面的方法可以实现功能，但是时间复杂度和空间复杂度都比较高，很不划算，然后，我就去看了一下已有的题解，先是很懵逼，之后就觉得非常巧妙了，代码如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            result ^= nums[i]</span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-<p>以上即为，假如给出的数组是这样的：[a, b, p, m, b, m, a] ，代码中最终的结果也就是<code>result = a^b^p^m^b^m^a = p</code>，能够得到这样的答案，那么异或运算肯定就符合交换律，并且<code>a^a = 0; a^0 = 0</code>。<br>然后我就想，这么神奇的东西，我一定要弄清楚。<br>所以，以下就是，什么是异或运算？异或运算都哪些性质，为什么？以及，异或运算都可以用来做什么？</p>
+    <content><![CDATA[<h4 id="由来"><a href="#由来" class="headerlink" title="由来"></a>由来</h4><p>开始注意到这个问题是因为在 leetcode 上面刷到了这样一道题——<a href="https://leetcode-cn.com/problems/single-number/" target="_blank" rel="noopener">只出现一次的数字</a>。题目要求为：给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次，找出那个只出现了一次的元素。需要注意的是：算法应该具有线性时间复杂度，尽量不使用额外的空间。<br>当时看到这个题，想的思路是：对题目中给出的数组进行遍历，用一个新的数组 N 来存储这些数，如果某个数不存在 N 中，那么就把这个数存进去，如果已经存在，就将 N 中的这个数删除，最后 N 中剩下的一个数就是那个唯一只出现一次的数了。<br>上面的方法可以实现功能，但是时间复杂度和空间复杂度都比较高，很不划算，然后，我就去看了一下已有的题解，先是很懵逼，之后就觉得非常巧妙了，代码如下：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, nums: List[int])</span> -&gt; int:</span></span><br><span class="line">        result = <span class="number">0</span></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(len(nums)):</span><br><span class="line">            result ^= nums[i]</span><br><span class="line">        <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure><br>以上即为，假如给出的数组是这样的：[a, b, p, m, b, m, a] ，代码中最终的结果也就是<code>result = a^b^p^m^b^m^a = p</code>，能够得到这样的答案，那么异或运算肯定就符合交换律，并且<code>a^a = 0; a^0 = 0</code>。<br>然后我就想，这么神奇的东西，我一定要弄清楚。<br>所以，以下就是，什么是异或运算？异或运算都哪些性质，为什么？以及，异或运算都可以用来做什么？</p>
 <h4 id="异或运算"><a href="#异或运算" class="headerlink" title="异或运算"></a>异或运算</h4><p>异或运算，其实就是一种逻辑运算，$p$ 异或 $q$ 记作 $pXORq$ ，在 python 中写作<code>p^q</code>，其真值运算表如下：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -672,7 +644,8 @@
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>p</strong></td>
 <td>$T$</td>
 <td>$T$</td>
@@ -693,9 +666,12 @@
 <td>$T$</td>
 <td>$F$</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>查了维基百科上面还有一些使用 <em>且、或、非</em> 来表达异或关系的表达式(真的不想敲数学公式)。</p>
 <p>对两个数进行异或运算时，可以先把两个数转换为二进制形式，然后对其按位进行异或操作，即可得到最后的答案，比如下例：</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -710,7 +686,8 @@
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>p</strong></td>
 <td>$1$</td>
 <td>$0$</td>
@@ -743,7 +720,9 @@
 <td><strong>0</strong></td>
 <td><strong>1</strong></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="性质-and-why"><a href="#性质-and-why" class="headerlink" title="性质 and why ?"></a>性质 and why ?</h4><ul>
 <li>交换律：$p$ ^ $q$ = $q$ ^ $p$</li>
 <li>结合律：$p$ ^ ($q$ ^ $r$) = ($q$ ^ $p$) ^ $r$</li>
@@ -752,6 +731,7 @@
 <li>自反性：$p$ ^ $q$ ^ $q$ = $q$</li>
 </ul>
 <p>很奇怪，小学很容易的接受了加法运算可以任意交换位置的事实，今天遇到的这个异或运算却非要想清楚到底为什么。然后我就想啊想啊，总结了一个规律，看对应位上 1 的个数是奇数还是偶数就好了。(在计算机中，^ 就是按位异或)</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
@@ -766,7 +746,8 @@
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><strong>p</strong></td>
 <td>$1$</td>
 <td>$0$</td>
@@ -832,7 +813,9 @@
 <td><strong>1</strong></td>
 <td><strong>1</strong></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <p>因为 “同为 0 ，异为 1 ” ，相异的也就只有 0 - 1 这种情况啦，而两个 1 异或得到 0 ，所以只要看 1 的个数就好了。而看个数的话，顺序当然就无所谓了。<br>当然，这里仅仅是对于数字之间异或的小规律，严谨一点的话，还是需要从表达式来推导。</p>
 <h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><ol>
 <li>首先就是之前提到的，当数组中其他的数都出现 2 次时，能够得到唯一只出现过一次的数。对这个问题进行推广，也就是，当数组中其他数都出现<em>偶数次</em>时，可以得到<em>唯一</em>出现<em>奇数次</em>的数。</li>
@@ -855,15 +838,46 @@
       </tags>
   </entry>
   <entry>
+    <title>虚拟机安装</title>
+    <url>/2019/09/15/virtual-machine-setting/</url>
+    <content><![CDATA[<h4 id="虚拟机安装及与主机间的文件共享"><a href="#虚拟机安装及与主机间的文件共享" class="headerlink" title="虚拟机安装及与主机间的文件共享"></a>虚拟机安装<em>及</em>与主机间的文件共享</h4><p><em>啾咪，这是一篇没有图片的教程，额呵呵……咩有图片，大概是因为，懒吧……</em><br><em>想要安装虚拟机是因为很多软件没有 Linux 版本，比如公司常用的钉钉，同时没有百度网盘客户端根本没办法下载一些大文件，虽然说现在百度网盘出了 Linux 版本，但是呵呵哒，根本不能用。而想要利用虚拟机下载文件，那就需要解决如何把虚拟机文件共享到主机的问题。</em></p>
+<h5 id="虚拟机安装"><a href="#虚拟机安装" class="headerlink" title="虚拟机安装"></a>虚拟机安装</h5><p>使用工具：</p>
+<ol>
+<li>VirtualBox</li>
+<li>VMware</li>
+</ol>
+<p>上面两个是常见的虚拟机安装的软件，最后还是选择了 VirtualBox，原因有下面几个</p>
+<ul>
+<li>我需要虚拟机实现的功能不多，VirtualBox 相对来说安装更便捷；</li>
+<li>VMware 需要付费，虽然它也有免费版可以使用，但就总觉得不得劲儿；</li>
+<li>刚开始是准备用 VMware 的，但是在启动虚拟机是遇到了问题，而在尝试使用 VirtualBox 时我有顺手把这个问题解决了，哈哈</li>
+</ul>
+<p>Anyway，其实两个软件的使用操作都是大同小异。<br>首先需要安装好 VirtualBox， Linux 下安装可以直接使用命令行 <code>sudo apt install virtualbox</code> ；如果是 Windows ，那就直接下载安装～<br>安装好之后，点击新建虚拟机，设置好名字，系统，想要分配的大小，虚拟硬盘文件类型选择<strong>磁盘映像</strong>。<br>创建好虚拟机后，选中虚拟机，点击<strong>启动</strong>，这时候就需要选定<strong>下载好的光盘映像文件(.iso)</strong>。<br>之后，就按照正常的系统安装过程进行就 OK 啦～</p>
+<p>在启动虚拟机时，可能会出现这样的报错信息：</p>
+<blockquote>
+<p>本机支持 VT-x ，但 VT-x 未开启。</p>
+</blockquote>
+<p>解决办法就是重启电脑进入 BIOS 模式将它打开。<br>细节问题，比如怎么进入 BIOS 模式？在哪里打开 VT-x ？</p>
+<ul>
+<li>不同电脑按键不一样，一般是在看到系统图标时按 <strong>F2 / F8 / F9 / F11 / F12</strong> ，就直接试试或是百度吧。</li>
+<li>关于第二点，就，多找找总能找到的，不然，也可以继续百度呀。</li>
+</ul>
+<h5 id="虚拟机与主机的文件共享"><a href="#虚拟机与主机的文件共享" class="headerlink" title="虚拟机与主机的文件共享"></a>虚拟机与主机的文件共享</h5><p><em>这里基于 VirtualBox ，跟 VMware 的区别就有些大了。</em><br><em>以下介绍的是使用共享文件夹进行文件共享的方式。</em></p>
+<p>首先，启动需要共享的虚拟机，左上方点击<strong>设备-安装增强功能</strong>，下载好驱动后，安装它（<strong>不同系统对应有不同的安装包</strong>）。<br>接下来新建共享文件夹，左上方点击<strong>控制-设置-共享文件夹</strong>，点击右侧<strong>带加号的文件夹图标</strong>新建，选择想要共享的文件夹，并给它命名。<br>会有三个选项：只读分配，自动挂载，固定分配。<br>如果想要虚拟机可以修改共享文件夹内容（写入），就不要勾选只读分配；之后的自动分配和固定挂载，为了方便我都会勾选。</p>
+]]></content>
+      <categories>
+        <category>Code Word</category>
+      </categories>
+      <tags>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>爬虫初体验-网站文章</title>
     <url>/2019/05/09/%E7%88%AC%E8%99%AB%E5%88%9D%E4%BD%93%E9%AA%8C-%E7%BD%91%E7%AB%99%E6%96%87%E7%AB%A0/</url>
     <content><![CDATA[<p>日期：2019-05-09<br>天气：没出门我也不知道……<br>啊啊啊啊啊(请自行带入Do、Re、Mi)～今天是有点艹dan又有点满足的一天。艹dan是因为，就因为同学让我帮忙就捣鼓了一天 python 爬虫，茶不思饭不想；满足就是一天过去了还是有很多收获，也掌握了一些 python 爬虫的基本技能。</p>
 <h4 id="目标任务"><a href="#目标任务" class="headerlink" title="目标任务"></a>目标任务</h4><p>需求是爬取<a href="https://www.kangantu.com/news/" target="_blank" rel="noopener">康安途网站医药新闻板块</a>的所有文章，希望得到的包括每一篇文章的标题及其内容(纯文本)。<br>大概浏览了一下页面的内容，新闻版块一共有 2317 页，每一页包含 20 篇文章，也就是实说最后会有 40k+ 条信息，我的小本本还是有点承受不住的……<br>本来我都准被写到一个个文件里了，后来嘞，需求改了，变成把 [标题，日期，链接] 存到一个 excel 表格里，大概就酱紫。<br>最后我还是手欠把内容给加上了。</p>
-<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><p>anaconda 安装</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ conda install requests</span><br><span class="line">$ conda install beautifulsoup4</span><br></pre></td></tr></table></figure>
-<p>pip 安装</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pip install requests</span><br><span class="line">$ pip install beautifulsoup4</span><br></pre></td></tr></table></figure>
-
+<h4 id="工具安装"><a href="#工具安装" class="headerlink" title="工具安装"></a>工具安装</h4><p>anaconda 安装<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ conda install requests</span><br><span class="line">$ conda install beautifulsoup4</span><br></pre></td></tr></table></figure><br>pip 安装<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ pip install requests</span><br><span class="line">$ pip install beautifulsoup4</span><br></pre></td></tr></table></figure></p>
 <h4 id="基本思路"><a href="#基本思路" class="headerlink" title="基本思路"></a>基本思路</h4><ul>
 <li>使用 requests + BeautifulSoup 获取网页的源代码并对其解析</li>
 <li>使用 BeautifulSoup 中的 find 函数找到 文章名称、链接网址、发表时间 所在的 tag </li>
@@ -873,24 +887,13 @@
 <li>因为信息数量太大了，所以使用多个文件来保存</li>
 </ul>
 <h4 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h4><p>一开始由于完全没经验，直接就去网上开始搜 “python爬取网站所有文章”，还是找到了两片比较有用的，虽然说由于每个网站的结构相差比较多，不一样的地方还是多，不过因为这两篇文章还是知道了常用的库以及基本用法。</p>
-<h5 id="requests-BeautifulSoup-乱码问题"><a href="#requests-BeautifulSoup-乱码问题" class="headerlink" title="requests - BeautifulSoup 乱码问题"></a>requests - BeautifulSoup 乱码问题</h5><p>! 叮！这里的代码是错误不完全示范！<br>使用 requests - BeautifulSoup 解析网页源代码，最开始两篇文章中是这样的：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line">bs = BeautifulSoup(req.text)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
-<p>然后就发现什么也找不到，相当于一部分内容直接丢失了……然后看了看 BeautifulSoup 的文档，借鉴了一下别人的代码。如下修改：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#新增：</span></span><br><span class="line">req.encoding = <span class="string">'utf-8'</span></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
-<p>倒腾来倒腾去，还是不对，虽然没有内容丢失，但中文部分还是会乱码。大半天被这问题困扰，终于我灵机一动，搜索 “BeautifulSoup 乱码” ，成功找到<a href="https://www.jianshu.com/p/69401b84419e" target="_blank" rel="noopener">这篇文章</a>，解决了问题，不过没有完全按照这个修改哈。<br>总结以下嘞，就是在使用 requests + BeautifulSoup 获取源代码的时候，最好能够声明网页的编码格式，编码格式源代码里可以看到，最终如下：</p>
+<h5 id="requests-BeautifulSoup-乱码问题"><a href="#requests-BeautifulSoup-乱码问题" class="headerlink" title="requests - BeautifulSoup 乱码问题"></a>requests - BeautifulSoup 乱码问题</h5><p>! 叮！这里的代码是错误不完全示范！<br>使用 requests - BeautifulSoup 解析网页源代码，最开始两篇文章中是这样的：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line">bs = BeautifulSoup(req.text)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure><br>然后就发现什么也找不到，相当于一部分内容直接丢失了……然后看了看 BeautifulSoup 的文档，借鉴了一下别人的代码。如下修改：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#新增：</span></span><br><span class="line">req.encoding = <span class="string">'utf-8'</span></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line"></span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure><br>倒腾来倒腾去，还是不对，虽然没有内容丢失，但中文部分还是会乱码。大半天被这问题困扰，终于我灵机一动，搜索 “BeautifulSoup 乱码” ，成功找到<a href="https://www.jianshu.com/p/69401b84419e" target="_blank" rel="noopener">这篇文章</a>，解决了问题，不过没有完全按照这个修改哈。<br>总结以下嘞，就是在使用 requests + BeautifulSoup 获取源代码的时候，最好能够声明网页的编码格式，编码格式源代码里可以看到，最终如下：</p>
 <blockquote>
 <p><em>如何获得网站编码格式：<br>使用 Chrome 浏览器，进入需要爬取的网页，鼠标右键进入源代码界面；<br>Ctrl + f 搜索 “charset” 即可</em></p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">url = <span class="string">"https://www.kangantu.com/news"</span></span><br><span class="line">req = requests.get(url)</span><br><span class="line"><span class="comment">#修改：</span></span><br><span class="line">req.encoding = <span class="string">'gb2312'</span></span><br><span class="line"></span><br><span class="line">bs = BeautifulSoup(req.text, <span class="string">"html.parser"</span>)</span><br><span class="line">bf = bs.find_all(<span class="string">"a"</span>, class_=<span class="string">"tiltle"</span>)</span><br></pre></td></tr></table></figure>
-
-<h5 id="如何获得需要的部分"><a href="#如何获得需要的部分" class="headerlink" title="如何获得需要的部分"></a>如何获得需要的部分</h5><p>一开始因为信息丢失和乱码问题，止步不前，一发同学用 python-2.7 + urllib2 + re 解决了文章标题和链接地址的问题，但是我真的非常不喜欢用 re ，看到就晕那种，磨啊磨一直到解决了乱码问题，后面的也就迎刃而解了，如下：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">htmlr = requests.get(url)</span><br><span class="line">htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line">date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line">link_list = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含网址的列表</span></span><br><span class="line">date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="窝嘞代码"><a href="#窝嘞代码" class="headerlink" title="窝嘞代码"></a>窝嘞代码</h4><p>最后，贴一下所有的代码～</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">date: 2019-5-9</span></span><br><span class="line"><span class="string">fucntion: get all the article of a network station</span></span><br><span class="line"><span class="string">author: Li yinian</span></span><br><span class="line"><span class="string">version: v-1.1</span></span><br><span class="line"><span class="string">python-3.7</span></span><br><span class="line"><span class="string">新增：对不完整网址的补全</span></span><br><span class="line"><span class="string">新增：抓取文章的内容</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#引入模块</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成包含所有网址的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_url_list</span><span class="params">(page_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：页码范围，要求格式为 list</span></span><br><span class="line"><span class="string">    输出：包含要抓取信息的所页面网址的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    basic_url = <span class="string">"https://www.kangantu.com/news/list_"</span> </span><br><span class="line">    url_list = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> page_list:</span><br><span class="line">        url = basic_url+str(i)+<span class="string">".html"</span></span><br><span class="line">        url_list.append(url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增函数，用于转换不完整网址</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">url_trans</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[:<span class="number">5</span>] != <span class="string">'https'</span>:</span><br><span class="line">        link = <span class="string">"https://www.kangantu.com"</span> + url</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        link = url</span><br><span class="line">    <span class="keyword">return</span> link</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取页面的文章题目，时间，以及文章链接</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_title_link_date</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：网址链接(str)</span></span><br><span class="line"><span class="string">    输出：DataFrame, columns=["title", "data", "link"]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    htmlr = requests.get(url)</span><br><span class="line">    htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">    bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">    title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">    date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">    title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#修改：url_trans()函数补全网址</span></span><br><span class="line">    <span class="comment">#link_list = list(item['href'] if for item in title_link)</span></span><br><span class="line">    link_list_0 = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)</span><br><span class="line">    link_list = list(map(url_trans, link_list_0))	<span class="comment">#得到包含网址的列表</span></span><br><span class="line"></span><br><span class="line">    date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br><span class="line"></span><br><span class="line">    title_date_link_df = pd.DataFrame(&#123;<span class="string">'title'</span>: title_list, <span class="string">'date'</span>: date_list, <span class="string">'link'</span>: link_list&#125;)     <span class="comment">#</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> title_date_link_df </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增：通过已获得的文章地址抓取文章的内容，得到包含日期的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_content</span><span class="params">(link_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：列表-内容为已获取的文章网址</span></span><br><span class="line"><span class="string">    输出：对应文章内容的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    content_list = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> link_list:</span><br><span class="line">        htmlr = requests.get(url)</span><br><span class="line">        htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">        bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">        content = bs.find(<span class="string">"div"</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">        content_list.append(content.get_text())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成excel文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">to_excel_file</span><span class="params">(file_df, file_path)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：DataFrame格式的文件，文件路径-包括名称，sheet编号</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment">#writer = pd.ExcelWriter(file_path)</span></span><br><span class="line">    file_df.to_excel(file_path, index=<span class="literal">False</span>, encoding=<span class="string">'utf-8'</span>, sheet_name=str(file_index))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">last_func</span><span class="params">(page_list, file_index)</span>:</span></span><br><span class="line">    urls = generate_url_list(page_list)</span><br><span class="line">    df = pd.DataFrame()</span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:</span><br><span class="line">        title_date_link_df = get_title_link_date(url)	</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#新增：加入文章内容</span></span><br><span class="line">        link_list = title_date_link_df[<span class="string">'link'</span>]</span><br><span class="line">        title_date_link_df[<span class="string">'content'</span>] = get_content(link_list)</span><br><span class="line"></span><br><span class="line">        df = pd.concat([df, title_date_link_df], axis=<span class="number">0</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment">#修改：修改文件夹名称</span></span><br><span class="line">    to_excel_file(df, <span class="string">"/home/may/daydayup/kangantu-more/kangantu-news-"</span>+str(file_index)+<span class="string">".xls"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#正式的代码部分，网站需要爬取的共 2317 页-rang(1,2318)</span></span><br><span class="line">list_n = list(range(<span class="number">1</span>, <span class="number">2318</span>, <span class="number">50</span>))</span><br><span class="line">list_n.append(<span class="number">2318</span>)</span><br><span class="line">page_hole_list = [list(range(list_n[i<span class="number">-1</span>], list_n[i])) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(list_n))]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(page_hole_list)):</span><br><span class="line">    file_index = i</span><br><span class="line">    page_list = page_hole_list[i]</span><br><span class="line">    last_func(page_list, file_index+<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-
-
-
+<h5 id="如何获得需要的部分"><a href="#如何获得需要的部分" class="headerlink" title="如何获得需要的部分"></a>如何获得需要的部分</h5><p>一开始因为信息丢失和乱码问题，止步不前，一发同学用 python-2.7 + urllib2 + re 解决了文章标题和链接地址的问题，但是我真的非常不喜欢用 re ，看到就晕那种，磨啊磨一直到解决了乱码问题，后面的也就迎刃而解了，如下：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">htmlr = requests.get(url)</span><br><span class="line">htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line">date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line">link_list = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含网址的列表</span></span><br><span class="line">date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="窝嘞代码"><a href="#窝嘞代码" class="headerlink" title="窝嘞代码"></a>窝嘞代码</h4><p>最后，贴一下所有的代码～<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: UTF-8 -*-</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">date: 2019-5-9</span></span><br><span class="line"><span class="string">fucntion: get all the article of a network station</span></span><br><span class="line"><span class="string">author: Li yinian</span></span><br><span class="line"><span class="string">version: v-1.1</span></span><br><span class="line"><span class="string">python-3.7</span></span><br><span class="line"><span class="string">新增：对不完整网址的补全</span></span><br><span class="line"><span class="string">新增：抓取文章的内容</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#引入模块</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> bs4 <span class="keyword">import</span> BeautifulSoup</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line"><span class="comment">#生成包含所有网址的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">generate_url_list</span><span class="params">(page_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：页码范围，要求格式为 list</span></span><br><span class="line"><span class="string">    输出：包含要抓取信息的所页面网址的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    basic_url = <span class="string">"https://www.kangantu.com/news/list_"</span> </span><br><span class="line">    url_list = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> page_list:</span><br><span class="line">        url = basic_url+str(i)+<span class="string">".html"</span></span><br><span class="line">        url_list.append(url)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> url_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增函数，用于转换不完整网址</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">url_trans</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">if</span> url[:<span class="number">5</span>] != <span class="string">'https'</span>:</span><br><span class="line">        link = <span class="string">"https://www.kangantu.com"</span> + url</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        link = url</span><br><span class="line">    <span class="keyword">return</span> link</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取页面的文章题目，时间，以及文章链接</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_title_link_date</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：网址链接(str)</span></span><br><span class="line"><span class="string">    输出：DataFrame, columns=["title", "data", "link"]</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    htmlr = requests.get(url)</span><br><span class="line">    htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">    bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">    title_link = bs.find(<span class="string">"div"</span>, class_=<span class="string">"listbox"</span>).find_all(<span class="string">"a"</span>, class_=<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">    date = bs.find_all(<span class="string">"span"</span>, class_=<span class="string">"article-date"</span>)</span><br><span class="line">    title_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> title_link)	<span class="comment">#得到包含标题的列表</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#修改：url_trans()函数补全网址</span></span><br><span class="line">    <span class="comment">#link_list = list(item['href'] if for item in title_link)</span></span><br><span class="line">    link_list_0 = list(item[<span class="string">'href'</span>] <span class="keyword">for</span> item <span class="keyword">in</span> title_link)</span><br><span class="line">    link_list = list(map(url_trans, link_list_0))	<span class="comment">#得到包含网址的列表</span></span><br><span class="line"></span><br><span class="line">    date_list = list(item.string <span class="keyword">for</span> item <span class="keyword">in</span> date)	<span class="comment">#得到包含日期的列表</span></span><br><span class="line"></span><br><span class="line">    title_date_link_df = pd.DataFrame(&#123;<span class="string">'title'</span>: title_list, <span class="string">'date'</span>: date_list, <span class="string">'link'</span>: link_list&#125;)     <span class="comment">#</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> title_date_link_df </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#新增：通过已获得的文章地址抓取文章的内容，得到包含日期的列表</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_content</span><span class="params">(link_list)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：列表-内容为已获取的文章网址</span></span><br><span class="line"><span class="string">    输出：对应文章内容的列表</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    content_list = []</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> link_list:</span><br><span class="line">        htmlr = requests.get(url)</span><br><span class="line">        htmlr.encoding = <span class="string">'gb2312'</span></span><br><span class="line">        bs = BeautifulSoup(htmlr.text, <span class="string">"html.parser"</span>)</span><br><span class="line">        content = bs.find(<span class="string">"div"</span>, class_=<span class="string">"content"</span>)</span><br><span class="line">        content_list.append(content.get_text())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> content_list</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#生成excel文件</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">to_excel_file</span><span class="params">(file_df, file_path)</span>:</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    输入：DataFrame格式的文件，文件路径-包括名称，sheet编号</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment">#writer = pd.ExcelWriter(file_path)</span></span><br><span class="line">    file_df.to_excel(file_path, index=<span class="literal">False</span>, encoding=<span class="string">'utf-8'</span>, sheet_name=str(file_index))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">last_func</span><span class="params">(page_list, file_index)</span>:</span></span><br><span class="line">    urls = generate_url_list(page_list)</span><br><span class="line">    df = pd.DataFrame()</span><br><span class="line">    <span class="keyword">for</span> url <span class="keyword">in</span> urls:</span><br><span class="line">        title_date_link_df = get_title_link_date(url)	</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#新增：加入文章内容</span></span><br><span class="line">        link_list = title_date_link_df[<span class="string">'link'</span>]</span><br><span class="line">        title_date_link_df[<span class="string">'content'</span>] = get_content(link_list)</span><br><span class="line"></span><br><span class="line">        df = pd.concat([df, title_date_link_df], axis=<span class="number">0</span>, ignore_index=<span class="literal">True</span>)</span><br><span class="line">    <span class="comment">#修改：修改文件夹名称</span></span><br><span class="line">    to_excel_file(df, <span class="string">"/home/may/daydayup/kangantu-more/kangantu-news-"</span>+str(file_index)+<span class="string">".xls"</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#正式的代码部分，网站需要爬取的共 2317 页-rang(1,2318)</span></span><br><span class="line">list_n = list(range(<span class="number">1</span>, <span class="number">2318</span>, <span class="number">50</span>))</span><br><span class="line">list_n.append(<span class="number">2318</span>)</span><br><span class="line">page_hole_list = [list(range(list_n[i<span class="number">-1</span>], list_n[i])) <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(list_n))]</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(page_hole_list)):</span><br><span class="line">    file_index = i</span><br><span class="line">    page_list = page_hole_list[i]</span><br><span class="line">    last_func(page_list, file_index+<span class="number">1</span>)</span><br></pre></td></tr></table></figure></p>
 ]]></content>
       <categories>
         <category>Python</category>
@@ -907,7 +910,7 @@
 <h3 id="先瞎叨叨几句"><a href="#先瞎叨叨几句" class="headerlink" title="先瞎叨叨几句"></a>先瞎叨叨几句</h3><p><em>开始的开始，我们都是孩子……噗噗噗，stop，说正事！</em><br>1.机器学习的整个过程大致可以分为：数据收集、数据处理、构建模型、训练模型、预测结果。共五个部分。在这次课程的大作业中每一个项目都包含了除数据收集的其余四个过程。在真正完成一个项目时，由于对预测结果的追求，肯定不是说五个过程顺序走一趟就可以了，而总是一个循环往复的过程，不断尝试、不断改进，直到最终模型的预测结果达到让人满意的程度。<br>2.数据处理需要把收集到的人能读懂的数据，通过一定的方法和规则，转换成能够运算的数字信息。一般来说都是对其进行分类编码。在这一部分还可能要做的就是特征的取舍，因为并不是所有的特征都与结果相关。此外，收集到的数据很有可能包含缺失值，对于缺失值，可以选择<strong>放弃</strong>或是<strong>填充</strong>，在包含缺失值样本极少时可以放弃不完整样本；又或者，有某一个特征包含大量的缺失值，也可以抛弃这个特征；而填充策略则有：向上填充、向下填充、均值填充、中位数填充等。在这一部分啊啊啊，还可以通过图像来快速判断特征之间，特征与标签之间的关系，为之后的模型建立作准备。总之呢，就是把手头的数据处理的能够直接上算法使用，而且还要对特征与预测结果的关系心中有数(大概吧)。<br>3.构建模型不是随便拿一个算法模型套上去就好了，而是要根据对数据的把握和对不同模型的理解，尽可能的选择适合的一个或者几个模型。在实际情况中，构建模型和训练模型往往是分不开的，因为大部分模型的都包含有超参数，为了选择最好的超参数，和最好的模型，当然就需要在数据集上进行多次训练最后取其中最好的结果啦。<br>4.如果已经得到了满意的模型，那么只要将数据处理的过程和训练好的模型保存起来就可以对新的数据进行预测。</p>
 <hr>
 <h3 id="就每个作业仔细叨叨"><a href="#就每个作业仔细叨叨" class="headerlink" title="就每个作业仔细叨叨"></a>就每个作业仔细叨叨</h3><p>一共五个大作业，分别为：IBM员工流失预测、贷款审批结果预测、员工流失预测进阶、蘑菇聚类分析、泰坦尼克幸存者预测。</p>
-<h4 id="IBM员工流失预测"><a href="#IBM员工流失预测" class="headerlink" title="IBM员工流失预测"></a>IBM员工流失预测</h4><p>该项目属于监督学习中的分类问题，主要目的是预测在未来一段时间公司的员工是否可能会离职。收集到的数据包括每一名员工的年龄、出差频率、职位等等信息，还包括作为标签列的是否离职信息。样本特征中既有数值型特征，也有字符型的标签特征。[<em>原作业点这里</em>](/superlink/IBM Employee attrition with simple processing.html)<br>因为这是第一个大作业，咱就梳理的仔细些，先来看看整个过程中都做了些什么吧：</p>
+<h4 id="IBM员工流失预测"><a href="#IBM员工流失预测" class="headerlink" title="IBM员工流失预测"></a>IBM员工流失预测</h4><p>该项目属于监督学习中的分类问题，主要目的是预测在未来一段时间公司的员工是否可能会离职。收集到的数据包括每一名员工的年龄、出差频率、职位等等信息，还包括作为标签列的是否离职信息。样本特征中既有数值型特征，也有字符型的标签特征。<a href="/superlink/IBM Employee attrition with simple processing.html"><em>原作业点这里</em></a><br>因为这是第一个大作业，咱就梳理的仔细些，先来看看整个过程中都做了些什么吧：</p>
 <ol>
 <li>引入可能用到的库、类或者函数，然后导入数据。</li>
 <li>人工观察数据(这时候就需要一双慧眼和经验啦)，搞明白每一列数据都是干嘛的，数据跟标签大概是个什么关系(一般领域靠常识还是能基本get到的)。顺便一行代码看看有没有空值，如果有就需要采取行动了，这个项目没有空值直接跳过。</li>
@@ -936,25 +939,14 @@
 <li>比较了不同模型的准确率和训练耗费的时间。</li>
 </ol>
 <p><em>(这里的过程也是非常详细啦，所以再之后我们就只罗列一些值得注意学习的点了)</em></p>
-<h4 id="员工流失预测进阶"><a href="#员工流失预测进阶" class="headerlink" title="员工流失预测进阶"></a>员工流失预测进阶</h4><p>(数据和项目简介之前已经有了，不再赘述)[<em>原作业点这里<em>](/superlink/ibm homework with preprocessing.html)<br>这里分别对数值型数据进行了归一化/标准化，比较了两种不同操作的训练结果；利用<code>sklearn.model_selection.validation_curve</code>绘制了学习曲线。<br><strong>叮！</strong>当样本分布不咋均衡的时候，可以对样本进行重采样(<code>pandas.DataFrame.sample()</code>) 。重采样有两种策略，一种是向下采样(在我们的数据中，分类0的数据比分类1多，向下采样即将分类0的数据量缩减到跟分类1相等<code>attrition_class_0.sample(count_class_1)</code>)；另一种则是向上采样(向上采样即将分类1的数据量随机增加到跟分类0相等<code>attrition_class_1.sample(count_class_0, replace=True)</code>)。<br>**【选修】</em></em>Python 的 imbalanced-learn 模块提供了更为丰富和科学的重采样方法。尝试使用<code>imblearn.combine.SMOTETomek</code> 来做上下采样相结合的数据处理。</p>
-<h4 id="蘑菇聚类分析"><a href="#蘑菇聚类分析" class="headerlink" title="蘑菇聚类分析"></a>蘑菇聚类分析</h4><p>数据集包含了蘑菇的各种特征共22个，比如帽形、帽面、气味等等，所有的特征数据都是字符型的。[<em>原作业点这里<em>](/superlink/mushroom clustering.html)<br>通过条形统计图直观展示了每个特征都有几类，以及每一类的数量，可以筛掉那些所有样本都相同的特征。ps.因为这种没有特色的，用了也是白搭啊哈哈。<br>虽然都是类别型数据，但也采取了区别对待。对仅包含2个可能值的变量使用一个简单的标签编码，对包含3个或多个可能值的变量进行热编码。<br>**叮！</em></em>使用<code>sklearn.decomposition.PCA</code>对特征进行了降维处理，在尽可能保留数据信息的同时减少特征的数量。</p>
+<h4 id="员工流失预测进阶"><a href="#员工流失预测进阶" class="headerlink" title="员工流失预测进阶"></a>员工流失预测进阶</h4><p>(数据和项目简介之前已经有了，不再赘述)<a href="/superlink/ibm homework with preprocessing.html"><em>原作业点这里</em></a><br>这里分别对数值型数据进行了归一化/标准化，比较了两种不同操作的训练结果；利用<code>sklearn.model_selection.validation_curve</code>绘制了学习曲线。<br><strong>叮！</strong>当样本分布不咋均衡的时候，可以对样本进行重采样(<code>pandas.DataFrame.sample()</code>) 。重采样有两种策略，一种是向下采样(在我们的数据中，分类0的数据比分类1多，向下采样即将分类0的数据量缩减到跟分类1相等<code>attrition_class_0.sample(count_class_1)</code>)；另一种则是向上采样(向上采样即将分类1的数据量随机增加到跟分类0相等<code>attrition_class_1.sample(count_class_0, replace=True)</code>)。<br><strong>【选修】</strong>Python 的 imbalanced-learn 模块提供了更为丰富和科学的重采样方法。尝试使用<code>imblearn.combine.SMOTETomek</code> 来做上下采样相结合的数据处理。</p>
+<h4 id="蘑菇聚类分析"><a href="#蘑菇聚类分析" class="headerlink" title="蘑菇聚类分析"></a>蘑菇聚类分析</h4><p>数据集包含了蘑菇的各种特征共22个，比如帽形、帽面、气味等等，所有的特征数据都是字符型的。<a href="/superlink/mushroom clustering.html"><em>原作业点这里</em></a><br>通过条形统计图直观展示了每个特征都有几类，以及每一类的数量，可以筛掉那些所有样本都相同的特征。ps.因为这种没有特色的，用了也是白搭啊哈哈。<br>虽然都是类别型数据，但也采取了区别对待。对仅包含2个可能值的变量使用一个简单的标签编码，对包含3个或多个可能值的变量进行热编码。<br><strong>叮！</strong>使用<code>sklearn.decomposition.PCA</code>对特征进行了降维处理，在尽可能保留数据信息的同时减少特征的数量。</p>
 <h4 id="泰坦尼克幸存者预测"><a href="#泰坦尼克幸存者预测" class="headerlink" title="泰坦尼克幸存者预测"></a>泰坦尼克幸存者预测</h4><p>终于终于到这个非*儿有名的沉船问题了，然后就一起来看看什么样的人群在这次沉船事件中更容易活下来吧。<a href="/superlink/titanic.html"><em>原作业点这里</em></a><br>画图分析了每一个特征内的存活率(比如性别这一特征中，男性的存活率)。然后嘞，从这个图也能反映一些问题，比如说：不是每个人的仓位号都是独一无二的，说明这个特征竟然还有跟最后的结果有点关系的。<br>观察同一个仓位(比如E44)中的乘客信息，看名字发现他们还是有点关系的，然后把每一个人名字的Title提取了出来(比如Mr、Miss)，有些title出现的次数很少，就把他们统一归位了一类-Misc 。</p>
 <hr>
 <h3 id="终极大盘点"><a href="#终极大盘点" class="headerlink" title="终极大盘点"></a>终极大盘点</h3><p><em>后来的后来，渴望变成天使……</em></p>
-<h4 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h4><p>这里不想瞎叨叨，先用一个流程图来理一理吧！(都能画流程图了，感觉自己很nb的样子吼^*-*^)<br>吭哧吭哧写好了代码，结果发现太长了，嘤嘤嘤，还是换图片吧。<br>ps. 这里提到的处理方法都很基础，不过嘞，这本身也只是对大作业的一个总结，理一理大概的过程，机器学习那么多方法，全部罗列也写不完啊……<br><img src="/images/%E5%B0%8F%E8%B1%A1%E6%80%BB%E7%BB%93%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="小象总结流程图"></p>
+<h4 id="基本流程"><a href="#基本流程" class="headerlink" title="基本流程"></a>基本流程</h4><p>这里不想瞎叨叨，先用一个流程图来理一理吧！(都能画流程图了，感觉自己很nb的样子吼^*-*^)<br>吭哧吭哧写好了代码，结果发现太长了，嘤嘤嘤，还是换图片吧。<br>ps. 这里提到的处理方法都很基础，不过嘞，这本身也只是对大作业的一个总结，理一理大概的过程，机器学习那么多方法，全部罗列也写不完啊……<br><img src="/images/小象总结流程图.png" alt="小象总结流程图"></p>
 <h4 id="方法盘点"><a href="#方法盘点" class="headerlink" title="方法盘点"></a>方法盘点</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> seaborn <span class="keyword">as</span> sns </span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br></pre></td></tr></table></figure>
-<p>导入数据：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">file_path = <span class="string">'(这里面是文件的路径以及名字。csv)'</span></span><br><span class="line">data = pd.read_csv(file_path)</span><br></pre></td></tr></table></figure>
-<p>作图分析：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.figure()</span><br><span class="line"><span class="comment">#可视化属性之间关系</span></span><br><span class="line">sns.pairplot(data[numerical], hue=<span class="string">'Attrition_numerical'</span>, </span><br><span class="line">             palette=<span class="string">'seismic'</span>, diag_kind = <span class="string">'kde'</span>, </span><br><span class="line">             diag_kws=dict(shade=<span class="literal">True</span>))</span><br><span class="line"><span class="comment">#柱形图</span></span><br><span class="line">data.plot.bar()</span><br><span class="line">data.plot(x=column_name, y=[<span class="string">'Survival Rate'</span>], kind=<span class="string">'bar'</span>,</span><br><span class="line">          title=column_name, legend=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#eheheha，其他的就不放在着了吧啦啦啦......</span></span><br></pre></td></tr></table></figure>
-<p>数据处理：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#是否存在重复样本？(这里是根据ID判断)</span></span><br><span class="line">data[data[<span class="string">'ID'</span>].duplicated()].shape[<span class="number">0</span>] == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#是否有空值？</span></span><br><span class="line">data.isnull().any()    <span class="comment">#会返回每一列是否有空值，bool型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#丢掉有空值的样本</span></span><br><span class="line">data = data.dropna()</span><br><span class="line"></span><br><span class="line"><span class="comment">#空值填充</span></span><br><span class="line"><span class="comment">#Method.1</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> Imputer</span><br><span class="line">imputer = Imputer(missing_values=’NaN’, strategy=’median’, copy=<span class="literal">True</span>)</span><br><span class="line">data = imputer.fit_transform(data)</span><br><span class="line"><span class="comment">#Method.2</span></span><br><span class="line">data.fillna(value=<span class="literal">None</span>)    <span class="comment">#直接指定填充值</span></span><br><span class="line">data.fillna(method=<span class="string">'backfill'</span>)    <span class="comment">#指定填充方案</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#重采样</span></span><br><span class="line">data.sample(sample_number)</span><br><span class="line"></span><br><span class="line"><span class="comment">#数据编码</span></span><br><span class="line"><span class="comment">#独热编码</span></span><br><span class="line"><span class="comment">#sklaern</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> OneHotEncoder</span><br><span class="line">encoder = OnrHotEncoder(sparse=<span class="literal">False</span>)</span><br><span class="line">data = encoder.fit_transform(data)</span><br><span class="line"><span class="comment">#pandas</span></span><br><span class="line">data = pd.get_dummies(data)    <span class="comment">#这个函数可以保持原来的数据格式</span></span><br><span class="line"><span class="comment">#标签编码</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> LabelEncoder</span><br><span class="line">encoder = LabelEncoder(sparse=<span class="literal">False</span>)    <span class="comment">#每次只能对单一特征编码</span></span><br><span class="line">data = encoder.fit_transform(data)</span><br><span class="line"></span><br><span class="line"><span class="comment">#数据降维</span></span><br><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA</span><br><span class="line">pca = PCA(n_components=<span class="literal">None</span>)    <span class="comment">#指定一个数(整数或小数)，可能小数会比较方便</span></span><br><span class="line">data = pca.fit_transform(data)</span><br><span class="line">n_components = pca.n_components_    <span class="comment">#返回主成分数量</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#数据拆分</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(data_X, data_y, test_size=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<p>模型训练：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#网格搜索</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> GridSearchCV</span><br><span class="line">clf = GridSearchCV(estimator = model,param_grid = param_range, cv = <span class="number">6</span>, scoring = <span class="string">'roc_auc'</span>, refit = <span class="literal">True</span>, </span><br><span class="line">			verbose = <span class="number">1</span>, n_jobs = <span class="number">4</span>)</span><br><span class="line">clf.fit(X_train, y_train)    <span class="comment">#训练后可以得到最优的模型</span></span><br><span class="line">best_param = clf.best_param_    <span class="comment">#返回训练得到的最优参数</span></span><br><span class="line">best_estimator = clf.best_estimator_</span><br><span class="line">train_score = clf.score(X_train, y_train)</span><br><span class="line">test_score = clf.score(X_test, y_test)</span><br><span class="line"></span><br><span class="line"><span class="comment">#监督学习</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier    <span class="comment">#KNN</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DescisionTreeClassifier    <span class="comment">#决策树-分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DescisionTreeRegress    <span class="comment">#决策树-回归</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> GaussianNB, BernoulliNB, MultinomialNB    <span class="comment">#朴素贝叶斯</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression    <span class="comment">#线性回归</span></span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression    <span class="comment">#逻辑回归</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC    <span class="comment">#SVM-分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR    <span class="comment">#SVM-回归</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#非监督学习</span></span><br><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans    <span class="comment">#K均值算法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#绘制学习曲线</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> validation_curve</span><br><span class="line">train_score, test_score = validation_curve(DecisionTreeClassifier(), X_train, y_train, </span><br><span class="line">			param_name=<span class="string">'max_depth'</span>, param_range=param_range, cv=<span class="number">10</span>, scoring=<span class="string">'roc_auc'</span>)</span><br><span class="line">train_score = np.mean(train_score,axis=<span class="number">1</span>)</span><br><span class="line">test_score = np.mean(test_score,axis=<span class="number">1</span>)</span><br><span class="line">plt.plot(param_range,train_score,<span class="string">'o-'</span>,color = <span class="string">'r'</span>,label = <span class="string">'training'</span>)</span><br><span class="line">plt.plot(param_range,test_score,<span class="string">'o-'</span>,color = <span class="string">'g'</span>,label = <span class="string">'testing'</span>)</span><br></pre></td></tr></table></figure>
-<p>导出数据：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">y_pre = model.predict(data_to_pre)</span><br><span class="line">result = pd.DataFrame(&#123;<span class="string">'ID'</span>: list(range(len(ypre))), <span class="string">'pre_value'</span>: y_pre&#125;)</span><br><span class="line">result.to_csv(<span class="string">'文件路径及名字'</span>)</span><br></pre></td></tr></table></figure>
-
-
+<p>导入数据：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">file_path = <span class="string">'(这里面是文件的路径以及名字。csv)'</span></span><br><span class="line">data = pd.read_csv(file_path)</span><br></pre></td></tr></table></figure><br>作图分析：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">plt.figure()</span><br><span class="line"><span class="comment">#可视化属性之间关系</span></span><br><span class="line">sns.pairplot(data[numerical], hue=<span class="string">'Attrition_numerical'</span>, </span><br><span class="line">             palette=<span class="string">'seismic'</span>, diag_kind = <span class="string">'kde'</span>, </span><br><span class="line">             diag_kws=dict(shade=<span class="literal">True</span>))</span><br><span class="line"><span class="comment">#柱形图</span></span><br><span class="line">data.plot.bar()</span><br><span class="line">data.plot(x=column_name, y=[<span class="string">'Survival Rate'</span>], kind=<span class="string">'bar'</span>,</span><br><span class="line">          title=column_name, legend=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">#eheheha，其他的就不放在着了吧啦啦啦......</span></span><br></pre></td></tr></table></figure><br>数据处理：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#是否存在重复样本？(这里是根据ID判断)</span></span><br><span class="line">data[data[<span class="string">'ID'</span>].duplicated()].shape[<span class="number">0</span>] == <span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#是否有空值？</span></span><br><span class="line">data.isnull().any()    <span class="comment">#会返回每一列是否有空值，bool型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#丢掉有空值的样本</span></span><br><span class="line">data = data.dropna()</span><br><span class="line"></span><br><span class="line"><span class="comment">#空值填充</span></span><br><span class="line"><span class="comment">#Method.1</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> Imputer</span><br><span class="line">imputer = Imputer(missing_values=’NaN’, strategy=’median’, copy=<span class="literal">True</span>)</span><br><span class="line">data = imputer.fit_transform(data)</span><br><span class="line"><span class="comment">#Method.2</span></span><br><span class="line">data.fillna(value=<span class="literal">None</span>)    <span class="comment">#直接指定填充值</span></span><br><span class="line">data.fillna(method=<span class="string">'backfill'</span>)    <span class="comment">#指定填充方案</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#重采样</span></span><br><span class="line">data.sample(sample_number)</span><br><span class="line"></span><br><span class="line"><span class="comment">#数据编码</span></span><br><span class="line"><span class="comment">#独热编码</span></span><br><span class="line"><span class="comment">#sklaern</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> OneHotEncoder</span><br><span class="line">encoder = OnrHotEncoder(sparse=<span class="literal">False</span>)</span><br><span class="line">data = encoder.fit_transform(data)</span><br><span class="line"><span class="comment">#pandas</span></span><br><span class="line">data = pd.get_dummies(data)    <span class="comment">#这个函数可以保持原来的数据格式</span></span><br><span class="line"><span class="comment">#标签编码</span></span><br><span class="line"><span class="keyword">from</span> sklearn.preprocessing <span class="keyword">import</span> LabelEncoder</span><br><span class="line">encoder = LabelEncoder(sparse=<span class="literal">False</span>)    <span class="comment">#每次只能对单一特征编码</span></span><br><span class="line">data = encoder.fit_transform(data)</span><br><span class="line"></span><br><span class="line"><span class="comment">#数据降维</span></span><br><span class="line"><span class="keyword">from</span> sklearn.decomposition <span class="keyword">import</span> PCA</span><br><span class="line">pca = PCA(n_components=<span class="literal">None</span>)    <span class="comment">#指定一个数(整数或小数)，可能小数会比较方便</span></span><br><span class="line">data = pca.fit_transform(data)</span><br><span class="line">n_components = pca.n_components_    <span class="comment">#返回主成分数量</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#数据拆分</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">X_train, X_test, y_train, y_test = train_test_split(data_X, data_y, test_size=<span class="number">0.2</span>, random_state=<span class="number">1</span>)</span><br></pre></td></tr></table></figure><br>模型训练：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#网格搜索</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> GridSearchCV</span><br><span class="line">clf = GridSearchCV(estimator = model,param_grid = param_range, cv = <span class="number">6</span>, scoring = <span class="string">'roc_auc'</span>, refit = <span class="literal">True</span>, </span><br><span class="line">			verbose = <span class="number">1</span>, n_jobs = <span class="number">4</span>)</span><br><span class="line">clf.fit(X_train, y_train)    <span class="comment">#训练后可以得到最优的模型</span></span><br><span class="line">best_param = clf.best_param_    <span class="comment">#返回训练得到的最优参数</span></span><br><span class="line">best_estimator = clf.best_estimator_</span><br><span class="line">train_score = clf.score(X_train, y_train)</span><br><span class="line">test_score = clf.score(X_test, y_test)</span><br><span class="line"></span><br><span class="line"><span class="comment">#监督学习</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier    <span class="comment">#KNN</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DescisionTreeClassifier    <span class="comment">#决策树-分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DescisionTreeRegress    <span class="comment">#决策树-回归</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.naive_bayes <span class="keyword">import</span> GaussianNB, BernoulliNB, MultinomialNB    <span class="comment">#朴素贝叶斯</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LinearRegression    <span class="comment">#线性回归</span></span><br><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression    <span class="comment">#逻辑回归</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC    <span class="comment">#SVM-分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR    <span class="comment">#SVM-回归</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#非监督学习</span></span><br><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> KMeans    <span class="comment">#K均值算法</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#绘制学习曲线</span></span><br><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> validation_curve</span><br><span class="line">train_score, test_score = validation_curve(DecisionTreeClassifier(), X_train, y_train, </span><br><span class="line">			param_name=<span class="string">'max_depth'</span>, param_range=param_range, cv=<span class="number">10</span>, scoring=<span class="string">'roc_auc'</span>)</span><br><span class="line">train_score = np.mean(train_score,axis=<span class="number">1</span>)</span><br><span class="line">test_score = np.mean(test_score,axis=<span class="number">1</span>)</span><br><span class="line">plt.plot(param_range,train_score,<span class="string">'o-'</span>,color = <span class="string">'r'</span>,label = <span class="string">'training'</span>)</span><br><span class="line">plt.plot(param_range,test_score,<span class="string">'o-'</span>,color = <span class="string">'g'</span>,label = <span class="string">'testing'</span>)</span><br></pre></td></tr></table></figure><br>导出数据：<br><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">y_pre = model.predict(data_to_pre)</span><br><span class="line">result = pd.DataFrame(&#123;<span class="string">'ID'</span>: list(range(len(ypre))), <span class="string">'pre_value'</span>: y_pre&#125;)</span><br><span class="line">result.to_csv(<span class="string">'文件路径及名字'</span>)</span><br></pre></td></tr></table></figure></p>
 <!--
 这是我废弃掉又舍不得扔的流程图源代码......
 预告：这个流程图很长，特别长......

@@ -1,81 +1,26 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html lang="zh-CN">
 <head>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="正则匹配," />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="简介正则表达式（RegEx）是一种文本模式，可以用单个字符串来匹配符合正则字符串描述规则的字符。 几个简单的例子 直接给出字符用于精确匹配，&#39;\d&#39; 匹配一个数字，&#39;\w&#39; 匹配一个字母数字或下划线。那么，&#39;\d00&#39; 可以匹配数字 ‘000’ 、 ‘700’ ，不能匹配 ‘a00’；而 &#39;\w00&#39; 则可以匹配 ‘a00’。 &amp;#3">
+  <meta name="description" content="简介正则表达式（RegEx）是一种文本模式，可以用单个字符串来匹配符合正则字符串描述规则的字符。 几个简单的例子 直接给出字符用于精确匹配，&#39;\d&#39; 匹配一个数字，&#39;\w&#39; 匹配一个字母数字或下划线。那么，&#39;\d00&#39; 可以匹配数字 ‘000’ 、 ‘700’ ，不能匹配 ‘a00’；而 &#39;\w00&#39; 则可以匹配 ‘a00’。 &amp;#3">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RegularExpression">
 <meta property="og:url" content="http://yoursite.com/2019/11/23/RegularExpression/index.html">
@@ -88,39 +33,18 @@
 <meta property="article:tag" content="正则匹配">
 <meta name="twitter:card" content="summary">
 
+<link rel="canonical" href="http://yoursite.com/2019/11/23/RegularExpression/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Gemini',
-    version: '',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
-    fancybox: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: 'undefined',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/2019/11/23/RegularExpression/"/>
-
-
-
-
 
   <title>RegularExpression | 桃花源</title>
   
@@ -130,248 +54,193 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
 
-<meta name="generator" content="Hexo 4.2.1"><!-- hexo-inject:begin --><!-- hexo-inject:end --></head>
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+</head>
 
-  
-  
-    
-  
-
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">桃花源</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-      
-        <p class="site-subtitle">zone for dreaming</p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">桃花源</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">zone for dreaming</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
   </div>
 </div>
+
+
+
 
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/%20" rel="section">
-            
-            首页
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
-            
-            标签
-          </a>
-        </li>
-      
-        
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
-            
-            分类
-          </a>
-        </li>
-      
-        
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="popup-trigger">
-          
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
-  
-    <div class="site-search">
-      
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
-    <span class="popup-btn-close">
-      <i class="fa fa-times-circle"></i>
-    </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="搜索..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
-  </div>
-  <div id="local-search-result"></div>
-</div>
-
-
-
-    </div>
-  
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
 </nav>
 
 
 
- </div>
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content post posts-expand">
             
 
-  <div id="posts" class="posts-expand">
     
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/23/RegularExpression/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/yinian818.jpeg">
       <meta itemprop="name" content="李一念">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/%5Bobject%20Object%5D">
+      <meta itemprop="description" content="好好学习，天天向上">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="桃花源">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">RegularExpression</h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          RegularExpression
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建时间" itemprop="dateCreated datePublished" datetime="2019-11-23T16:34:04+08:00">
-                2019-11-23
-              </time>
-            
+              <span class="post-meta-item-text">发表于</span>
 
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">修改时间&#58;</span>
-              
-              <time title="修改时间" itemprop="dateModified" datetime="2019-11-24T17:37:25+08:00">
-                2019-11-24
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Code-Word/" itemprop="url" rel="index">
-                    <span itemprop="name">Code Word</span>
-                  </a>
-                </span>
-
-                
-                
-              
+              <time title="创建时间：2019-11-23 16:34:04" itemprop="dateCreated datePublished" datetime="2019-11-23T16:34:04+08:00">2019-11-23</time>
             </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-24 17:37:25" itemprop="dateModified" datetime="2019-11-24T17:37:25+08:00">2019-11-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Code-Word/" itemprop="url" rel="index"><span itemprop="name">Code Word</span></a>
+                </span>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
-      
 
       
         <h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p>正则表达式（RegEx）是一种文本模式，可以用单个字符串来匹配符合正则字符串描述规则的字符。</p>
@@ -383,148 +252,165 @@
 </ul>
 <h4 id="常用元字符"><a href="#常用元字符" class="headerlink" title="常用元字符"></a>常用元字符</h4><p>注：所有用到的特殊符号如 $ 等，在用于原义匹配是需要使用 <code>/</code> 转义。</p>
 <h5 id="打印字符"><a href="#打印字符" class="headerlink" title="打印字符"></a>打印字符</h5><p>打印字符可以用于匹配一个显示字符。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>等价表达</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">\w</td>
+<tbody>
+<tr>
+<td style="text-align:center">\w</td>
 <td>匹配一个<strong>数字、字母或下划线</strong></td>
 <td>[A-Za-z0-9_]</td>
 </tr>
 <tr>
-<td align="center">\W</td>
+<td style="text-align:center">\W</td>
 <td>匹配一个<strong>非字母数字下划线</strong>的字符</td>
-<td>[^A-Za-z0-9_]</td>
+<td><sup><a href="#fn_A-Za-z0-9\_" id="reffn_A-Za-z0-9\_">A-Za-z0-9\_</a></sup></td>
 </tr>
 <tr>
-<td align="center">\d</td>
+<td style="text-align:center">\d</td>
 <td>匹配一个<strong>数字</strong></td>
 <td>[0-9]</td>
 </tr>
 <tr>
-<td align="center">\D</td>
+<td style="text-align:center">\D</td>
 <td>匹配一个<strong>非数字</strong>的字符</td>
-<td>[^0-9]</td>
+<td><sup><a href="#fn_0-9" id="reffn_0-9">0-9</a></sup></td>
 </tr>
 <tr>
-<td align="center">.</td>
+<td style="text-align:center">.</td>
 <td>匹配一个<strong>任意字符</strong></td>
 <td>略</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h5 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h5><p>定位符用于确定匹配项的位置。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>例子</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">^</td>
+<tbody>
+<tr>
+<td style="text-align:center">^</td>
 <td>匹配字符串的开头位置</td>
 <td><code>&#39;^\d&#39;</code> 匹配以数字开头的字符串</td>
 </tr>
 <tr>
-<td align="center">$</td>
+<td style="text-align:center">$</td>
 <td>匹配字符串的<strong>结尾</strong>位置</td>
 <td><code>&#39;\d$&#39;</code> 匹配以数字结尾的字符串</td>
 </tr>
 <tr>
-<td align="center">\b</td>
+<td style="text-align:center">\b</td>
 <td>匹配一个单词的边界，即字符和空格交界处</td>
 <td><code>&#39;ty\b&#39;</code> 匹配在单词最后两位的 ty</td>
 </tr>
 <tr>
-<td align="center">\B</td>
+<td style="text-align:center">\B</td>
 <td>非单词边界匹配</td>
 <td><code>&#39;\Bty&#39;</code> 匹配不在单词开头两位的 ty</td>
 </tr>
-</tbody></table>
-<h5 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h5><table>
+</tbody>
+</table>
+</div>
+<h5 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h5><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>例子</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">*</td>
+<tbody>
+<tr>
+<td style="text-align:center">*</td>
 <td>匹配前面的表达式<strong>0 或 多 次</strong></td>
 <td><code>&#39;\d*&#39;</code> 匹配任意个数字</td>
 </tr>
 <tr>
-<td align="center">+</td>
+<td style="text-align:center">+</td>
 <td>匹配前面的表达式<strong>至少一次</strong></td>
 <td><code>&#39;\d+&#39;</code> 匹配至少一个数字</td>
 </tr>
 <tr>
-<td align="center">？</td>
+<td style="text-align:center">？</td>
 <td>匹配前面的表达式 <strong>0 或 1 次</strong></td>
 <td><code>&#39;\d+&#39;</code> 匹配 0 或 1 个数字</td>
 </tr>
 <tr>
-<td align="center">{n}</td>
+<td style="text-align:center">{n}</td>
 <td>匹配 n 个字符</td>
 <td><code>\d{2}&#39;</code> 匹配 2 位数字</td>
 </tr>
 <tr>
-<td align="center">{m, n}</td>
+<td style="text-align:center">{m, n}</td>
 <td>匹配 m - n 个字符</td>
 <td><code>&#39;\d{3, 5}&#39;</code> 匹配 3 - 5 个数字</td>
 </tr>
 <tr>
-<td align="center">{n, }</td>
+<td style="text-align:center">{n, }</td>
 <td>匹配至少 n 个字符</td>
 <td><code>&#39;\d{2, }&#39;</code> 匹配至少 2 位数字</td>
 </tr>
-</tbody></table>
-<h5 id="选择符"><a href="#选择符" class="headerlink" title="选择符"></a>选择符</h5><table>
+</tbody>
+</table>
+</div>
+<h5 id="选择符"><a href="#选择符" class="headerlink" title="选择符"></a>选择符</h5><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">字符</th>
+<th style="text-align:center">字符</th>
 <th>简介</th>
 <th>例子</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">&#124;</td>
+<tbody>
+<tr>
+<td style="text-align:center">&#124;</td>
 <td>“或”，<strong>两项取其一</strong></td>
 <td>略</td>
 </tr>
 <tr>
-<td align="center">[xyz]</td>
+<td style="text-align:center">[xyz]</td>
 <td>字符集和，表示<strong>范围</strong>，匹配 x、y、z 中的一个</td>
 <td><code>&#39;[a-zA-Z0-9]&#39;</code> 匹配一个大小写字母或数字</td>
 </tr>
 <tr>
-<td align="center">[^xyz]</td>
+<td style="text-align:center"><sup><a href="#fn_xyz" id="reffn_xyz">xyz</a></sup></td>
 <td>字符集和，表示<strong>范围</strong>，匹配不在 x、y、z 中的一个字符</td>
 <td><code>&#39;[^a-zA-Z0-9]&#39;</code> 匹配既不是字母又不是数字的字符</td>
 </tr>
 <tr>
-<td align="center">()</td>
+<td style="text-align:center">()</td>
 <td><strong>匹配 pattern 并缓存</strong>这一匹配，使用 \n 可匹配第 n 个缓存项</td>
 <td><code>&#39;(.)(.)\2\1&#39;</code> 可匹配 ABBA 形式的字符串</td>
 </tr>
 <tr>
-<td align="center">(?:)</td>
-<td>*<em>匹配 pattern *</em>这一匹配，这里可以使用 “或” 字符 (&#124;) 来组合一个模式的各个部分</td>
+<td style="text-align:center">(?:)</td>
+<td><strong>匹配 pattern </strong>这一匹配，这里可以使用 “或” 字符 (&#124;) 来组合一个模式的各个部分</td>
 <td><code>&#39;industr(?:y&amp;#124;ies) &#39;</code>可匹配 industry 或 industries</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h4 id="贪婪模式和非贪婪模式"><a href="#贪婪模式和非贪婪模式" class="headerlink" title="贪婪模式和非贪婪模式"></a>贪婪模式和非贪婪模式</h4><p><code>*</code>、<code>+</code> 限定符都是贪婪的，会尽可能多的匹配符合条件的字符串。<br>若使用 <code>&lt;.*&gt;</code> 来匹配字符串 <code>&#39;&lt;h1&gt;dream land&lt;/h1&gt;&#39;</code> ，会匹配整个字符串。<br>如果想要得到标签内容 <code>&#39;h1&#39;</code> ，则可以使用 <code>&#39;.*?&#39;</code> 匹配。<br><strong>添加 ？ 即可实现非贪婪或最小匹配</strong>。</p>
 <h4 id="常用匹配"><a href="#常用匹配" class="headerlink" title="常用匹配"></a>常用匹配</h4><h5 id="匹配电子邮箱"><a href="#匹配电子邮箱" class="headerlink" title="匹配电子邮箱"></a>匹配电子邮箱</h5><p><code>&#39;\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}&#39;</code></p>
 <h5 id="匹配手机号"><a href="#匹配手机号" class="headerlink" title="匹配手机号"></a>匹配手机号</h5><p><code>&#39;(13\d|14[579]|15[^4\D]|17[^49\D]|18\d)\d{8}&#39;</code></p>
 <h5 id="匹配时间-时：分：秒"><a href="#匹配时间-时：分：秒" class="headerlink" title="匹配时间(时：分：秒)"></a>匹配时间(时：分：秒)</h5><p><code>&#39;([01]?\d|2[0-3]):[0-5]?\d:[0-5]?\d&#39;</code></p>
-<h4 id="其他元字符"><a href="#其他元字符" class="headerlink" title="其他元字符"></a>其他元字符</h4><h5 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h5><table>
+<h4 id="其他元字符"><a href="#其他元字符" class="headerlink" title="其他元字符"></a>其他元字符</h4><h5 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h5><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字符</th>
@@ -532,7 +418,8 @@
 <th>举例/等价表达</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>\cx</td>
 <td>匹配<strong>由 x 指明的控制字符</strong></td>
 <td><code>&#39;\cM&#39;</code> 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 c 字符</td>
@@ -570,268 +457,189 @@
 <tr>
 <td>\S</td>
 <td>匹配一个<strong>任意非空白字符</strong></td>
-<td>[^ \f\n\r\t\v]</td>
+<td><sup><a href="#fn_ \f\n\r\t\v" id="reffn_ \f\n\r\t\v"> \f\n\r\t\v</a></sup></td>
 </tr>
-</tbody></table>
-<p>*<br>最后，推荐两个网站：<br><a href="https://alf.nu/RegexGolf" target="_blank" rel="noopener">Regex Golf</a> - 用于正表达式练习<br><a href="https://tool.lu/regex/" target="_blank" rel="noopener">正则表达式测试工具</a> - 写正则表达式时用于检测是否有效，还可生成代码<br>*</p>
+</tbody>
+</table>
+</div>
+<p><em><br>最后，推荐两个网站：<br><a href="https://alf.nu/RegexGolf" target="_blank" rel="noopener">Regex Golf</a> - 用于正表达式练习<br><a href="https://tool.lu/regex/" target="_blank" rel="noopener">正则表达式测试工具</a> - 写正则表达式时用于检测是否有效，还可生成代码
+</em></p>
 <h4 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h4><p><a href="https://www.runoob.com/regexp/regexp-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a><br><a href="https://www.liaoxuefeng.com/wiki/1016959663602400/1017639890281664" target="_blank" rel="noopener">廖雪峰官网</a></p>
 
-      
     </div>
+
     
     
     
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D/" rel="tag"># 正则匹配</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/11/19/Python-VirtualEnv/" rel="next" title="Python虚拟环境">
-                <i class="fa fa-chevron-left"></i> Python虚拟环境
-              </a>
-            
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%AD%A3%E5%88%99%E5%8C%B9%E9%85%8D/" rel="tag"># 正则匹配</a>
           </div>
 
-          <span class="post-nav-divider"></span>
+        
 
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/11/24/Python-re/" rel="prev" title="Python-re">
-                Python-re <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
 
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/11/19/Python-VirtualEnv/" rel="prev" title="Python虚拟环境">
+      <i class="fa fa-chevron-left"></i> Python虚拟环境
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/11/24/Python-re/" rel="next" title="Python-re">
+      Python-re <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
+  
+  
+  
 
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
 
 
           </div>
           
 
-
-          
-
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image"
-                src="/%5Bobject%20Object%5D"
-                alt="李一念" />
-            
-              <p class="site-author-name" itemprop="name">李一念</p>
-              <p class="site-description motion-element" itemprop="description">好好学习，天天向上</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/%20%7C%7C%20archive">
-              
-                  <span class="site-state-item-count">17</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">16</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#几个简单的例子"><span class="nav-number">2.</span> <span class="nav-text">几个简单的例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用元字符"><span class="nav-number">3.</span> <span class="nav-text">常用元字符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#打印字符"><span class="nav-number">3.1.</span> <span class="nav-text">打印字符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#定位符"><span class="nav-number">3.2.</span> <span class="nav-text">定位符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#限定符"><span class="nav-number">3.3.</span> <span class="nav-text">限定符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#选择符"><span class="nav-number">3.4.</span> <span class="nav-text">选择符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#贪婪模式和非贪婪模式"><span class="nav-number">4.</span> <span class="nav-text">贪婪模式和非贪婪模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用匹配"><span class="nav-number">5.</span> <span class="nav-text">常用匹配</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#匹配电子邮箱"><span class="nav-number">5.1.</span> <span class="nav-text">匹配电子邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#匹配手机号"><span class="nav-number">5.2.</span> <span class="nav-text">匹配手机号</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#匹配时间-时：分：秒"><span class="nav-number">5.3.</span> <span class="nav-text">匹配时间(时：分：秒)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他元字符"><span class="nav-number">6.</span> <span class="nav-text">其他元字符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#非打印字符"><span class="nav-number">6.1.</span> <span class="nav-text">非打印字符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考链接"><span class="nav-number">7.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-[object Object]"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">李一念</span>
-
-  
-</div>
-
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
 
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#几个简单的例子"><span class="nav-number">2.</span> <span class="nav-text">几个简单的例子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用元字符"><span class="nav-number">3.</span> <span class="nav-text">常用元字符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#打印字符"><span class="nav-number">3.1.</span> <span class="nav-text">打印字符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#定位符"><span class="nav-number">3.2.</span> <span class="nav-text">定位符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#限定符"><span class="nav-number">3.3.</span> <span class="nav-text">限定符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#选择符"><span class="nav-number">3.4.</span> <span class="nav-text">选择符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#贪婪模式和非贪婪模式"><span class="nav-number">4.</span> <span class="nav-text">贪婪模式和非贪婪模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#常用匹配"><span class="nav-number">5.</span> <span class="nav-text">常用匹配</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#匹配电子邮箱"><span class="nav-number">5.1.</span> <span class="nav-text">匹配电子邮箱</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#匹配手机号"><span class="nav-number">5.2.</span> <span class="nav-text">匹配手机号</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#匹配时间-时：分：秒"><span class="nav-number">5.3.</span> <span class="nav-text">匹配时间(时：分：秒)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他元字符"><span class="nav-number">6.</span> <span class="nav-text">其他元字符</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#非打印字符"><span class="nav-number">6.1.</span> <span class="nav-text">非打印字符</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#参考链接"><span class="nav-number">7.</span> <span class="nav-text">参考链接</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="李一念"
+      src="/images/yinian818.jpeg">
+  <p class="site-author-name" itemprop="name">李一念</p>
+  <div class="site-description" itemprop="description">好好学习，天天向上</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李一念</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
 
 
 
 
 
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -841,457 +649,20 @@
 
 
 
-
-
-
-
-
-
-
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+<script src="/js/local-search.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
 
-  
-  
-    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  
 
 
-  
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v="></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v="></script>
 
 
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v="></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v="></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v="></script>
-<script type="text/javascript" src="/js/src/post-details.js?v="></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v="></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  <script type="text/javascript">
-    // Popup Window;
-    var isfetched = false;
-    var isXml = true;
-    // Search DB path;
-    var search_path = "search.xml";
-    if (search_path.length === 0) {
-      search_path = "search.xml";
-    } else if (/json$/i.test(search_path)) {
-      isXml = false;
-    }
-    var path = "/" + search_path;
-    // monitor main search box;
-
-    var onPopupClose = function (e) {
-      $('.popup').hide();
-      $('#local-search-input').val('');
-      $('.search-result-list').remove();
-      $('#no-result').remove();
-      $(".local-search-pop-overlay").remove();
-      $('body').css('overflow', '');
-    }
-
-    function proceedsearch() {
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
-        .css('overflow', 'hidden');
-      $('.search-popup-overlay').click(onPopupClose);
-      $('.popup').toggle();
-      var $localSearchInput = $('#local-search-input');
-      $localSearchInput.attr("autocapitalize", "none");
-      $localSearchInput.attr("autocorrect", "off");
-      $localSearchInput.focus();
-    }
-
-    // search function;
-    var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-
-      // start loading animation
-      $("body")
-        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
-          '<div id="search-loading-icon">' +
-          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
-          '</div>' +
-          '</div>')
-        .css('overflow', 'hidden');
-      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
-
-      $.ajax({
-        url: path,
-        dataType: isXml ? "xml" : "json",
-        async: true,
-        success: function(res) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = isXml ? $("entry", res).map(function() {
-            return {
-              title: $("title", this).text(),
-              content: $("content",this).text(),
-              url: $("url" , this).text()
-            };
-          }).get() : res;
-          var input = document.getElementById(search_id);
-          var resultContent = document.getElementById(content_id);
-          var inputEventFunction = function() {
-            var searchText = input.value.trim().toLowerCase();
-            var keywords = searchText.split(/[\s\-]+/);
-            if (keywords.length > 1) {
-              keywords.push(searchText);
-            }
-            var resultItems = [];
-            if (searchText.length > 0) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var hitCount = 0;
-                var searchTextCount = 0;
-                var title = data.title.trim();
-                var titleInLowerCase = title.toLowerCase();
-                var content = data.content.trim().replace(/<[^>]+>/g,"");
-                var contentInLowerCase = content.toLowerCase();
-                var articleUrl = decodeURIComponent(data.url);
-                var indexOfTitle = [];
-                var indexOfContent = [];
-                // only match articles with not empty titles
-                if(title != '') {
-                  keywords.forEach(function(keyword) {
-                    function getIndexByWord(word, text, caseSensitive) {
-                      var wordLen = word.length;
-                      if (wordLen === 0) {
-                        return [];
-                      }
-                      var startPosition = 0, position = [], index = [];
-                      if (!caseSensitive) {
-                        text = text.toLowerCase();
-                        word = word.toLowerCase();
-                      }
-                      while ((position = text.indexOf(word, startPosition)) > -1) {
-                        index.push({position: position, word: word});
-                        startPosition = position + wordLen;
-                      }
-                      return index;
-                    }
-
-                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
-                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
-                  });
-                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
-                    isMatch = true;
-                    hitCount = indexOfTitle.length + indexOfContent.length;
-                  }
-                }
-
-                // show search results
-
-                if (isMatch) {
-                  // sort index by position of keyword
-
-                  [indexOfTitle, indexOfContent].forEach(function (index) {
-                    index.sort(function (itemLeft, itemRight) {
-                      if (itemRight.position !== itemLeft.position) {
-                        return itemRight.position - itemLeft.position;
-                      } else {
-                        return itemLeft.word.length - itemRight.word.length;
-                      }
-                    });
-                  });
-
-                  // merge hits into slices
-
-                  function mergeIntoSlice(text, start, end, index) {
-                    var item = index[index.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    var hits = [];
-                    var searchTextCountInSlice = 0;
-                    while (position + word.length <= end && index.length != 0) {
-                      if (word === searchText) {
-                        searchTextCountInSlice++;
-                      }
-                      hits.push({position: position, length: word.length});
-                      var wordEnd = position + word.length;
-
-                      // move to next position of hit
-
-                      index.pop();
-                      while (index.length != 0) {
-                        item = index[index.length - 1];
-                        position = item.position;
-                        word = item.word;
-                        if (wordEnd > position) {
-                          index.pop();
-                        } else {
-                          break;
-                        }
-                      }
-                    }
-                    searchTextCount += searchTextCountInSlice;
-                    return {
-                      hits: hits,
-                      start: start,
-                      end: end,
-                      searchTextCount: searchTextCountInSlice
-                    };
-                  }
-
-                  var slicesOfTitle = [];
-                  if (indexOfTitle.length != 0) {
-                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
-                  }
-
-                  var slicesOfContent = [];
-                  while (indexOfContent.length != 0) {
-                    var item = indexOfContent[indexOfContent.length - 1];
-                    var position = item.position;
-                    var word = item.word;
-                    // cut out 100 characters
-                    var start = position - 20;
-                    var end = position + 80;
-                    if(start < 0){
-                      start = 0;
-                    }
-                    if (end < position + word.length) {
-                      end = position + word.length;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
-                  }
-
-                  // sort slices in content by search text's count and hits' count
-
-                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
-                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
-                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
-                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
-                      return sliceRight.hits.length - sliceLeft.hits.length;
-                    } else {
-                      return sliceLeft.start - sliceRight.start;
-                    }
-                  });
-
-                  // select top N slices in content
-
-                  var upperBound = parseInt('1');
-                  if (upperBound >= 0) {
-                    slicesOfContent = slicesOfContent.slice(0, upperBound);
-                  }
-
-                  // highlight title and content
-
-                  function highlightKeyword(text, slice) {
-                    var result = '';
-                    var prevEnd = slice.start;
-                    slice.hits.forEach(function (hit) {
-                      result += text.substring(prevEnd, hit.position);
-                      var end = hit.position + hit.length;
-                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
-                      prevEnd = end;
-                    });
-                    result += text.substring(prevEnd, slice.end);
-                    return result;
-                  }
-
-                  var resultItem = '';
-
-                  if (slicesOfTitle.length != 0) {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
-                  } else {
-                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
-                  }
-
-                  slicesOfContent.forEach(function (slice) {
-                    resultItem += "<a href='" + articleUrl + "'>" +
-                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
-                      "...</p>" + "</a>";
-                  });
-
-                  resultItem += "</li>";
-                  resultItems.push({
-                    item: resultItem,
-                    searchTextCount: searchTextCount,
-                    hitCount: hitCount,
-                    id: resultItems.length
-                  });
-                }
-              })
-            };
-            if (keywords.length === 1 && keywords[0] === "") {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
-            } else if (resultItems.length === 0) {
-              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
-            } else {
-              resultItems.sort(function (resultLeft, resultRight) {
-                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
-                  return resultRight.searchTextCount - resultLeft.searchTextCount;
-                } else if (resultLeft.hitCount !== resultRight.hitCount) {
-                  return resultRight.hitCount - resultLeft.hitCount;
-                } else {
-                  return resultRight.id - resultLeft.id;
-                }
-              });
-              var searchResultList = '<ul class=\"search-result-list\">';
-              resultItems.forEach(function (result) {
-                searchResultList += result.item;
-              })
-              searchResultList += "</ul>";
-              resultContent.innerHTML = searchResultList;
-            }
-          }
-
-          if ('auto' === 'auto') {
-            input.addEventListener('input', inputEventFunction);
-          } else {
-            $('.search-icon').click(inputEventFunction);
-            input.addEventListener('keypress', function (event) {
-              if (event.keyCode === 13) {
-                inputEventFunction();
-              }
-            });
-          }
-
-          // remove loading animation
-          $(".local-search-pop-overlay").remove();
-          $('body').css('overflow', '');
-
-          proceedsearch();
-        }
-      });
-    }
-
-    // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
-      e.stopPropagation();
-      if (isfetched === false) {
-        searchFunc(path, 'local-search-input', 'local-search-result');
-      } else {
-        proceedsearch();
-      };
-    });
-
-    $('.popup-btn-close').click(onPopupClose);
-    $('.popup').click(function(e){
-      e.stopPropagation();
-    });
-    $(document).on('keyup', function (event) {
-      var shouldDismissSearchPopup = event.which === 27 &&
-        $('.search-popup').is(':visible');
-      if (shouldDismissSearchPopup) {
-        onPopupClose();
-      }
-    });
-  </script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({"tex2jax":{"inlineMath":[["$","$"],["\\(","\\)"]],"skipTags":["script","noscript","style","textarea","pre","code"],"processEscapes":true},"TeX":{"equationNumbers":{"autoNumber":"AMS"}}});
-</script>
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-      all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-  });
-</script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-</script>
-<!-- End: Injected MathJax -->
-<!-- hexo-inject:end -->
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
 
   
 
