@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hadoop-buiding</title>
+    <url>/2019/12/03/Hadoop-buiding/</url>
+    <content><![CDATA[<p>— 环境：三台腾讯云服务器—<br>配置：<br>sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default </p>
+<p>云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改</p>
+<p>core-xtml.sh 配置备份到 hdsf。。</p>
+<p>把自己的公钥加到自己的 auto。。。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>GTD在滴答清单帮助下的实现</title>
     <url>/2020/05/02/GTD-TickTick/</url>
     <content><![CDATA[<h4 id="GTD简介"><a href="#GTD简介" class="headerlink" title="GTD简介"></a>GTD简介</h4><p>GTD 是 getting things done 的英文缩写，是 戴维·艾伦 在《搞定：无压工作的艺术》中的主要方法。其主要目的是帮助人们减轻工作压力，让事情变得井井有条。<br>GTD主要核心内容是将所有的事务从大脑赶出去，以便我们在做一件事时可以专注的沉浸其中。</p>
@@ -25,15 +34,6 @@
       <tags>
         <tag>效率</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hadoop-buiding</title>
-    <url>/2019/12/03/Hadoop-buiding/</url>
-    <content><![CDATA[<p>— 环境：三台腾讯云服务器—<br>配置：<br>sudo echo ‘ssh’ &gt;&gt; /etc/pdsh/rcmd_default </p>
-<p>云主机 连接 IP 和 ifconfig 显示ip不一样，需要在 /etc/hosts 更改</p>
-<p>core-xtml.sh 配置备份到 hdsf。。</p>
-<p>把自己的公钥加到自己的 auto。。。</p>
-]]></content>
   </entry>
   <entry>
     <title>Python虚拟环境</title>
@@ -481,64 +481,6 @@
       </tags>
   </entry>
   <entry>
-    <title>sklearn入门-监督学习</title>
-    <url>/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。<br>在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。</p>
-<h4 id="k近邻算法-kNN-sklearn-neighbors-KNeighborsClassifier"><a href="#k近邻算法-kNN-sklearn-neighbors-KNeighborsClassifier" class="headerlink" title="k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier)"></a>k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier)</h4><blockquote>
-<p>KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’auto’, leaf_size=30, p=2, metric=’minkowski’, metric_params=None, n_jobs=None, **kwargs)<br><code>n_neighbors=5</code> 分类数目，这个参数一般都要自己设置啊啊啊。<br><code>weights=&#39;uniform&#39;</code> 权重，默认为’uniform’类别中的所有点权重相同。支持’distance’，此时权重时距离的倒数，离分类点越近，权重越大；也可传入一个自己定义的函数名，要求接受一个距离数组，并返回一个包含权重的相同形状的数组。<br><code>algorithm=&#39;auto&#39;</code> 用于计算最近分类点的算法，默认’auto’尝试根据传递给fit方法的值来确定最合适的算法。其他：’ball_tree’将使用BallTree，’kd_tree’将使用KDTree，’brute’将使用暴力搜索。<br><code>leaf_size=30</code> 传递给BallTree或KDTree的叶子大小。 这可能会影响构造和查询的速度，以及存储树所需的内存。 最佳值取决于问题的性质。<br><code>p=2</code> 整数。Minkowski距离度量的参数。 当p = 1：曼哈顿距离(L1)；p = 2：欧几里得距离(L2)。对于任意p，使用minkowski_distance(Lp)。<br><code>metric=&#39;minkowski</code> 距离度量函数。<br><code>metric_params=None</code> 度量函数的其他关键字参数<br><code>n_job=None</code> 并行作业数</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#导入kNN</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">以下四步即为sklearn用于</span></span><br><span class="line"><span class="string">模型训练，数据预测，模型评估</span></span><br><span class="line"><span class="string">的一般基本使用方法</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">kNN_model = DescisionTreeClassifier(n_neighbors=<span class="number">5</span>)    </span><br><span class="line"><span class="comment">#训练模型</span></span><br><span class="line">kNN_model.fit(X_train, y_train)</span><br><span class="line"><span class="comment">#使用训练好的模型进行预测</span></span><br><span class="line">y_predict = kNN_model.predic(X_test)</span><br><span class="line"><span class="comment">#使用测试集对模型进行评分</span></span><br><span class="line">kNN_score = kNN_model.score(y_test, y_predict)</span><br></pre></td></tr></table></figure>
-<h4 id="决策树-sklearn-tree"><a href="#决策树-sklearn-tree" class="headerlink" title="决策树(sklearn.tree)"></a>决策树(sklearn.tree)</h4><ol>
-<li><p>分类树(sklearn.tree.DecisionTreeClassifier)</p>
-<blockquote>
-<p>DecisionTreeClassifier(criterion=’gini’, splitter=’best’, max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features=None, random_state=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, class_weight=None, presort=False)<br><code>criterion=&#39;gini&#39;</code> 特征选择标准。’gini’: 基尼指数，’entropy’: 信息增益<br><code>splitter=&#39;best&#39;</code> 每个节点选择如何分类的策略。’best’/‘random’<br><code>max_depth=None</code> 最大深度（深度小可提高泛化能力,避免过拟合）<br><code>min_samples_split=2</code> 拆分内部节点所需的最小样本数。int(个数)/float(比例)<br><code>min_samples_leaf=1</code> 每一个叶子节点的最小样本数。<br><code>min_wight_fraction_leaf=0.0</code> 每一个叶子节点的最小样本权重和，小于该值会被剪枝。<br><code>max_faetures=None</code> 寻找最佳分类特征时考虑的分类数量。’auto’/‘sqrt’: sqrt(n_features); ‘log2’:log2(n_features); None:n_features<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>max_leaf_nodes=None</code> 最大叶子节点数，防止过拟合<br><code>min_impurity_decrease=0.0</code> 如果该分裂导致不纯度的减少大于或等于该值，则将分裂节点。<br><code>min_impurity_split=None</code> 树提前停止生成的阈值，若某节点的不纯度小于/等于该值，停止分裂<br><code>class_weight=None</code> 指定样本各类别的的权重，防止训练集某些类别的样本过多，导致训练的决策树过于偏向这些类别。可以自己指定各个样本的权重，或者用“balanced”，如果使用“balanced”，则算法会自己计算权重，样本量少的类别所对应的样本权重会高。如果样本类别分布没有明显的偏倚，可以不管这个参数，选择默认的”None”。{class_label: weight}<br><code>presort=False</code> 是否提前排序。</p>
-</blockquote>
-</li>
-<li><p>回归树(sklearn.tree.DecisionTreeRegressor)</p>
-<blockquote>
-<p>DecisionTreeRegressor(criterion=’mse’,splitter=’best’,max_depth=None,min_samples_split=2,min_samples_leaf=1,min_weight_fraction_leaf=0.0,max_features=None,random_state=None,max_leaf_nodes=None,min_impurity_decrease=0.0,min_impurity_split=None, presort=False)<br><code>criterion=&#39;mse&#39;</code> 误差计算。 ‘mse’: 均方误差，’friedman_mse’: L2，’mae’: L1<br>(其余同上)</p>
-</blockquote>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#分别导入分类树和回归树</span></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeRegressor</span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">DTC_model = DescisionTreeClassifier(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">DTR_model = DescisionTreeRegressor(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<h4 id="朴素贝叶斯-sklearn-naive-bayes"><a href="#朴素贝叶斯-sklearn-naive-bayes" class="headerlink" title="朴素贝叶斯(sklearn.naive_bayes)"></a>朴素贝叶斯(sklearn.naive_bayes)</h4><p>高斯模型：GaussianNB(priors=None, var_smoothing=1e-09)，适用于连续值。<br>伯努利模型：BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None)，适用于离散值。<br>多项式模型：MultinomialNB(alpha=1.0, fit_prior=True, class_prior=None)，适用于离散值。</p>
-<blockquote>
-<p><code>priors=None</code> 类的先验概率<br><code>var_smoothing=1e-09</code> 为使计算稳定添加的特征最大方差的部分(？)<br><code>alpha=1.0</code> 平滑参数<br><code>binarize=0.0</code> 样本特征的二值化（映射到布尔值）的阈值。 如果为None，则假定输入已包含二进制向量。<br><code>fit_prior=True</code> 是否学习先验概率<br><code>class_prior=None</code> 类的先验概率<br>(目前这几种模型，不调参，对这些参数的理解还不够清晰透彻)</p>
-</blockquote>
-<h4 id="线性回归-sklearn-linear-model-LinearRegression"><a href="#线性回归-sklearn-linear-model-LinearRegression" class="headerlink" title="线性回归(sklearn.linear_model.LinearRegression)"></a>线性回归(sklearn.linear_model.LinearRegression)</h4><p>线性回归主要用于对连续值的预测。该模块在未对样本进行特别处理时，只能对数据进行简单的线性拟合，但配合其他一些数据处理模块却能够进行更复杂的曲线拟合等，此处暂不过多介绍。</p>
-<blockquote>
-<p>LinearRegression(fit_intercept=True, normalize=False, copy_X=True, n_jobs=None)<br><code>fit_intercept=True</code> 训练时是否考虑截距。 如果设置为False，则不会在计算中使用截距(e.g. 预计数据已经居中)。<br><code>normalize=False</code> 当fit_intercept设置为False时，将忽略此参数。 如果为True，则回归量X将在回归之前通过减去平均值并除以L2范数来归一化。<br><code>copy_X=True</code> 如果为True，则将复制X; 否则，它可能会被覆盖。<br><code>n_jobs=None</code> 并行作业数。</p>
-</blockquote>
-<h4 id="逻辑回归-sklearn-linear-model-LogisticRegression"><a href="#逻辑回归-sklearn-linear-model-LogisticRegression" class="headerlink" title="逻辑回归(sklearn.linear_model.LogisticRegression)"></a>逻辑回归(sklearn.linear_model.LogisticRegression)</h4><p>逻辑回归用于处理二分类问题，多个分类器组合也可用于多分类问题。在应用于多分类问题时，需要softmax(其实我觉着也可以不需要，直接选值最高的就行，不过处理之后可以让不同类的预测值为1，近似于概率)。</p>
-<blockquote>
-<p>LogisticRegression(penalty=’l2’, dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver=’warn’, max_iter=100, multi_class=’warn’, verbose=0, warm_start=False, n_jobs=None)<br><code>penaity=&#39;l2&#39;</code> 用于指定惩罚项(正则项)。’l2’(默认)或者’l1’，L2很好用，一般别动它<br><code>dual=False</code> 对偶或者原始方法。Dual只适用于正则化相为l2 liblinear的情况，通常样本数大于特征数的情况下，默认为False。<br><code>tol=0.0001</code> 停止训练的误差值大小。<br><code>C=1</code> C为正则化系数λ的倒数，通常默认为1。C越大，正则化系数越小，一般设置它小于1<br><code>fit_intercept=True</code> 是否存在截距，默认存在<br><code>intercept_scaling=1</code> 仅在正则化项为”liblinear”，且fit_intercept设置为True时有用。<br><code>class_weight=None</code> 类的权重。dict / ‘balanced’<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>solver=&#39;warn&#39;</code> str, {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}.默认：’liblinear’<br>其中，’liblinear’: 适用于小数据集，仅可用于二元分类。&lt;’newton-cg’: ‘lbfgs’: ‘liblinear’: ‘sag’: ‘saga’:&gt;<br><code>max_iter=&#39;100&#39;</code> 求解器收敛的最大迭代次数。仅适用于newton-cg，sag和lbfgs求解器。<br><code>multi_class=&#39;warn&#39;</code> str，{‘ovr’，’multinomial’，’auto’}，默认值：’ovr’。<br><code>verbose=0</code> 对于liblinear和lbfgs求解器，将详细设置为任何正数以表示详细程度。<br><code>warm_start=False</code> 设置为True时，重用上一次调用的解决方案以适合初始化，否则，只需擦除以前的解决方案。对于liblinear解算器无效。<br><code>n_jobs=None</code> 并行作业数。</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line"><span class="comment">#定义模型及常用参数</span></span><br><span class="line">RL_model = LogisticRegression(C=<span class="number">1</span>, randomstate=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
-<h4 id="支持向量机-SVM-sklearn-svm"><a href="#支持向量机-SVM-sklearn-svm" class="headerlink" title="支持向量机(SVM)(sklearn.svm)"></a>支持向量机(SVM)(sklearn.svm)</h4><p>sklearn中的SVM模块既可用于分类问题(SVC)，也可以用于回归问题(SVR)。</p>
-<ol>
-<li><p>用于分类问题(sklearn.svm.SVC)</p>
-<blockquote>
-<p>SVC(C=1.0, kernel=’rbf’, degree=3, gamma=’auto_deprecated’, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape=’ovr’, random_state=None)<br><code>C=1.0</code> 正则项系数的倒数<br><code>kernel=&#39;rbf&#39;</code> 算法使用的核函数。必须是’linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’之一或者可传入对象<br><code>degree=3</code> 多项式核函数的次数(‘poly’)。对其余核函数忽略<br><code>gamma=’auto_deprecated’</code> ‘rbf’,’poly’ 和’sigmoid’的核函数参数。默认是’auto’，会选择1/n_features。<br><code>coef0=0.0</code> 核函数的常数项。对于’poly’和’sigmoid’有校。<br><code>shrinking=True</code> 是否采用shrinking heuristic方法，默认为true<br><code>probability=False</code><br><code>tol=0.001</code> 停止训练的误差值大小，默认为1e-3<br><code>cache_size=200</code> 核函数cache缓存大小，默认为200<br><code>class_weight=None</code> 类别的权重，字典形式传递。<br><code>verbose=False</code> 是否允许冗余输出。<br><code>max_iter=-1</code> 最大迭代次数。-1为无限制。<br><code>decision_function_shape=’ovr’</code> ‘ovo’ / ‘ovr’<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。</p>
-</blockquote>
-</li>
-<li><p>用于回归问题(sklearn.svm.SVR)</p>
-<blockquote>
-<p>SVR(kernel=’rbf’, degree=3, gamma=’auto_deprecated’, coef0=0.0, tol=0.001, C=1.0, epsilon=0.1, shrinking=True, cache_size=200, verbose=False, max_iter=-1)<br><code>epsilon=0.1</code> Epsilon in the epsilon-SVR model. It specifies the epsilon-tube within which no penalty is associated in the training loss function with points predicted within a distance epsilon from the actual value.<br>(其余同上)</p>
-</blockquote>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC    <span class="comment">#分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR    <span class="comment">#回归</span></span><br><span class="line"></span><br><span class="line">svc_model = SVC(C=<span class="number">1.0</span>, kernel=<span class="string">'rbf'</span>, degree=<span class="number">3</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">svr_model = SVR(kernal=<span class="string">'rbf'</span>, C=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
-<p>(完)</p>
-]]></content>
-      <categories>
-        <category>Machine Learning</category>
-      </categories>
-      <tags>
-        <tag>sklearn</tag>
-        <tag>监督学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>sklearn入门-数据预处理</title>
     <url>/2019/04/20/sklearn%E5%85%A5%E9%97%A8-%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[<p><strong>sklearn.preprocessing</strong></p>
@@ -615,11 +557,104 @@
       </tags>
   </entry>
   <entry>
+    <title>sklearn入门-监督学习</title>
+    <url>/2019/04/22/sklearn%E5%85%A5%E9%97%A8-%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>这篇文档只对sklearn关于几种基本的监督学习算法进行简单的阐述汇总，不涉及参数详细含义。<br>在本文代码块中，定义模型的括号内为一般需要调整的参数(给出的为原始值)。</p>
+<h4 id="k近邻算法-kNN-sklearn-neighbors-KNeighborsClassifier"><a href="#k近邻算法-kNN-sklearn-neighbors-KNeighborsClassifier" class="headerlink" title="k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier)"></a>k近邻算法(kNN)(sklearn.neighbors.KNeighborsClassifier)</h4><blockquote>
+<p>KNeighborsClassifier(n_neighbors=5, weights=’uniform’, algorithm=’auto’, leaf_size=30, p=2, metric=’minkowski’, metric_params=None, n_jobs=None, **kwargs)<br><code>n_neighbors=5</code> 分类数目，这个参数一般都要自己设置啊啊啊。<br><code>weights=&#39;uniform&#39;</code> 权重，默认为’uniform’类别中的所有点权重相同。支持’distance’，此时权重时距离的倒数，离分类点越近，权重越大；也可传入一个自己定义的函数名，要求接受一个距离数组，并返回一个包含权重的相同形状的数组。<br><code>algorithm=&#39;auto&#39;</code> 用于计算最近分类点的算法，默认’auto’尝试根据传递给fit方法的值来确定最合适的算法。其他：’ball_tree’将使用BallTree，’kd_tree’将使用KDTree，’brute’将使用暴力搜索。<br><code>leaf_size=30</code> 传递给BallTree或KDTree的叶子大小。 这可能会影响构造和查询的速度，以及存储树所需的内存。 最佳值取决于问题的性质。<br><code>p=2</code> 整数。Minkowski距离度量的参数。 当p = 1：曼哈顿距离(L1)；p = 2：欧几里得距离(L2)。对于任意p，使用minkowski_distance(Lp)。<br><code>metric=&#39;minkowski</code> 距离度量函数。<br><code>metric_params=None</code> 度量函数的其他关键字参数<br><code>n_job=None</code> 并行作业数</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#导入kNN</span></span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> KNeighborsClassifier</span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">以下四步即为sklearn用于</span></span><br><span class="line"><span class="string">模型训练，数据预测，模型评估</span></span><br><span class="line"><span class="string">的一般基本使用方法</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">kNN_model = DescisionTreeClassifier(n_neighbors=<span class="number">5</span>)    </span><br><span class="line"><span class="comment">#训练模型</span></span><br><span class="line">kNN_model.fit(X_train, y_train)</span><br><span class="line"><span class="comment">#使用训练好的模型进行预测</span></span><br><span class="line">y_predict = kNN_model.predic(X_test)</span><br><span class="line"><span class="comment">#使用测试集对模型进行评分</span></span><br><span class="line">kNN_score = kNN_model.score(y_test, y_predict)</span><br></pre></td></tr></table></figure>
+<h4 id="决策树-sklearn-tree"><a href="#决策树-sklearn-tree" class="headerlink" title="决策树(sklearn.tree)"></a>决策树(sklearn.tree)</h4><ol>
+<li><p>分类树(sklearn.tree.DecisionTreeClassifier)</p>
+<blockquote>
+<p>DecisionTreeClassifier(criterion=’gini’, splitter=’best’, max_depth=None, min_samples_split=2, min_samples_leaf=1, min_weight_fraction_leaf=0.0, max_features=None, random_state=None, max_leaf_nodes=None, min_impurity_decrease=0.0, min_impurity_split=None, class_weight=None, presort=False)<br><code>criterion=&#39;gini&#39;</code> 特征选择标准。’gini’: 基尼指数，’entropy’: 信息增益<br><code>splitter=&#39;best&#39;</code> 每个节点选择如何分类的策略。’best’/‘random’<br><code>max_depth=None</code> 最大深度（深度小可提高泛化能力,避免过拟合）<br><code>min_samples_split=2</code> 拆分内部节点所需的最小样本数。int(个数)/float(比例)<br><code>min_samples_leaf=1</code> 每一个叶子节点的最小样本数。<br><code>min_wight_fraction_leaf=0.0</code> 每一个叶子节点的最小样本权重和，小于该值会被剪枝。<br><code>max_faetures=None</code> 寻找最佳分类特征时考虑的分类数量。’auto’/‘sqrt’: sqrt(n_features); ‘log2’:log2(n_features); None:n_features<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>max_leaf_nodes=None</code> 最大叶子节点数，防止过拟合<br><code>min_impurity_decrease=0.0</code> 如果该分裂导致不纯度的减少大于或等于该值，则将分裂节点。<br><code>min_impurity_split=None</code> 树提前停止生成的阈值，若某节点的不纯度小于/等于该值，停止分裂<br><code>class_weight=None</code> 指定样本各类别的的权重，防止训练集某些类别的样本过多，导致训练的决策树过于偏向这些类别。可以自己指定各个样本的权重，或者用“balanced”，如果使用“balanced”，则算法会自己计算权重，样本量少的类别所对应的样本权重会高。如果样本类别分布没有明显的偏倚，可以不管这个参数，选择默认的”None”。{class_label: weight}<br><code>presort=False</code> 是否提前排序。</p>
+</blockquote>
+</li>
+<li><p>回归树(sklearn.tree.DecisionTreeRegressor)</p>
+<blockquote>
+<p>DecisionTreeRegressor(criterion=’mse’,splitter=’best’,max_depth=None,min_samples_split=2,min_samples_leaf=1,min_weight_fraction_leaf=0.0,max_features=None,random_state=None,max_leaf_nodes=None,min_impurity_decrease=0.0,min_impurity_split=None, presort=False)<br><code>criterion=&#39;mse&#39;</code> 误差计算。 ‘mse’: 均方误差，’friedman_mse’: L2，’mae’: L1<br>(其余同上)</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#分别导入分类树和回归树</span></span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeClassifier</span><br><span class="line"><span class="keyword">from</span> sklearn.tree <span class="keyword">import</span> DecisionTreeRegressor</span><br><span class="line"><span class="comment">#定义模型</span></span><br><span class="line">DTC_model = DescisionTreeClassifier(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">DTR_model = DescisionTreeRegressor(max_depth=<span class="literal">None</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<h4 id="朴素贝叶斯-sklearn-naive-bayes"><a href="#朴素贝叶斯-sklearn-naive-bayes" class="headerlink" title="朴素贝叶斯(sklearn.naive_bayes)"></a>朴素贝叶斯(sklearn.naive_bayes)</h4><p>高斯模型：GaussianNB(priors=None, var_smoothing=1e-09)，适用于连续值。<br>伯努利模型：BernoulliNB(alpha=1.0, binarize=0.0, fit_prior=True, class_prior=None)，适用于离散值。<br>多项式模型：MultinomialNB(alpha=1.0, fit_prior=True, class_prior=None)，适用于离散值。</p>
+<blockquote>
+<p><code>priors=None</code> 类的先验概率<br><code>var_smoothing=1e-09</code> 为使计算稳定添加的特征最大方差的部分(？)<br><code>alpha=1.0</code> 平滑参数<br><code>binarize=0.0</code> 样本特征的二值化（映射到布尔值）的阈值。 如果为None，则假定输入已包含二进制向量。<br><code>fit_prior=True</code> 是否学习先验概率<br><code>class_prior=None</code> 类的先验概率<br>(目前这几种模型，不调参，对这些参数的理解还不够清晰透彻)</p>
+</blockquote>
+<h4 id="线性回归-sklearn-linear-model-LinearRegression"><a href="#线性回归-sklearn-linear-model-LinearRegression" class="headerlink" title="线性回归(sklearn.linear_model.LinearRegression)"></a>线性回归(sklearn.linear_model.LinearRegression)</h4><p>线性回归主要用于对连续值的预测。该模块在未对样本进行特别处理时，只能对数据进行简单的线性拟合，但配合其他一些数据处理模块却能够进行更复杂的曲线拟合等，此处暂不过多介绍。</p>
+<blockquote>
+<p>LinearRegression(fit_intercept=True, normalize=False, copy_X=True, n_jobs=None)<br><code>fit_intercept=True</code> 训练时是否考虑截距。 如果设置为False，则不会在计算中使用截距(e.g. 预计数据已经居中)。<br><code>normalize=False</code> 当fit_intercept设置为False时，将忽略此参数。 如果为True，则回归量X将在回归之前通过减去平均值并除以L2范数来归一化。<br><code>copy_X=True</code> 如果为True，则将复制X; 否则，它可能会被覆盖。<br><code>n_jobs=None</code> 并行作业数。</p>
+</blockquote>
+<h4 id="逻辑回归-sklearn-linear-model-LogisticRegression"><a href="#逻辑回归-sklearn-linear-model-LogisticRegression" class="headerlink" title="逻辑回归(sklearn.linear_model.LogisticRegression)"></a>逻辑回归(sklearn.linear_model.LogisticRegression)</h4><p>逻辑回归用于处理二分类问题，多个分类器组合也可用于多分类问题。在应用于多分类问题时，需要softmax(其实我觉着也可以不需要，直接选值最高的就行，不过处理之后可以让不同类的预测值为1，近似于概率)。</p>
+<blockquote>
+<p>LogisticRegression(penalty=’l2’, dual=False, tol=0.0001, C=1.0, fit_intercept=True, intercept_scaling=1, class_weight=None, random_state=None, solver=’warn’, max_iter=100, multi_class=’warn’, verbose=0, warm_start=False, n_jobs=None)<br><code>penaity=&#39;l2&#39;</code> 用于指定惩罚项(正则项)。’l2’(默认)或者’l1’，L2很好用，一般别动它<br><code>dual=False</code> 对偶或者原始方法。Dual只适用于正则化相为l2 liblinear的情况，通常样本数大于特征数的情况下，默认为False。<br><code>tol=0.0001</code> 停止训练的误差值大小。<br><code>C=1</code> C为正则化系数λ的倒数，通常默认为1。C越大，正则化系数越小，一般设置它小于1<br><code>fit_intercept=True</code> 是否存在截距，默认存在<br><code>intercept_scaling=1</code> 仅在正则化项为”liblinear”，且fit_intercept设置为True时有用。<br><code>class_weight=None</code> 类的权重。dict / ‘balanced’<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。<br><code>solver=&#39;warn&#39;</code> str, {‘newton-cg’, ‘lbfgs’, ‘liblinear’, ‘sag’, ‘saga’}.默认：’liblinear’<br>其中，’liblinear’: 适用于小数据集，仅可用于二元分类。&lt;’newton-cg’: ‘lbfgs’: ‘liblinear’: ‘sag’: ‘saga’:&gt;<br><code>max_iter=&#39;100&#39;</code> 求解器收敛的最大迭代次数。仅适用于newton-cg，sag和lbfgs求解器。<br><code>multi_class=&#39;warn&#39;</code> str，{‘ovr’，’multinomial’，’auto’}，默认值：’ovr’。<br><code>verbose=0</code> 对于liblinear和lbfgs求解器，将详细设置为任何正数以表示详细程度。<br><code>warm_start=False</code> 设置为True时，重用上一次调用的解决方案以适合初始化，否则，只需擦除以前的解决方案。对于liblinear解算器无效。<br><code>n_jobs=None</code> 并行作业数。</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.linear_model <span class="keyword">import</span> LogisticRegression</span><br><span class="line"><span class="comment">#定义模型及常用参数</span></span><br><span class="line">RL_model = LogisticRegression(C=<span class="number">1</span>, randomstate=<span class="literal">None</span>)</span><br><span class="line">......</span><br></pre></td></tr></table></figure>
+<h4 id="支持向量机-SVM-sklearn-svm"><a href="#支持向量机-SVM-sklearn-svm" class="headerlink" title="支持向量机(SVM)(sklearn.svm)"></a>支持向量机(SVM)(sklearn.svm)</h4><p>sklearn中的SVM模块既可用于分类问题(SVC)，也可以用于回归问题(SVR)。</p>
+<ol>
+<li><p>用于分类问题(sklearn.svm.SVC)</p>
+<blockquote>
+<p>SVC(C=1.0, kernel=’rbf’, degree=3, gamma=’auto_deprecated’, coef0=0.0, shrinking=True, probability=False, tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, decision_function_shape=’ovr’, random_state=None)<br><code>C=1.0</code> 正则项系数的倒数<br><code>kernel=&#39;rbf&#39;</code> 算法使用的核函数。必须是’linear’, ‘poly’, ‘rbf’, ‘sigmoid’, ‘precomputed’之一或者可传入对象<br><code>degree=3</code> 多项式核函数的次数(‘poly’)。对其余核函数忽略<br><code>gamma=’auto_deprecated’</code> ‘rbf’,’poly’ 和’sigmoid’的核函数参数。默认是’auto’，会选择1/n_features。<br><code>coef0=0.0</code> 核函数的常数项。对于’poly’和’sigmoid’有校。<br><code>shrinking=True</code> 是否采用shrinking heuristic方法，默认为true<br><code>probability=False</code><br><code>tol=0.001</code> 停止训练的误差值大小，默认为1e-3<br><code>cache_size=200</code> 核函数cache缓存大小，默认为200<br><code>class_weight=None</code> 类别的权重，字典形式传递。<br><code>verbose=False</code> 是否允许冗余输出。<br><code>max_iter=-1</code> 最大迭代次数。-1为无限制。<br><code>decision_function_shape=’ovr’</code> ‘ovo’ / ‘ovr’<br><code>random_state=None</code> 如果是int，则random_state是随机数生成器使用的种子; 如果是RandomState实例，则random_state是随机数生成器; 如果为None，则随机数生成器是np.random。</p>
+</blockquote>
+</li>
+<li><p>用于回归问题(sklearn.svm.SVR)</p>
+<blockquote>
+<p>SVR(kernel=’rbf’, degree=3, gamma=’auto_deprecated’, coef0=0.0, tol=0.001, C=1.0, epsilon=0.1, shrinking=True, cache_size=200, verbose=False, max_iter=-1)<br><code>epsilon=0.1</code> Epsilon in the epsilon-SVR model. It specifies the epsilon-tube within which no penalty is associated in the training loss function with points predicted within a distance epsilon from the actual value.<br>(其余同上)</p>
+</blockquote>
+</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVC    <span class="comment">#分类</span></span><br><span class="line"><span class="keyword">from</span> sklearn.svm <span class="keyword">import</span> SVR    <span class="comment">#回归</span></span><br><span class="line"></span><br><span class="line">svc_model = SVC(C=<span class="number">1.0</span>, kernel=<span class="string">'rbf'</span>, degree=<span class="number">3</span>, random_state=<span class="literal">None</span>)</span><br><span class="line">svr_model = SVR(kernal=<span class="string">'rbf'</span>, C=<span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<p>(完)</p>
+]]></content>
+      <categories>
+        <category>Machine Learning</category>
+      </categories>
+      <tags>
+        <tag>sklearn</tag>
+        <tag>监督学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>群晖 NAS 远程访问</title>
     <url>/2019/09/15/synology-NAS-remote-access/</url>
     <content><![CDATA[<p>外部访问，根据引导教程进行设置。</p>
 <p>确保网络连接所用的 IP （可百度‘我的 IP ’查看）和 公网 IP 一致 ！！！</p>
 <p>路由器添加映射端口。<br>本机端口　＝　内部端口<br>路由器端口　＝　外部端口<br>IP 地址　＝　NAS 在局域网内部的 IP</p>
+]]></content>
+      <categories>
+        <category>Code Word</category>
+      </categories>
+      <tags>
+        <tag>配置</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟机安装</title>
+    <url>/2019/09/15/virtual-machine-setting/</url>
+    <content><![CDATA[<h4 id="虚拟机安装及与主机间的文件共享"><a href="#虚拟机安装及与主机间的文件共享" class="headerlink" title="虚拟机安装及与主机间的文件共享"></a>虚拟机安装<em>及</em>与主机间的文件共享</h4><p><em>啾咪，这是一篇没有图片的教程，额呵呵……咩有图片，大概是因为，懒吧……</em><br><em>想要安装虚拟机是因为很多软件没有 Linux 版本，比如公司常用的钉钉，同时没有百度网盘客户端根本没办法下载一些大文件，虽然说现在百度网盘出了 Linux 版本，但是呵呵哒，根本不能用。而想要利用虚拟机下载文件，那就需要解决如何把虚拟机文件共享到主机的问题。</em></p>
+<h5 id="虚拟机安装"><a href="#虚拟机安装" class="headerlink" title="虚拟机安装"></a>虚拟机安装</h5><p>使用工具：</p>
+<ol>
+<li>VirtualBox</li>
+<li>VMware</li>
+</ol>
+<p>上面两个是常见的虚拟机安装的软件，最后还是选择了 VirtualBox，原因有下面几个</p>
+<ul>
+<li>我需要虚拟机实现的功能不多，VirtualBox 相对来说安装更便捷；</li>
+<li>VMware 需要付费，虽然它也有免费版可以使用，但就总觉得不得劲儿；</li>
+<li>刚开始是准备用 VMware 的，但是在启动虚拟机是遇到了问题，而在尝试使用 VirtualBox 时我有顺手把这个问题解决了，哈哈</li>
+</ul>
+<p>Anyway，其实两个软件的使用操作都是大同小异。<br>首先需要安装好 VirtualBox， Linux 下安装可以直接使用命令行 <code>sudo apt install virtualbox</code> ；如果是 Windows ，那就直接下载安装～<br>安装好之后，点击新建虚拟机，设置好名字，系统，想要分配的大小，虚拟硬盘文件类型选择<strong>磁盘映像</strong>。<br>创建好虚拟机后，选中虚拟机，点击<strong>启动</strong>，这时候就需要选定<strong>下载好的光盘映像文件(.iso)</strong>。<br>之后，就按照正常的系统安装过程进行就 OK 啦～</p>
+<p>在启动虚拟机时，可能会出现这样的报错信息：</p>
+<blockquote>
+<p>本机支持 VT-x ，但 VT-x 未开启。</p>
+</blockquote>
+<p>解决办法就是重启电脑进入 BIOS 模式将它打开。<br>细节问题，比如怎么进入 BIOS 模式？在哪里打开 VT-x ？</p>
+<ul>
+<li>不同电脑按键不一样，一般是在看到系统图标时按 <strong>F2 / F8 / F9 / F11 / F12</strong> ，就直接试试或是百度吧。</li>
+<li>关于第二点，就，多找找总能找到的，不然，也可以继续百度呀。</li>
+</ul>
+<h5 id="虚拟机与主机的文件共享"><a href="#虚拟机与主机的文件共享" class="headerlink" title="虚拟机与主机的文件共享"></a>虚拟机与主机的文件共享</h5><p><em>这里基于 VirtualBox ，跟 VMware 的区别就有些大了。</em><br><em>以下介绍的是使用共享文件夹进行文件共享的方式。</em></p>
+<p>首先，启动需要共享的虚拟机，左上方点击<strong>设备-安装增强功能</strong>，下载好驱动后，安装它（<strong>不同系统对应有不同的安装包</strong>）。<br>接下来新建共享文件夹，左上方点击<strong>控制-设置-共享文件夹</strong>，点击右侧<strong>带加号的文件夹图标</strong>新建，选择想要共享的文件夹，并给它命名。<br>会有三个选项：只读分配，自动挂载，固定分配。<br>如果想要虚拟机可以修改共享文件夹内容（写入），就不要勾选只读分配；之后的自动分配和固定挂载，为了方便我都会勾选。</p>
 ]]></content>
       <categories>
         <category>Code Word</category>
@@ -951,41 +986,6 @@ c5(yes)->opD->io2->e
       </categories>
       <tags>
         <tag>网络爬虫</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟机安装</title>
-    <url>/2019/09/15/virtual-machine-setting/</url>
-    <content><![CDATA[<h4 id="虚拟机安装及与主机间的文件共享"><a href="#虚拟机安装及与主机间的文件共享" class="headerlink" title="虚拟机安装及与主机间的文件共享"></a>虚拟机安装<em>及</em>与主机间的文件共享</h4><p><em>啾咪，这是一篇没有图片的教程，额呵呵……咩有图片，大概是因为，懒吧……</em><br><em>想要安装虚拟机是因为很多软件没有 Linux 版本，比如公司常用的钉钉，同时没有百度网盘客户端根本没办法下载一些大文件，虽然说现在百度网盘出了 Linux 版本，但是呵呵哒，根本不能用。而想要利用虚拟机下载文件，那就需要解决如何把虚拟机文件共享到主机的问题。</em></p>
-<h5 id="虚拟机安装"><a href="#虚拟机安装" class="headerlink" title="虚拟机安装"></a>虚拟机安装</h5><p>使用工具：</p>
-<ol>
-<li>VirtualBox</li>
-<li>VMware</li>
-</ol>
-<p>上面两个是常见的虚拟机安装的软件，最后还是选择了 VirtualBox，原因有下面几个</p>
-<ul>
-<li>我需要虚拟机实现的功能不多，VirtualBox 相对来说安装更便捷；</li>
-<li>VMware 需要付费，虽然它也有免费版可以使用，但就总觉得不得劲儿；</li>
-<li>刚开始是准备用 VMware 的，但是在启动虚拟机是遇到了问题，而在尝试使用 VirtualBox 时我有顺手把这个问题解决了，哈哈</li>
-</ul>
-<p>Anyway，其实两个软件的使用操作都是大同小异。<br>首先需要安装好 VirtualBox， Linux 下安装可以直接使用命令行 <code>sudo apt install virtualbox</code> ；如果是 Windows ，那就直接下载安装～<br>安装好之后，点击新建虚拟机，设置好名字，系统，想要分配的大小，虚拟硬盘文件类型选择<strong>磁盘映像</strong>。<br>创建好虚拟机后，选中虚拟机，点击<strong>启动</strong>，这时候就需要选定<strong>下载好的光盘映像文件(.iso)</strong>。<br>之后，就按照正常的系统安装过程进行就 OK 啦～</p>
-<p>在启动虚拟机时，可能会出现这样的报错信息：</p>
-<blockquote>
-<p>本机支持 VT-x ，但 VT-x 未开启。</p>
-</blockquote>
-<p>解决办法就是重启电脑进入 BIOS 模式将它打开。<br>细节问题，比如怎么进入 BIOS 模式？在哪里打开 VT-x ？</p>
-<ul>
-<li>不同电脑按键不一样，一般是在看到系统图标时按 <strong>F2 / F8 / F9 / F11 / F12</strong> ，就直接试试或是百度吧。</li>
-<li>关于第二点，就，多找找总能找到的，不然，也可以继续百度呀。</li>
-</ul>
-<h5 id="虚拟机与主机的文件共享"><a href="#虚拟机与主机的文件共享" class="headerlink" title="虚拟机与主机的文件共享"></a>虚拟机与主机的文件共享</h5><p><em>这里基于 VirtualBox ，跟 VMware 的区别就有些大了。</em><br><em>以下介绍的是使用共享文件夹进行文件共享的方式。</em></p>
-<p>首先，启动需要共享的虚拟机，左上方点击<strong>设备-安装增强功能</strong>，下载好驱动后，安装它（<strong>不同系统对应有不同的安装包</strong>）。<br>接下来新建共享文件夹，左上方点击<strong>控制-设置-共享文件夹</strong>，点击右侧<strong>带加号的文件夹图标</strong>新建，选择想要共享的文件夹，并给它命名。<br>会有三个选项：只读分配，自动挂载，固定分配。<br>如果想要虚拟机可以修改共享文件夹内容（写入），就不要勾选只读分配；之后的自动分配和固定挂载，为了方便我都会勾选。</p>
-]]></content>
-      <categories>
-        <category>Code Word</category>
-      </categories>
-      <tags>
-        <tag>配置</tag>
       </tags>
   </entry>
 </search>
